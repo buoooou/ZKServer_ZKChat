@@ -1,0 +1,24 @@
+20161127 16:24:06  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20161127 16:24:22  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxCostMills:15693
+20161127 16:24:22  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  TimecostMills:15693
+20161127 16:32:04  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20161127 16:32:04  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxCostMills:12
+20161127 16:49:56  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20161127 16:49:57  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxCostMills:7
+20161127 16:54:10  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20161127 16:54:30  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxCostMills:18528
+20161127 16:54:31  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  TimecostMills:18528
+20161127 17:03:30  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20161127 17:03:30  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxCostMills:1
+20161127 18:46:47  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20161127 18:46:47  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxCostMills:1
+20161127 19:02:20  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20161127 19:02:20  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxCostMills:1
+20161127 19:02:57  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20161127 19:02:57  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxCostMills:0
+20161127 19:07:08  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20161127 19:07:08  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxCostMills:1
+20161127 19:16:37  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20161127 19:16:37  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxCostMills:1
+20161130 20:33:24  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20161130 20:33:24  [WARN] kafeihu.zk.netpay.proc.OpenQRPayProtocol  Prid:OpenQRPayProtocol MaxCostMills:8

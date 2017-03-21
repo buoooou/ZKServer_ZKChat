@@ -1,0 +1,28 @@
+<!-- BServer -->
+<bserver-config>
+	<global>
+		<encoding>UTF-8</encoding>
+		<timeConsumingWarningMills>1500</timeConsumingWarningMills>
+	</global>
+
+	<!--工具类-->
+	<preLoadClasses>
+		<preLoadClass>kafeihu.zk.base.manager.ModuleManager</preLoadClass>
+		<preLoadClass>kafeihu.zk.base.manager.LoggerManager</preLoadClass>
+    	<preLoadClass>kafeihu.zk.base.manager.DBConnectionPoolManager</preLoadClass>
+    	<preLoadClass>kafeihu.zk.base.manager.ContextManager</preLoadClass>
+		<preLoadClass>kafeihu.zk.base.manager.ProcManager</preLoadClass>
+	</preLoadClasses>
+
+
+	<!--服务模块，socket，监控模块monitor，暂时没实现-->
+	<serviceManagers>
+		<serviceManager>
+			<name>SocketServerManager</name>
+			<class>kafeihu.zk.manager.SocketServerManager</class>
+			<description>SocketServer管理</description>
+		</serviceManager>
+
+	</serviceManagers>
+	
+</bserver-config>

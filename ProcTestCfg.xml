@@ -1,0 +1,8 @@
+<bserverIP>127.0.0.1</bserverIP>
+<bserverPort>8010</bserverPort>
+<proc>
+<id>OpenQRPayProtocol</id>
+<module>netpay</module>
+<reqPacket4Test>netpay</reqPacket4Test>
+
+</proc>

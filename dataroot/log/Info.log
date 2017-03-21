@@ -1,0 +1,10 @@
+20161203 12:08:29  [INFO] UniBServer  System starting......
+20161203 12:08:29  [INFO] UniBServer  Init global config OK!
+20161203 12:08:34  [INFO] kafeihu.zk.db.pool.DBConnectionPool   [id=NETPAY, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20161203 12:08:34  [INFO] 杩��ュ��  NETPAY
+20161203 12:08:35  [INFO] UniBServer  PreLoad classes OK!
+20161203 12:08:35  [INFO] kafeihu.zk.base.server.BSocketServer  started. [alias=SocketServer-NPS, port=8010]
+20161203 12:08:35  [INFO] UniBServer  StartServiceManager OK!
+20161203 12:08:35  [INFO] Active module:   monitor, netpay
+20161203 12:08:35  [INFO] BServer-NPS  System started
+

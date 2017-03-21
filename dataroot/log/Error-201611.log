@@ -1,0 +1,25 @@
+20161122 21:10:49  [ERROR] error  测试日志
+20161123 21:32:01  [ERROR] kafeihu.zk.db.pool.DBConnectionPool  createRealConnection failed. Exception:Access denied for user 'localhost'@'localhost' (using password: YES)
+20161123 21:32:01  [ERROR] kafeihu.zk.db.pool.DBConnectionPool  createRealConnection failed. Exception:Access denied for user 'localhost'@'localhost' (using password: YES)
+20161123 21:33:43  [ERROR] kafeihu.zk.db.pool.DBConnectionPool  createRealConnection failed. Exception:Access denied for user 'localhost'@'localhost' (using password: YES)
+20161123 21:33:43  [ERROR] kafeihu.zk.db.pool.DBConnectionPool  createRealConnection failed. Exception:Access denied for user 'localhost'@'localhost' (using password: YES)
+20161123 21:33:43  [ERROR] kafeihu.zk.db.pool.DBConnectionPool  createRealConnection failed. Exception:Access denied for user 'localhost'@'localhost' (using password: YES)
+20161127 16:48:47  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. java.net.SocketTimeoutException: Read timed out
+20161127 18:54:06  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+20161127 18:54:06  [ERROR] kafeihu.zk.base.socket.handler.DefaultSocketExceptionHandler  handleException() failed : javax.net.ssl.SSLException: Connection has been shutdown: javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+20161127 18:57:29  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+20161127 18:57:29  [ERROR] kafeihu.zk.base.socket.handler.DefaultSocketExceptionHandler  handleException() failed : javax.net.ssl.SSLException: Connection has been shutdown: javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+20161127 18:59:53  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+20161127 18:59:53  [ERROR] kafeihu.zk.base.socket.handler.DefaultSocketExceptionHandler  handleException() failed : javax.net.ssl.SSLException: Connection has been shutdown: javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+20161127 19:03:52  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+20161127 19:03:52  [ERROR] kafeihu.zk.base.socket.handler.DefaultSocketExceptionHandler  handleException() failed : javax.net.ssl.SSLException: Connection has been shutdown: javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
+20161130 20:36:23  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. java.lang.Exception: Illegal request data length:0
+20161130 21:20:34  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. java.lang.Exception: Illegal request data length:0
+20161130 21:24:26  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. java.lang.Exception: Illegal request data length:6
+20161130 21:26:35  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. java.lang.Exception: Illegal request data length:6
+20161130 21:30:24  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. java.lang.Exception: Illegal request data length:6
+20161130 21:46:52  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. java.lang.Exception: Illegal request data length:6
+20161130 21:51:15  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. java.net.SocketTimeoutException: Read timed out
+20161130 21:52:00  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. java.net.SocketTimeoutException: Read timed out
+20161130 22:15:06  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. java.lang.Exception: Illegal request data length:8
+20161130 22:36:20  [ERROR] kafeihu.zk.base.socket.handler.RecvRequestDataHandler  receiveRequestData() failed. java.lang.Exception: Illegal request data length:8

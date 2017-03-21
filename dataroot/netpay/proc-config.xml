@@ -1,0 +1,23 @@
+<!--����˵��
+	id���ӿ�����
+	impl���ӿڵľ���ʵ����
+	scope���ӿڵ���ģʽ 
+					singleton��ʵ����������ʱֱ��ʹ���Ѵ����Ľӿڶ���
+					protocol��ԭ�ͣ�������ʱ���´����ӿڶ���
+	params���ӿ��Զ������
+
+-->
+
+<proc-config>
+	<proc-scope>singleton</proc-scope>
+
+	<proc>
+		<id>OpenQRPayProtocol</id>
+		<impl>kafeihu.zk.netpay.proc.OpenQRPayProtocol</impl>
+		<scope>singleton</scope>
+		<params>
+		</params>
+		<description>��ͨ��ά��֧��Э��</description>
+	</proc>
+
+</proc-config>
