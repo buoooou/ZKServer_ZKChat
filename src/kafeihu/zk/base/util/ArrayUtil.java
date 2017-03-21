@@ -20,6 +20,7 @@ public class ArrayUtil {
         }
         return (byte[]) array.clone();
     }
+    
 
     /**
      * 合并两个字节数组
