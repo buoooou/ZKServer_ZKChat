@@ -16,8 +16,8 @@
 	
 	<!-- 支付模块配置-->
 	<module>
-		<name>netpay</name>
-		<contextImpl>kafeihu.zk.base.context.NetpayContext</contextImpl>
+		<name>zkchat</name>
+		<contextImpl>kafeihu.zk.base.context.ChatContext</contextImpl>
 		<active>Y</active>
 		<description></description>
 	</module>

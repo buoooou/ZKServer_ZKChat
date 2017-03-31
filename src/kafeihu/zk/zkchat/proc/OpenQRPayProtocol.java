@@ -1,4 +1,4 @@
-package kafeihu.zk.netpay.proc;
+package kafeihu.zk.zkchat.proc;
 
 import kafeihu.zk.base.proc.BaseProc;
 import kafeihu.zk.base.socket.model.ResponseData;

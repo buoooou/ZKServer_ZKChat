@@ -1,10 +1,40 @@
-20161203 12:08:29  [INFO] UniBServer  System starting......
-20161203 12:08:29  [INFO] UniBServer  Init global config OK!
-20161203 12:08:34  [INFO] kafeihu.zk.db.pool.DBConnectionPool   [id=NETPAY, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
-20161203 12:08:34  [INFO] 杩��ュ��  NETPAY
-20161203 12:08:35  [INFO] UniBServer  PreLoad classes OK!
-20161203 12:08:35  [INFO] kafeihu.zk.base.server.BSocketServer  started. [alias=SocketServer-NPS, port=8010]
-20161203 12:08:35  [INFO] UniBServer  StartServiceManager OK!
-20161203 12:08:35  [INFO] Active module:   monitor, netpay
-20161203 12:08:35  [INFO] BServer-NPS  System started
+20170331 20:24:23  [INFO] UniBServer  System starting......
+20170331 20:24:23  [INFO] UniBServer  Init global config OK!
+20170331 20:24:24  [INFO] kafeihu.zk.db.pool.DBConnectionPool   [id=NETPAY, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170331 20:24:24  [INFO] 杩��ュ��  NETPAY
+20170331 20:27:40  [INFO] UniBServer  System starting......
+20170331 20:27:40  [INFO] UniBServer  Init global config OK!
+20170331 20:27:40  [INFO] kafeihu.zk.db.pool.DBConnectionPool   [id=NETPAY, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170331 20:27:40  [INFO] 杩��ュ��  NETPAY
+20170331 20:30:07  [INFO] UniBServer  System starting......
+20170331 20:30:07  [INFO] UniBServer  Init global config OK!
+20170331 20:30:08  [INFO] kafeihu.zk.db.pool.DBConnectionPool   [id=NETPAY, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170331 20:30:08  [INFO] 杩��ュ��  NETPAY
+20170331 20:31:39  [INFO] UniBServer  System starting......
+20170331 20:31:39  [INFO] UniBServer  Init global config OK!
+20170331 20:31:40  [INFO] kafeihu.zk.db.pool.DBConnectionPool   [id=NETPAY, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170331 20:31:40  [INFO] 杩��ュ��  NETPAY
+20170331 20:32:21  [INFO] UniBServer  System starting......
+20170331 20:32:21  [INFO] UniBServer  Init global config OK!
+20170331 20:32:21  [INFO] kafeihu.zk.db.pool.DBConnectionPool   [id=NETPAY, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170331 20:32:21  [INFO] 杩��ュ��  NETPAY
+20170331 20:35:56  [INFO] UniBServer  System starting......
+20170331 20:35:56  [INFO] UniBServer  Init global config OK!
+20170331 20:35:57  [INFO] kafeihu.zk.db.pool.DBConnectionPool   [id=NETPAY, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170331 20:35:57  [INFO] 杩��ュ��  NETPAY
+20170331 20:35:57  [INFO] UniBServer  PreLoad classes OK!
+20170331 20:35:57  [INFO] kafeihu.zk.base.server.BSocketServer  started. [alias=SocketServer-NPS, port=8010]
+20170331 20:35:57  [INFO] UniBServer  StartServiceManager OK!
+20170331 20:35:57  [INFO] Active module:   monitor, netpay
+20170331 20:35:57  [INFO] BServer-NPS  System started
+
+20170331 20:42:54  [INFO] UniBServer  System starting......
+20170331 20:42:54  [INFO] UniBServer  Init global config OK!
+20170331 20:42:54  [INFO] kafeihu.zk.db.pool.DBConnectionPool   [id=NETPAY, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170331 20:42:54  [INFO] 杩��ュ��  NETPAY
+20170331 20:42:54  [INFO] UniBServer  PreLoad classes OK!
+20170331 20:42:54  [INFO] kafeihu.zk.base.server.BSocketServer  started. [alias=SocketServer-NPS, port=8010]
+20170331 20:42:54  [INFO] UniBServer  StartServiceManager OK!
+20170331 20:42:54  [INFO] Active module:   monitor, zkchat
+20170331 20:42:54  [INFO] BServer-NPS  System started
 

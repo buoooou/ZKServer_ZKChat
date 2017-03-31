@@ -1,4 +1,4 @@
-package kafeihu.zk.netpay;
+package kafeihu.zk.zkchat;
 
 /**
  * Created by zhangkuo on 2016/11/27.

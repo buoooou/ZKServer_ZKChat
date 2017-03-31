@@ -5,7 +5,7 @@ import kafeihu.zk.base.util.XmlUtil;
 /**
  * Created by zhangkuo on 2016/11/27.
  */
-public class NetpayConfig {
+public class ChatConfig {
     // 数据库最大查询记录数
     private int DBQueryMaxRecordCount;
 
@@ -20,7 +20,7 @@ public class NetpayConfig {
     // 交易币种
     private String currency;
 
-    public NetpayConfig()
+    public ChatConfig()
     {
     }
 

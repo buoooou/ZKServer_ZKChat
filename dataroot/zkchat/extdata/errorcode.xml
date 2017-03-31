@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>EUser模块错误码定义</comment>
+	
+	<entry key="0000">交易成功</entry>
+	
+	<entry key="0901">数据库处理发生异常</entry>
+
+</properties>

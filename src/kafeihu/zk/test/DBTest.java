@@ -13,7 +13,7 @@ public class DBTest {
     public static void main(String[] args) {
 
         try {
-            DBConnectionPool dbpool=DBConnectionPoolManager.getModuleDBConnectionPool("netpay","NETPAY");
+            DBConnectionPool dbpool=DBConnectionPoolManager.getModuleDBConnectionPool("zkchat","NETPAY");
             Connection conn=dbpool.getDBConnection();
             System.out.println(conn);
             String sql="";

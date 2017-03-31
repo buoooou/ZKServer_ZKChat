@@ -1,6 +1,6 @@
 package kafeihu.zk.base.context;
 
-import kafeihu.zk.base.config.NetpayConfig;
+import kafeihu.zk.base.config.ChatConfig;
 import kafeihu.zk.base.config.TypeConfig;
 import kafeihu.zk.base.util.IoUtil;
 
@@ -11,11 +11,11 @@ import java.util.Properties;
 /**
  * Created by zhangkuo on 2016/11/27.
  */
-public class NetpayContext extends ModuleContext{
+public class ChatContext extends ModuleContext{
     /**
      * netpay模块共用配置
      */
-    public static NetpayConfig netpayConfig;
+    public static ChatConfig chatConfig;
 
     public static TypeConfig typeConfig;
     /**
@@ -23,7 +23,7 @@ public class NetpayContext extends ModuleContext{
      */
     public static Properties ErrorCodeMessage = new Properties();
 
-    public NetpayContext(String mModuleName)
+    public ChatContext(String mModuleName)
     {
         super(mModuleName);
     }
@@ -49,13 +49,13 @@ public class NetpayContext extends ModuleContext{
 
         try
         {
-            String xmlConfig = IoUtil.readTextFileContent(path + "Netpay-config.xml");
-            netpayConfig = new NetpayConfig();
-            netpayConfig.loadXmlConfig(xmlConfig);
+            String xmlConfig = IoUtil.readTextFileContent(path + "zkchat-config.xml");
+            chatConfig = new ChatConfig();
+            chatConfig.loadXmlConfig(xmlConfig);
         }
         catch (Exception e)
         {
-            throw new Exception(NetpayContext.class.getName() + ".loadNetpayConfig() failed : " + e.getMessage());
+            throw new Exception(ChatContext.class.getName() + ".loadNetpayConfig() failed : " + e.getMessage());
         }
         finally
         {
@@ -85,7 +85,7 @@ public class NetpayContext extends ModuleContext{
         }
         catch (Exception exp)
         {
-            throw new Exception(NetpayContext.class.getName()+ ".loadErrorCode() failed : " + exp.getMessage());
+            throw new Exception(ChatContext.class.getName()+ ".loadErrorCode() failed : " + exp.getMessage());
         }
         finally
         {
@@ -111,7 +111,7 @@ public class NetpayContext extends ModuleContext{
         }
         catch (Exception exp)
         {
-            throw new Exception(NetpayContext.class.getName()+ ".loadTypeConfig() failed : " + exp.getMessage());
+            throw new Exception(ChatContext.class.getName()+ ".loadTypeConfig() failed : " + exp.getMessage());
         }
 
     }
