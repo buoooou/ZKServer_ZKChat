@@ -6,8 +6,8 @@ import kafeihu.zk.base.socket.model.ResponseData;
 /**
  * Created by zhangkuo on 2016/11/27.
  */
-public class OpenQRPayProtocol extends BaseProc {
-    public OpenQRPayProtocol(String mModuleName, String mProcId) {
+public class GetUserFriends extends BaseProc {
+    public GetUserFriends(String mModuleName, String mProcId) {
         super(mModuleName, mProcId);
     }
     @Override
