@@ -1,10 +1,10 @@
-package kafeihu.zk.base.manager;
+package kafeihu.zk.manager;
 
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
-import kafeihu.zk.db.model.DBConnectionPoolConfig;
-import kafeihu.zk.db.pool.DBConnectionPool;
+import kafeihu.zk.base.db.model.DBConnectionPoolConfig;
+import kafeihu.zk.base.db.pool.DBConnectionPool;
 
 import java.util.Collection;
 import java.util.List;

@@ -5,15 +5,12 @@ import kafeihu.zk.base.exception.BServerException;
 import kafeihu.zk.base.exception.EarlyFinishException;
 import kafeihu.zk.base.exception.model.ErrorCodeConstants;
 import kafeihu.zk.base.logging.Logger;
-import kafeihu.zk.base.manager.LoggerManager;
+import kafeihu.zk.manager.LoggerManager;
 import kafeihu.zk.base.socket.model.RequestData;
 import kafeihu.zk.base.socket.util.SocketKit;
 import kafeihu.zk.base.util.MiscUtil;
-import kafeihu.zk.base.util.XmlUtil;
 
 import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 接收请求数据处理器<br>

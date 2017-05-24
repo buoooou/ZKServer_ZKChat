@@ -3,8 +3,8 @@ package kafeihu.zk.base.proc;
 import kafeihu.zk.base.GlobalConfig;
 import kafeihu.zk.base.context.ModuleContext;
 import kafeihu.zk.base.logging.Logger;
-import kafeihu.zk.base.manager.ContextManager;
-import kafeihu.zk.base.manager.LoggerManager;
+import kafeihu.zk.manager.ContextManager;
+import kafeihu.zk.manager.LoggerManager;
 import kafeihu.zk.base.statistics.IStatistics;
 import kafeihu.zk.base.util.XmlUtil;
 

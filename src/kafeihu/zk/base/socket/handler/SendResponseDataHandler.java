@@ -5,7 +5,7 @@ package kafeihu.zk.base.socket.handler;
 import kafeihu.zk.base.exception.BServerException;
 import kafeihu.zk.base.exception.model.ErrorCodeConstants;
 import kafeihu.zk.base.logging.Logger;
-import kafeihu.zk.base.manager.LoggerManager;
+import kafeihu.zk.manager.LoggerManager;
 import kafeihu.zk.base.socket.model.ResponseData;
 import kafeihu.zk.base.socket.util.SocketKit;
 import kafeihu.zk.base.util.ArrayUtil;

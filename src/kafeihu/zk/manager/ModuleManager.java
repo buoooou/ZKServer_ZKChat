@@ -1,4 +1,4 @@
-package kafeihu.zk.base.manager;
+package kafeihu.zk.manager;
 
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;

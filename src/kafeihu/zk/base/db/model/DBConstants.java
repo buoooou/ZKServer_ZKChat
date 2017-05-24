@@ -1,4 +1,4 @@
-package kafeihu.zk.db.model;
+package kafeihu.zk.base.db.model;
 
 /**
  * //数据库连接池相关常量

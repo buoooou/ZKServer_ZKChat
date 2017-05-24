@@ -2,7 +2,7 @@ package kafeihu.zk.base.server;
 
 import kafeihu.zk.base.config.ThreadPoolConfig;
 import kafeihu.zk.base.logging.Logger;
-import kafeihu.zk.base.manager.LoggerManager;
+import kafeihu.zk.manager.LoggerManager;
 import kafeihu.zk.base.socket.SocketWorkerPool;
 import kafeihu.zk.base.socket.SocketWorkerRejectedExecutionHandler;
 import kafeihu.zk.base.socket.handler.ISocketExceptionHandler;

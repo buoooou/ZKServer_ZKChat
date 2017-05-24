@@ -2,7 +2,7 @@ package kafeihu.zk.base.socket.handler;
 
 import kafeihu.zk.base.GlobalConfig;
 import kafeihu.zk.base.logging.Logger;
-import kafeihu.zk.base.manager.LoggerManager;
+import kafeihu.zk.manager.LoggerManager;
 import kafeihu.zk.base.socket.util.SocketKit;
 import kafeihu.zk.base.util.ArrayUtil;
 import kafeihu.zk.base.util.MiscUtil;

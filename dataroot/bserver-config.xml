@@ -7,11 +7,11 @@
 
 	<!--工具类-->
 	<preLoadClasses>
-		<preLoadClass>kafeihu.zk.base.manager.ModuleManager</preLoadClass>
-		<preLoadClass>kafeihu.zk.base.manager.LoggerManager</preLoadClass>
-    	<preLoadClass>kafeihu.zk.base.manager.DBConnectionPoolManager</preLoadClass>
-    	<preLoadClass>kafeihu.zk.base.manager.ContextManager</preLoadClass>
-		<preLoadClass>kafeihu.zk.base.manager.ProcManager</preLoadClass>
+		<preLoadClass>kafeihu.zk.manager.ModuleManager</preLoadClass>
+		<preLoadClass>kafeihu.zk.manager.LoggerManager</preLoadClass>
+    	<preLoadClass>kafeihu.zk.manager.DBConnectionPoolManager</preLoadClass>
+    	<preLoadClass>kafeihu.zk.manager.ContextManager</preLoadClass>
+		<preLoadClass>kafeihu.zk.manager.ProcManager</preLoadClass>
 	</preLoadClasses>
 
 
