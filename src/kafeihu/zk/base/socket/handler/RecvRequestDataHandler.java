@@ -1,6 +1,6 @@
 package kafeihu.zk.base.socket.handler;
 
-import kafeihu.zk.base.config.GlobalConfig;
+import kafeihu.zk.server.config.GlobalConfig;
 import kafeihu.zk.base.exception.BServerException;
 import kafeihu.zk.base.exception.EarlyFinishException;
 import kafeihu.zk.base.exception.model.ErrorCodeConstants;

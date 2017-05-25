@@ -1,4 +1,6 @@
-package kafeihu.zk.base.context;
+package kafeihu.zk.monitor.context;
+
+import kafeihu.zk.server.context.ModuleContext;
 
 /**
  * 监控上下文

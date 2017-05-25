@@ -1,4 +1,4 @@
-package kafeihu.zk.base.config;
+package kafeihu.zk.server.config;
 
 import kafeihu.zk.base.util.IoUtil;
 import kafeihu.zk.base.util.MiscUtil;

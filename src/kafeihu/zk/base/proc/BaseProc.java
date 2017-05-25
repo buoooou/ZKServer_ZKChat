@@ -1,7 +1,7 @@
 package kafeihu.zk.base.proc;
 
-import kafeihu.zk.base.config.GlobalConfig;
-import kafeihu.zk.base.context.ModuleContext;
+import kafeihu.zk.server.config.GlobalConfig;
+import kafeihu.zk.server.context.ModuleContext;
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.manager.ContextManager;
 import kafeihu.zk.manager.LoggerManager;

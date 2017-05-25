@@ -1,4 +1,4 @@
-package kafeihu.zk.base.context;
+package kafeihu.zk.server.context;
 
 /**
  * Created by zhangkuo on 2016/11/27.

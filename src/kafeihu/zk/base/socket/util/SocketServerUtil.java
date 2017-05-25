@@ -1,6 +1,6 @@
 package kafeihu.zk.base.socket.util;
 
-import kafeihu.zk.base.config.ThreadPoolConfig;
+import kafeihu.zk.server.config.ThreadPoolConfig;
 import kafeihu.zk.server.ISocketServer;
 import kafeihu.zk.base.socket.SocketWorkerPool;
 import kafeihu.zk.base.socket.SocketWorkerRejectedExecutionHandler;

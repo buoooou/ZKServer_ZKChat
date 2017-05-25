@@ -1,6 +1,6 @@
 package kafeihu.zk.base.socket.handler;
 
-import kafeihu.zk.base.config.GlobalConfig;
+import kafeihu.zk.server.config.GlobalConfig;
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.manager.LoggerManager;
 import kafeihu.zk.base.socket.util.SocketKit;

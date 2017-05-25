@@ -1,7 +1,8 @@
-package kafeihu.zk.base.context;
+package kafeihu.zk.zkchat.context;
 
-import kafeihu.zk.base.config.ChatConfig;
-import kafeihu.zk.base.config.TypeConfig;
+import kafeihu.zk.zkchat.config.ChatConfig;
+import kafeihu.zk.server.config.TypeConfig;
+import kafeihu.zk.server.context.ModuleContext;
 import kafeihu.zk.base.util.IoUtil;
 
 import java.io.FileInputStream;
@@ -11,7 +12,7 @@ import java.util.Properties;
 /**
  * Created by zhangkuo on 2016/11/27.
  */
-public class ChatContext extends ModuleContext{
+public class ChatContext extends ModuleContext {
     /**
      * netpay模块共用配置
      */

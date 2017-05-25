@@ -1,6 +1,6 @@
 package kafeihu.zk.server;
 
-import kafeihu.zk.base.config.ThreadPoolConfig;
+import kafeihu.zk.server.config.ThreadPoolConfig;
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.manager.LoggerManager;
 import kafeihu.zk.base.socket.SocketWorkerPool;

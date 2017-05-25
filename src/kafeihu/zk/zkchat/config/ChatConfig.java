@@ -1,4 +1,4 @@
-package kafeihu.zk.base.config;
+package kafeihu.zk.zkchat.config;
 
 import kafeihu.zk.base.util.XmlUtil;
 

@@ -1,7 +1,7 @@
 package kafeihu.zk.manager;
 
-import kafeihu.zk.base.context.ApplicationContext;
-import kafeihu.zk.base.context.ModuleContext;
+import kafeihu.zk.server.context.ApplicationContext;
+import kafeihu.zk.server.context.ModuleContext;
 import kafeihu.zk.base.exception.UndefinedModuleException;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;

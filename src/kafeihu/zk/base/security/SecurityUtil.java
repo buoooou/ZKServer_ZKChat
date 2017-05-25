@@ -1,6 +1,6 @@
 package kafeihu.zk.base.security;
 
-import kafeihu.zk.base.config.ThreadPoolConfig;
+import kafeihu.zk.server.config.ThreadPoolConfig;
 import kafeihu.zk.base.security.ssl.KeyManagerFactoryConfig;
 import kafeihu.zk.base.security.ssl.SSLContextConfig;
 import kafeihu.zk.base.socket.SocketWorkerPool;
