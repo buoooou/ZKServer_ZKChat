@@ -1,4 +1,4 @@
-package kafeihu.zk.base.socket.handler;
+package kafeihu.zk.server.socket.handler;
 
 import kafeihu.zk.server.config.GlobalConfig;
 import kafeihu.zk.base.exception.BServerException;
@@ -6,7 +6,7 @@ import kafeihu.zk.base.exception.EarlyFinishException;
 import kafeihu.zk.base.exception.model.ErrorCodeConstants;
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.manager.LoggerManager;
-import kafeihu.zk.base.socket.model.RequestData;
+import kafeihu.zk.server.socket.model.RequestData;
 import kafeihu.zk.base.socket.util.SocketKit;
 import kafeihu.zk.base.util.MiscUtil;
 

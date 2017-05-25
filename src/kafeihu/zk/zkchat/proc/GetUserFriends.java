@@ -1,7 +1,7 @@
 package kafeihu.zk.zkchat.proc;
 
 import kafeihu.zk.base.proc.BaseProc;
-import kafeihu.zk.base.socket.model.ResponseData;
+import kafeihu.zk.server.socket.model.ResponseData;
 
 /**
  * Created by zhangkuo on 2016/11/27.

@@ -5,7 +5,7 @@ import kafeihu.zk.base.exception.UndefinedModuleException;
 import kafeihu.zk.base.exception.UndefinedProcException;
 import kafeihu.zk.base.exception.model.ErrorCodeConstants;
 import kafeihu.zk.base.proc.BaseProc;
-import kafeihu.zk.base.socket.model.RequestData;
+import kafeihu.zk.server.socket.model.RequestData;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;

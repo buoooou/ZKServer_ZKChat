@@ -1,9 +1,9 @@
-package kafeihu.zk.base.socket;
+package kafeihu.zk.server.socket;
 
 import kafeihu.zk.base.exception.EarlyFinishException;
 import kafeihu.zk.server.SocketServer;
-import kafeihu.zk.base.socket.handler.ISocketExceptionHandler;
-import kafeihu.zk.base.socket.handler.ISocketRequestHandler;
+import kafeihu.zk.server.socket.handler.ISocketExceptionHandler;
+import kafeihu.zk.server.socket.handler.ISocketRequestHandler;
 
 import java.net.Socket;
 import java.util.List;

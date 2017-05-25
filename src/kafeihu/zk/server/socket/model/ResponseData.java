@@ -1,4 +1,4 @@
-package kafeihu.zk.base.socket.model;
+package kafeihu.zk.server.socket.model;
 
 /**
  * Created by zhangkuo on 2016/11/25.
