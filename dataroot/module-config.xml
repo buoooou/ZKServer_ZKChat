@@ -3,7 +3,7 @@
 	<!-- 总应用配置-->
 	<application>
 		<name>BServer-NPS</name>
-		<contextImpl>kafeihu.zk.server.context.NpsContext</contextImpl>
+		<contextImpl>kafeihu.zk.bserver.context.NpsContext</contextImpl>
 
 	</application>
 	<!-- 监控模块配置-->
