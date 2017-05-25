@@ -1,4 +1,4 @@
-package kafeihu.zk.base.server;
+package kafeihu.zk.server;
 
 /**
  * Created by zhangkuo on 2016/11/24.

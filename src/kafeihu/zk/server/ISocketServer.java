@@ -1,4 +1,4 @@
-package kafeihu.zk.base.server;
+package kafeihu.zk.server;
 
 import java.net.Socket;
 

@@ -53,7 +53,7 @@ public class DBConnectionPoolManager {
         Collection<String> keys = m_DBConnPoolInstMap.keySet();
         for (String key : keys)
         {
-            LoggerManager.getSysLogger().info("连接名", key);
+            LoggerManager.getSysLogger().info("连接名：", key);
         }
 
     }

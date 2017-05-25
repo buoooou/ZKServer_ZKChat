@@ -1,7 +1,7 @@
 package kafeihu.zk.base.socket;
 
 import kafeihu.zk.base.exception.EarlyFinishException;
-import kafeihu.zk.base.server.SocketServer;
+import kafeihu.zk.server.SocketServer;
 import kafeihu.zk.base.socket.handler.ISocketExceptionHandler;
 import kafeihu.zk.base.socket.handler.ISocketRequestHandler;
 

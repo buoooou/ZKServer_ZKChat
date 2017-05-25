@@ -1,4 +1,4 @@
-package kafeihu.zk.base.server;
+package kafeihu.zk.server;
 
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.base.socket.SocketWorker;
