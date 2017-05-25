@@ -7,7 +7,7 @@
 <socketserver-config>
 	<socketServer>
 			<alias>SocketServer-NPS</alias>
-			<serverImpl>kafeihu.zk.base.server.BSocketServer</serverImpl>
+			<serverImpl>kafeihu.zk.server.BSocketServer</serverImpl>
 			<serverSocket>
 				<port>8010</port>
 				<clientSocketTimeoutMills>15000</clientSocketTimeoutMills>

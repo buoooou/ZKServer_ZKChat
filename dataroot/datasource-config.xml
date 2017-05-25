@@ -8,7 +8,7 @@
 
 <dbConnPool-config>
 	<dbConnectionPool>
-		<id>NETPAY</id>
+		<id>zkchat</id>
 		<alias></alias>
 		<username>root</username>
 		<password>root</password>
