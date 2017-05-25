@@ -1,11 +1,11 @@
-package kafeihu.zk.base.proc;
+package kafeihu.zk.server.proc;
 
 import kafeihu.zk.server.config.GlobalConfig;
 import kafeihu.zk.server.context.ModuleContext;
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.manager.ContextManager;
 import kafeihu.zk.manager.LoggerManager;
-import kafeihu.zk.base.statistics.IStatistics;
+import kafeihu.zk.statistics.IStatistics;
 import kafeihu.zk.base.util.XmlUtil;
 
 import java.util.Properties;

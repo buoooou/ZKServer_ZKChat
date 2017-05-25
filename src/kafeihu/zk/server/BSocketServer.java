@@ -7,7 +7,7 @@ import kafeihu.zk.server.socket.SocketWorkerPool;
 import kafeihu.zk.server.socket.SocketWorkerRejectedExecutionHandler;
 import kafeihu.zk.server.socket.handler.ISocketExceptionHandler;
 import kafeihu.zk.server.socket.handler.ISocketRequestHandler;
-import kafeihu.zk.base.statistics.IStatistics;
+import kafeihu.zk.statistics.IStatistics;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.socket.util.SocketServerUtil;
 import kafeihu.zk.base.util.XmlUtil;

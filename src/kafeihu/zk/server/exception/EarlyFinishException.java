@@ -1,4 +1,4 @@
-package kafeihu.zk.base.exception;
+package kafeihu.zk.server.exception;
 
 /**
  * 提前结束处理异常：如果某一个ISocketRequestHandler需要提前终止整个请求处理过程，抛出该异常。<br>

@@ -1,4 +1,4 @@
-package kafeihu.zk.base.statistics;
+package kafeihu.zk.statistics;
 
 /**
  * 如果对象需要进行数据统计，实现该接口

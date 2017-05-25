@@ -1,6 +1,6 @@
-package kafeihu.zk.base.exception;
+package kafeihu.zk.server.exception;
 
-import kafeihu.zk.base.exception.model.ErrorCodeConstants;
+import kafeihu.zk.server.exception.model.ErrorCodeConstants;
 
 /**
  * Created by zhangkuo on 2016/11/24.
