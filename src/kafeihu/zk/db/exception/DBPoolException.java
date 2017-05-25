@@ -1,4 +1,4 @@
-package kafeihu.zk.base.db.exception;
+package kafeihu.zk.db.exception;
 
 /**
  * Created by zhangkuo on 2016/11/22.
