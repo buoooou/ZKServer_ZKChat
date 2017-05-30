@@ -9,7 +9,7 @@
 	<!-- 监控模块配置-->
 	<module>
 		<name>monitor</name>
-		<contextImpl>kafeihu.zk.monitor.context.MonitorContext</contextImpl>
+		<contextImpl>kafeihu.zk.bserver.monitor.context.MonitorContext</contextImpl>
 		<active>Y</active>
 		<description></description>
 	</module>
