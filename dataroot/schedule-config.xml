@@ -1,0 +1,35 @@
+<schedule-config>
+    <!--定时任务 -->
+    <task>
+        <name>systemMaintenanceMon</name>
+        <impl>com.cmbchina.bserver.schedule.task.SystemMaintenanceMonitor</impl>
+        <params>
+            <filename>systemMaintenance.txt</filename>
+        </params>
+        <desc></desc>
+    </task>
+
+    <!-- 定时策略 -->
+    <!--repeatCount重复次数-->
+    <!--endDate结束时间yyyyMMdd、-->
+    <!--timeUnit Hour,Minute,Second,MilliSecond -->
+
+    <!--任务策略-->
+    <policy>
+        <id>monitorPolicy</id>
+        <impl>com.cmbchina.base.schedule.policy.FixedRatePolicy</impl>
+        <repeatCount>0</repeatCount>
+        <endDate></endDate>
+        <timeUnit>Second</timeUnit>
+        <firstDelay>0</firstDelay>
+        <period>5</period>
+    </policy>
+
+    <!--taskName 任务名，以，隔开-->
+    <!--policyId 策略名-->
+    <scheduleBinding>
+        <taskName>systemMaintenanceMon</taskName>
+        <policyId>monitorPolicy</policyId>
+    </scheduleBinding>
+
+</schedule-config>
