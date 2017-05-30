@@ -3,10 +3,10 @@ package kafeihu.zk.bserver.context;
 /**
  * Created by zhangkuo on 2016/11/27.
  */
-public class NpsContext extends ApplicationContext{
+public class UniContext extends ApplicationContext{
 
 
-    public NpsContext(String mApplicationName)
+    public UniContext(String mApplicationName)
     {
         super(mApplicationName);
     }

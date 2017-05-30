@@ -2,8 +2,8 @@
 <module-config>
 	<!-- 总应用配置-->
 	<application>
-		<name>BServer-NPS</name>
-		<contextImpl>kafeihu.zk.bserver.context.NpsContext</contextImpl>
+		<name>UniBServer</name>
+		<contextImpl>kafeihu.zk.bserver.context.UniContext</contextImpl>
 
 	</application>
 	<!-- 监控模块配置-->
