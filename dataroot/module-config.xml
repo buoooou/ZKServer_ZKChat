@@ -4,7 +4,6 @@
 	<application>
 		<name>UniBServer</name>
 		<contextImpl>kafeihu.zk.bserver.context.UniContext</contextImpl>
-
 	</application>
 	<!-- 监控模块配置-->
 	<module>

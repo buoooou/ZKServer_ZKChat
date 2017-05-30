@@ -27,11 +27,11 @@
 			<class>kafeihu.zk.bserver.manager.ScheduleManager</class>
 			<description>定时任务管理器</description>
 		</serviceManager>
-		<serviceManager>
-			<name>MonitorManager</name>
-			<class>kafeihu.zk.bserver.manager.MonitorManager</class>
-			<description>监控管理器</description>
-		</serviceManager>
-	</serviceManagers>
-	
+        <!--<serviceManager>
+            <name>MonitorManager</name>
+            <class>kafeihu.zk.bserver.manager.MonitorManager</class>
+            <description>监控管理器</description>
+        </serviceManager>-->
+    </serviceManagers>
+
 </bserver-config>
