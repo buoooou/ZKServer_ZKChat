@@ -1,6 +1,6 @@
 package kafeihu.zk.zkchat.proc;
 
-import kafeihu.zk.bserver.proc.BaseProc;
+import kafeihu.zk.bserver.proc.base.BaseProc;
 
 /**
  * Created by zhangkuo on 2017/4/5.
