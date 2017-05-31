@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.manager;
+package kafeihu.zk.bserver.monitor;
 
 /**
  * Created by zhangkuo on 2017/5/30.
