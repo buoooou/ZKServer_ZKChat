@@ -3,8 +3,8 @@ package kafeihu.zk.base.security;
 import kafeihu.zk.bserver.config.ThreadPoolConfig;
 import kafeihu.zk.base.security.ssl.KeyManagerFactoryConfig;
 import kafeihu.zk.base.security.ssl.SSLContextConfig;
-import kafeihu.zk.bserver.socket.SocketWorkerPool;
-import kafeihu.zk.bserver.socket.SocketWorkerRejectedExecutionHandler;
+import kafeihu.zk.base.server.socket.SocketWorkerPool;
+import kafeihu.zk.base.server.socket.SocketWorkerRejectedExecutionHandler;
 import kafeihu.zk.base.util.MiscUtil;
 
 import javax.net.ssl.*;

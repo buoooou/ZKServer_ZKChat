@@ -1,9 +1,10 @@
 package kafeihu.zk.bserver.socket.handler;
 
+import kafeihu.zk.base.server.socket.ISocketExceptionHandler;
+import kafeihu.zk.base.server.socket.SocketWorkerRejectedExecutionHandler;
 import kafeihu.zk.bserver.exception.BServerException;
 import kafeihu.zk.bserver.exception.model.ErrorCodeConstants;
-import kafeihu.zk.bserver.socket.SocketWorker;
-import kafeihu.zk.bserver.socket.SocketWorkerRejectedExecutionHandler;
+import kafeihu.zk.base.server.socket.SocketWorker;
 
 import java.util.concurrent.ThreadPoolExecutor;
 

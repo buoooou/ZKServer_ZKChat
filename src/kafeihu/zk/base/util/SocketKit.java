@@ -1,4 +1,4 @@
-package kafeihu.zk.base.socket.util;
+package kafeihu.zk.base.util;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,16 +1,12 @@
-package kafeihu.zk.bserver.server;
+package kafeihu.zk.bserver.socket;
 
-import kafeihu.zk.bserver.config.ThreadPoolConfig;
 import kafeihu.zk.base.logging.Logger;
-import kafeihu.zk.bserver.manager.LoggerManager;
-import kafeihu.zk.bserver.socket.SocketWorkerPool;
-import kafeihu.zk.bserver.socket.SocketWorkerRejectedExecutionHandler;
-import kafeihu.zk.bserver.socket.handler.ISocketExceptionHandler;
-import kafeihu.zk.bserver.socket.handler.ISocketRequestHandler;
-import kafeihu.zk.bserver.statistics.IStatistics;
+import kafeihu.zk.base.server.socket.*;
 import kafeihu.zk.base.util.MiscUtil;
-import kafeihu.zk.base.socket.util.SocketServerUtil;
 import kafeihu.zk.base.util.XmlUtil;
+import kafeihu.zk.bserver.config.ThreadPoolConfig;
+import kafeihu.zk.bserver.manager.LoggerManager;
+import kafeihu.zk.bserver.statistics.IStatistics;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLServerSocket;
@@ -22,9 +18,10 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by zhangkuo on 2016/11/25.
+ * Created by zhangkuo on 2017/5/31.
  */
 public class BSocketServer extends SocketServer implements IStatistics {
+
     private static final Logger m_logger = LoggerManager.getSysLogger();
     /**
      * 服务器别名
@@ -79,9 +76,12 @@ public class BSocketServer extends SocketServer implements IStatistics {
      *
      * @param port
      * @param backlog
+     * @param isReuseAddress
      * @param socketWorkerPool
      * @param sslContext
      *            SSL上下文
+     * @param bNeedClientAuth
+     *            是否需要认证客户端
      * @throws IOException
      */
     public BSocketServer(int port, int backlog, SocketWorkerPool socketWorkerPool,
@@ -376,5 +376,5 @@ public class BSocketServer extends SocketServer implements IStatistics {
 
         return socketServer;
     }
-
 }
+

@@ -1,6 +1,6 @@
-package kafeihu.zk.base.socket.client;
+package kafeihu.zk.base.client;
 
-import kafeihu.zk.base.socket.util.SocketKit;
+import kafeihu.zk.base.util.SocketKit;
 import kafeihu.zk.base.util.ArrayUtil;
 import kafeihu.zk.base.util.MiscUtil;
 

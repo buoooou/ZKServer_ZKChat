@@ -1,9 +1,10 @@
 package kafeihu.zk.bserver.socket.handler;
 
+import kafeihu.zk.base.server.socket.ISocketExceptionHandler;
 import kafeihu.zk.bserver.config.GlobalConfig;
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.bserver.manager.LoggerManager;
-import kafeihu.zk.base.socket.util.SocketKit;
+import kafeihu.zk.base.util.SocketKit;
 import kafeihu.zk.base.util.ArrayUtil;
 import kafeihu.zk.base.util.MiscUtil;
 
@@ -13,7 +14,7 @@ import java.net.Socket;
  * 缺省的Socket请求处理异常处理器
  * Created by zhangkuo on 2016/11/25.
  */
-public class DefaultSocketExceptionHandler implements ISocketExceptionHandler{
+public class DefaultSocketExceptionHandler implements ISocketExceptionHandler {
     private static final Logger m_logger = LoggerManager.getSysLogger();
     /**
      * 请求处理失败结果前缀

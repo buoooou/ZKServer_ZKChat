@@ -1,13 +1,14 @@
 package kafeihu.zk.bserver.socket.handler;
 
+import kafeihu.zk.base.server.socket.ISocketRequestHandler;
 import kafeihu.zk.bserver.config.GlobalConfig;
 import kafeihu.zk.bserver.exception.BServerException;
 import kafeihu.zk.bserver.exception.EarlyFinishException;
 import kafeihu.zk.bserver.exception.model.ErrorCodeConstants;
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.bserver.manager.LoggerManager;
-import kafeihu.zk.bserver.socket.model.RequestData;
-import kafeihu.zk.base.socket.util.SocketKit;
+import kafeihu.zk.bserver.proc.RequestData;
+import kafeihu.zk.base.util.SocketKit;
 import kafeihu.zk.base.util.MiscUtil;
 
 import java.net.Socket;
@@ -23,7 +24,7 @@ import java.net.Socket;
  * 注意：该类可能被多个线程同时调用，必须满足线程安全要求。
  * Created by zhangkuo on 2016/11/25.
  */
-public class RecvRequestDataHandler implements ISocketRequestHandler{
+public class RecvRequestDataHandler implements ISocketRequestHandler {
     private static final Logger m_logger = LoggerManager.getSysLogger();
     /**
      * 数据包长度

@@ -1,10 +1,11 @@
 package kafeihu.zk.bserver.socket.handler;
 
+import kafeihu.zk.base.server.socket.ISocketRequestHandler;
 import kafeihu.zk.bserver.exception.BServerException;
 import kafeihu.zk.bserver.exception.model.ErrorCodeConstants;
 import kafeihu.zk.bserver.manager.ProcManager;
-import kafeihu.zk.bserver.proc.BaseProc;
-import kafeihu.zk.bserver.socket.model.RequestData;
+import kafeihu.zk.bserver.proc.base.BaseProc;
+import kafeihu.zk.bserver.proc.RequestData;
 
 import java.net.Socket;
 
@@ -12,7 +13,7 @@ import java.net.Socket;
  * BServer业务请求处理器。<br>
  * Created by zhangkuo on 2016/11/25.
  */
-public class DoRequestProcHandler implements ISocketRequestHandler{
+public class DoRequestProcHandler implements ISocketRequestHandler {
 
     public Object handleRequest(Socket sock, Object preResult) throws Exception
     {

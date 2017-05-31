@@ -1,6 +1,7 @@
-package kafeihu.zk.bserver.server;
+package kafeihu.zk.base.server.socket;
 
 import java.net.Socket;
+import kafeihu.zk.base.server.IServer;
 
 /**
  * Created by zhangkuo on 2016/11/24.

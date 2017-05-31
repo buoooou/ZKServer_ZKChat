@@ -2,12 +2,13 @@ package kafeihu.zk.bserver.socket.handler;
 
 
 
+import kafeihu.zk.base.server.socket.ISocketRequestHandler;
 import kafeihu.zk.bserver.exception.BServerException;
 import kafeihu.zk.bserver.exception.model.ErrorCodeConstants;
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.bserver.manager.LoggerManager;
-import kafeihu.zk.bserver.socket.model.ResponseData;
-import kafeihu.zk.base.socket.util.SocketKit;
+import kafeihu.zk.bserver.proc.ResponseData;
+import kafeihu.zk.base.util.SocketKit;
 import kafeihu.zk.base.util.ArrayUtil;
 import kafeihu.zk.base.util.MiscUtil;
 
@@ -18,7 +19,7 @@ import java.net.Socket;
  *
  * Created by zhangkuo on 2016/11/25.
  */
-public class SendResponseDataHandler implements ISocketRequestHandler{
+public class SendResponseDataHandler implements ISocketRequestHandler {
     private static final Logger m_logger = LoggerManager.getSysLogger();
     /**
      * 请求处理成功结果前缀

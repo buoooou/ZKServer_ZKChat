@@ -1,9 +1,6 @@
-package kafeihu.zk.bserver.socket;
+package kafeihu.zk.base.server.socket;
 
 import kafeihu.zk.bserver.exception.EarlyFinishException;
-import kafeihu.zk.bserver.server.SocketServer;
-import kafeihu.zk.bserver.socket.handler.ISocketExceptionHandler;
-import kafeihu.zk.bserver.socket.handler.ISocketRequestHandler;
 
 import java.net.Socket;
 import java.util.List;
