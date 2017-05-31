@@ -1,5 +1,6 @@
-package kafeihu.zk.bserver.manager;
+package kafeihu.zk.bserver.socket;
 
+import kafeihu.zk.bserver.manager.ServiceManager;
 import kafeihu.zk.bserver.server.ISocketServer;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.socket.util.SocketServerUtil;
