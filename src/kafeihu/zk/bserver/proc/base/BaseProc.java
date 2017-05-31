@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.proc;
+package kafeihu.zk.bserver.proc.base;
 
 import kafeihu.zk.bserver.config.GlobalConfig;
 import kafeihu.zk.bserver.context.ModuleContext;

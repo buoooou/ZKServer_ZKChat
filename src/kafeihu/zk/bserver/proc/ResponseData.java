@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.socket.model;
+package kafeihu.zk.bserver.proc;
 
 /**
  * Created by zhangkuo on 2016/11/25.

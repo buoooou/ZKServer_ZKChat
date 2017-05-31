@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.socket.model;
+package kafeihu.zk.bserver.proc;
 
 /**
  * BServer业务请求数据
