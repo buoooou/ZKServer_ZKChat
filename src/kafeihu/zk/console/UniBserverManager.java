@@ -1,9 +1,13 @@
-package kafeihu.zk.bserver.manager;
+package kafeihu.zk.console;
 
 import kafeihu.zk.bserver.config.GlobalConfig;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
+import kafeihu.zk.bserver.manager.ContextManager;
+import kafeihu.zk.bserver.manager.LoggerManager;
+import kafeihu.zk.bserver.manager.ModuleManager;
+import kafeihu.zk.bserver.manager.base.ServiceManager;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
