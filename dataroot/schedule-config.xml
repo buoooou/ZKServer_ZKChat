@@ -25,7 +25,7 @@
         <period>5</period>
     </policy>
 
-    <!--taskName 任务名，以，隔开-->
+    <!--taskName 任务名，以逗号隔开-->
     <!--policyId 策略名-->
     <scheduleBinding>
         <taskName>systemMaintenanceMon</taskName>

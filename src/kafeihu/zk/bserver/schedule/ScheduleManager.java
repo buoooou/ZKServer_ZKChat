@@ -1,4 +1,6 @@
-package kafeihu.zk.bserver.manager;
+package kafeihu.zk.bserver.schedule;
+
+import kafeihu.zk.bserver.manager.ServiceManager;
 
 /**
  * Created by zhangkuo on 2017/5/30.
