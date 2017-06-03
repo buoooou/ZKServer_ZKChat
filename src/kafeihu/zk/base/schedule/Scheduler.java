@@ -2,7 +2,7 @@ package kafeihu.zk.base.schedule;
 
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.base.schedule.policy.Policy;
-import kafeihu.zk.base.schedule.policy.impl.CyclePolicy;
+import kafeihu.zk.base.schedule.policy.CyclePolicy;
 import kafeihu.zk.base.schedule.policy.impl.FixedDelayPolicy;
 import kafeihu.zk.base.schedule.policy.impl.FixedRatePolicy;
 
