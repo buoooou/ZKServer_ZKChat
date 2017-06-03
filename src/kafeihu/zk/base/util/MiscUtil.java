@@ -3,6 +3,7 @@ package kafeihu.zk.base.util;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -327,5 +328,11 @@ public class MiscUtil {
         }
 
         return cal.getTimeInMillis() - calNow.getTimeInMillis();
+    }
+
+    public static Date toDate_2(String strDate) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd HH:mm:ss");
+        // sdf.setLenient(false);
+        return sdf.parse(strDate);
     }
 }
