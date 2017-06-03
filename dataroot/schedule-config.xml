@@ -17,7 +17,7 @@
     <!--任务策略-->
     <policy>
         <id>monitorPolicy</id>
-        <impl>com.cmbchina.base.schedule.policy.FixedRatePolicy</impl>
+        <impl>com.cmbchina.base.schedule.policy.impl.FixedRatePolicy</impl>
         <repeatCount>0</repeatCount>
         <endDate></endDate>
         <timeUnit>Second</timeUnit>
