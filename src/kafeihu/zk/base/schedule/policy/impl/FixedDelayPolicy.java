@@ -1,9 +1,9 @@
 package kafeihu.zk.base.schedule.policy.impl;
 
 import kafeihu.zk.base.schedule.RepeatMode;
-import kafeihu.zk.base.schedule.policy.BasePolicy;
+import kafeihu.zk.base.schedule.policy.BaseFixedSpanPolicy;
 
-import java.util.Date;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  *
  * Created by zhangkuo on 2017/6/3.
  */
-public class FixedDelayPolicy extends BasePolicy {
+public class FixedDelayPolicy extends BaseFixedSpanPolicy {
 
     /**
      * 任务执行完成间隔
@@ -45,18 +45,71 @@ public class FixedDelayPolicy extends BasePolicy {
         m_delay = mDelay;
     }
 
-    @Override
-    public int getRepeatCount() {
-        return 0;
+
+    /**
+     *
+     * @param prop
+     *            策略属性容器，属性名包括：firstDelay,delay,默认为10，timeUnit,默认为second
+     */
+    public FixedDelayPolicy(Properties prop) throws Exception
+    {
+        super(RepeatMode.FixedDelay);
+        try
+        {
+            long firstDelay = Long.valueOf(prop.getProperty("firstDelay", "10"));
+            long delay = Long.valueOf(prop.getProperty("delay", "10"));
+            TimeUnit timeUnit = TimeUnit.SECONDS;
+            String strTimeUnit = prop.getProperty("timeUnit", "second");
+            if (strTimeUnit.equalsIgnoreCase("second"))
+            {
+                timeUnit = TimeUnit.SECONDS;
+            }
+            else if (strTimeUnit.equalsIgnoreCase("MilliSecond"))
+            {
+                timeUnit = TimeUnit.MILLISECONDS;
+            }
+            else if (strTimeUnit.equalsIgnoreCase("minute"))
+            {
+                timeUnit = TimeUnit.SECONDS;
+                firstDelay = firstDelay * 60;
+                delay = delay * 60;
+            }
+            else if (strTimeUnit.equalsIgnoreCase("hour"))
+            {
+                timeUnit = TimeUnit.SECONDS;
+                firstDelay = firstDelay * 3600;
+                delay = delay * 3600;
+            }
+
+            setFirstDelay(firstDelay);
+            setTimeUnit(timeUnit);
+
+            m_delay = delay;
+        }
+        catch (NumberFormatException exp)
+        {
+            throw new Exception(getClass().getName() + " illegal properties format:" + exp, exp);
+        }
+    }
+    /**
+     * 下次执行时间。返回-1表示任务是固定间隔执行模式，不需下次执行时间
+     */
+    public long getNextDelay()
+    {
+        return -1;
+    }
+    /**
+     * 返回任务执行间隔
+     */
+    public long getDelay()
+    {
+        return m_delay;
     }
 
     @Override
-    public RepeatMode getRepeatMode() {
-        return null;
-    }
-
-    @Override
-    public Date getEndDate() {
-        return null;
+    public String toString()
+    {
+        return "FixedDelayPolicy [delay=" + m_delay + ", firstDelay=" + getFirstDelay()
+                + ", timeUnit=" + getTimeUnit() + "]";
     }
 }

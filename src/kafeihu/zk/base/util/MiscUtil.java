@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -245,4 +246,86 @@ public class MiscUtil {
         return sbResult.toString();
     }
 
+    public static long getDuringMillisFromNextDayTime(int m_dayHour, int m_minute, int m_second) {
+
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.HOUR_OF_DAY, m_dayHour);
+        cal.set(Calendar.MINUTE, m_minute);
+        cal.set(Calendar.SECOND, m_second);
+
+        //
+        Calendar calNow = Calendar.getInstance();
+        //
+        if (cal.compareTo(calNow) <= 0)
+        {
+            cal.add(Calendar.DAY_OF_MONTH, 1);
+        }
+
+        return cal.getTimeInMillis() - calNow.getTimeInMillis();
+    }
+
+    /***
+     *
+     * @param monthDay
+     * @param dayHour
+     * @param minute
+     * @param second
+     * @return
+     */
+    public static long getDuringMillisFromNextMonthDayTime(int monthDay, int dayHour, int minute,
+                                                           int second)
+    {
+        Calendar cal = Calendar.getInstance();
+        if (monthDay <= 0)
+        {
+            cal.add(Calendar.MONTH, 1);
+            cal.set(Calendar.DAY_OF_MONTH, 1);
+            cal.add(Calendar.DAY_OF_MONTH, monthDay - 1);
+        }
+        else
+        {
+            cal.set(Calendar.DAY_OF_MONTH, monthDay);
+        }
+        cal.set(Calendar.HOUR_OF_DAY, dayHour);
+        cal.set(Calendar.MINUTE, minute);
+        cal.set(Calendar.SECOND, second);
+
+        //
+        Calendar calNow = Calendar.getInstance();
+        //
+        if (cal.compareTo(calNow) <= 0)
+        {
+            cal.add(Calendar.MONTH, 1);
+        }
+        return cal.getTimeInMillis() - calNow.getTimeInMillis();
+
+    }
+
+    /***
+     *
+     * @param weekDay
+     * @param dayHour
+     * @param minute
+     * @param second
+     * @return
+     */
+    public static long getDuringMillisFromNextWeekDayTime(int weekDay, int dayHour, int minute,
+                                                          int second)
+    {
+        //
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.DAY_OF_WEEK, weekDay);
+        cal.set(Calendar.HOUR_OF_DAY, dayHour);
+        cal.set(Calendar.MINUTE, minute);
+        cal.set(Calendar.SECOND, second);
+        //
+        Calendar calNow = Calendar.getInstance();
+        //
+        if (cal.compareTo(calNow) <= 0)
+        {
+            cal.add(Calendar.WEEK_OF_YEAR, 1);
+        }
+
+        return cal.getTimeInMillis() - calNow.getTimeInMillis();
+    }
 }
