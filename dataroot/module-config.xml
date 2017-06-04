@@ -13,7 +13,7 @@
 		<description></description>
 	</module>
 	
-	<!-- 支付模块配置-->
+	<!-- 聊天模块配置-->
 	<module>
 		<name>zkchat</name>
 		<contextImpl>kafeihu.zk.zkchat.context.ChatContext</contextImpl>
