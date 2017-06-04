@@ -19,13 +19,18 @@
 	<serviceManagers>
 		<serviceManager>
 			<name>SocketServerManager</name>
-			<class>kafeihu.zk.bserver.socket.SocketServerManager</class>
+			<class>kafeihu.zk.bserver.service.socket.SocketServerManager</class>
 			<description>SocketServer管理</description>
 		</serviceManager>
 		<serviceManager>
 			<name>ScheduleManager</name>
-			<class>kafeihu.zk.bserver.schedule.ScheduleManager</class>
+			<class>kafeihu.zk.bserver.service.schedule.ScheduleManager</class>
 			<description>定时任务管理</description>
+		</serviceManager>
+		<serviceManager>
+			<name>MonitorManager</name>
+			<class>kafeihu.zk.bserver.service.monitor.MonitorManager</class>
+			<description>监控模块</description>
 		</serviceManager>
     </serviceManagers>
 

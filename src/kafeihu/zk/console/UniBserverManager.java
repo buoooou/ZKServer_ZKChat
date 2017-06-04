@@ -7,7 +7,7 @@ import kafeihu.zk.base.util.XmlUtil;
 import kafeihu.zk.bserver.manager.ContextManager;
 import kafeihu.zk.bserver.manager.LoggerManager;
 import kafeihu.zk.bserver.manager.ModuleManager;
-import kafeihu.zk.bserver.manager.base.ServiceManager;
+import kafeihu.zk.bserver.service.ServiceManager;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
