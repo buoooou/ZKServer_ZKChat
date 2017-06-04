@@ -16,6 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 系统日志管理类。解析log-config.xml配置文件，设置日志工具类属性
+ *
  * Created by zhangkuo on 2016/11/21.
  *
  */

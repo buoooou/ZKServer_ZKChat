@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.socket;
+package kafeihu.zk.bserver.service.socket;
 
 import kafeihu.zk.base.server.socket.SocketWorkerPool;
 import kafeihu.zk.bserver.config.ThreadPoolConfig;
