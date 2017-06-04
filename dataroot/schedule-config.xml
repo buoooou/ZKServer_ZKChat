@@ -2,7 +2,7 @@
     <!--定时任务 -->
     <task>
         <name>systemMaintenanceMon</name>
-        <impl>kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor</impl>
+        <impl>kafeihu.zk.bserver.service.schedule.task.SystemMaintenanceMonitor</impl>
         <params>
             <filename>systemMaintenance.txt</filename>
         </params>

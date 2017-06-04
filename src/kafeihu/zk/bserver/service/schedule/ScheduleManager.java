@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.schedule;
+package kafeihu.zk.bserver.service.schedule;
 
 import kafeihu.zk.base.schedule.Scheduler;
 import kafeihu.zk.base.schedule.Task;
@@ -9,7 +9,7 @@ import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
 import kafeihu.zk.bserver.manager.LoggerManager;
 import kafeihu.zk.bserver.manager.ModuleManager;
-import kafeihu.zk.bserver.manager.base.ServiceManager;
+import kafeihu.zk.bserver.service.ServiceManager;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
