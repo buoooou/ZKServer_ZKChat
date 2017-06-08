@@ -1,5 +1,15 @@
 package kafeihu.zk.bserver.service.monitor;
 
+import kafeihu.zk.base.logging.Logger;
+import kafeihu.zk.base.util.IPPattern;
+import kafeihu.zk.base.util.MiscUtil;
+import kafeihu.zk.base.util.SocketKit;
+import kafeihu.zk.bserver.manager.LoggerManager;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
 /**
  *
  * 监控服务监听类：接受并执行监控请求，返回处理结果<br>
@@ -9,9 +19,106 @@ package kafeihu.zk.bserver.service.monitor;
  */
 public class MonitorListener implements Runnable {
 
+    private ServerSocket m_socketserver=null;
+
+    private IPPattern m_clientIPPatten=null;
+
+    private boolean m_isRunning=true;
+
+    private boolean m_allowing=true;
+
+    private final Logger m_logger= LoggerManager.getSysLogger();
+
+    public MonitorListener(ServerSocket m_socketserver) {
+        super();
+        this.m_socketserver = m_socketserver;
+    }
+
+    public void setClientIPPatten(IPPattern m_clientIPPatten) {
+        this.m_clientIPPatten = m_clientIPPatten;
+    }
+
+    public void setAllow(boolean m_allowing) {
+        this.m_allowing = m_allowing;
+    }
+
+    public void start(){
+
+        new Thread(this).start();
+
+    }
+
+
+    public void stop(){
+
+        m_isRunning=false;
+
+
+        try {
+            m_socketserver.close();
+        } catch (IOException e) {
+            m_logger.error(this.getClass().getName(),"stop Monitorserver filed:"+e.getMessage());
+        }finally {
+            m_socketserver=null;
+        }
+
+    }
 
     @Override
     public void run() {
+
+        while (m_isRunning){
+
+            Socket socket=acceptSocket();
+            if(socket==null){
+                continue;
+            }
+
+            acceptClinetIP();
+
+            SocketKit socketKit=new SocketKit(socket);
+
+            try {
+                // 接收数据长度
+                byte []packlen =new byte[MonitorProc.PACK_LEN];
+                socketKit.receive(packlen,MonitorProc.PACK_LEN);
+
+                int iLen= MiscUtil.ntohl(packlen);
+
+                // 接收数据
+                byte[] data = new byte[iLen];
+                socketKit.receive(data,iLen);
+
+                String requestData = new String(data);
+
+                String m_prid=requestData.substring(0,MonitorProc.PRID_LEN);
+
+                if(MiscUtil.isEmpty(m_prid)){
+                    throw new Exception("prid can not be empty");
+                }
+
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    private void acceptClinetIP() {
+
+    }
+
+    private Socket acceptSocket() {
+
+        try {
+            return m_socketserver.accept();
+        } catch (IOException e) {
+            m_logger.error(this.getClass().getName(),"acceptSocket filed:"+e.getMessage());
+        }
+        return null;
 
     }
 }
