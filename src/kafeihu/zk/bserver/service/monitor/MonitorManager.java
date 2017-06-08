@@ -31,4 +31,26 @@ public class MonitorManager extends ServiceManager{
      */
     private static MonitorListener m_listener;
 
+
+    /**
+     * 获取指定prid的监控处理类。如果找不到，则抛出异常
+     *
+     * @param prid
+     * @return
+     */
+    public static MonitorProc getProc(String prid) throws Exception
+    {
+//        MonitorProc proc = m_prid.get(prid);
+//        if (null == proc)
+//        {
+//            createMonitorProc(prid);
+//            proc = m_prid.get(prid);
+//            if (null == proc)
+//            {
+//                throw new Exception("undefined prid:" + prid);
+//            }
+//        }
+//        return proc;
+    }
+
 }

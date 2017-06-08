@@ -91,22 +91,35 @@ public class MonitorListener implements Runnable {
 
                 String requestData = new String(data);
 
-                String m_prid=requestData.substring(0,MonitorProc.PRID_LEN);
+                String prid=requestData.substring(0,MonitorProc.PRID_LEN);
 
-                if(MiscUtil.isEmpty(m_prid)){
+                if(MiscUtil.isEmpty(prid)){
                     throw new Exception("prid can not be empty");
                 }
 
+                MonitorProc monProc = MonitorManager.getProc(prid);
 
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (Exception e) {
-                e.printStackTrace();
+                String request = requestData.substring(MonitorProc.PRID_LEN);
+
+                monProc.doProc(socket, request);
+
+
+            } catch (Exception exp) {
+                MonitorProc.sendResponse(socket, MonitorProc.FailPrefix, "MonitorProc:"
+                        + exp.getMessage());
+            }finally {
+                try {
+                    socket.close();
+                } catch (IOException e) {
+
+                }
+
             }
         }
 
     }
 
+    //过滤客户端
     private void acceptClinetIP() {
 
     }
