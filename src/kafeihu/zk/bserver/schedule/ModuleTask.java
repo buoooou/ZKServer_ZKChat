@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.service.schedule;
+package kafeihu.zk.bserver.schedule;
 
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.base.schedule.Task;
