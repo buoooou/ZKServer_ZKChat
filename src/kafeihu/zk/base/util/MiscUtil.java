@@ -5,8 +5,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import java.util.*;
 
 /**
  * Created by zhangkuo on 2016/11/21.
@@ -334,5 +333,69 @@ public class MiscUtil {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd HH:mm:ss");
         // sdf.setLenient(false);
         return sdf.parse(strDate);
+    }
+
+    public static int getDuringHours(String fromTime, String toTime) throws ParseException{
+        Date fromDate = toDate_2(fromTime);
+        Date toDate = toDate_2(toTime);
+        long millsSpan = toDate.getTime() - fromDate.getTime();
+        if (millsSpan <= 0)
+        {
+            return 0;
+        }
+        return (int) (millsSpan / 3600000);
+
+    }
+
+    public static String[] getDuringDays(String fromDay, String toDay, boolean incFrom,
+                                         boolean incTo) throws ParseException{
+        Set<String> listDays = new HashSet<String>();
+        if (fromDay.compareTo(toDay) <= 0)
+        {
+            if (incFrom)
+            {
+                listDays.add(fromDay);
+            }
+            if (incTo)
+            {
+                listDays.add(toDay);
+            }
+
+            Date nextDate = addDays(toDate(fromDay), 1);
+            Date toDate = toDate(toDay);
+            while (nextDate.before(toDate))
+            {
+                listDays.add(getDate(nextDate));
+                nextDate = addDays(nextDate, 1);
+            }
+        }
+        String[] allDays = listDays.toArray(new String[] {});
+        Arrays.sort(allDays);
+        return allDays;
+    }
+    public static Date toDate(String strDate) throws ParseException
+    {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+        // sdf.setLenient(false);
+        return sdf.parse(strDate);
+
+    }
+    public static Date addDays(Date date, int amount)
+    {
+        return add(date, Calendar.DAY_OF_MONTH, amount);
+    }
+    public static Date add(Date date, int calendarField, int amount)
+    {
+        Calendar c = Calendar.getInstance();
+        if (date != null)
+        {
+            c.setTime(date);
+        }
+        c.add(calendarField, amount);
+        return c.getTime();
+    }
+    public static void clearStringBuilder(StringBuilder sb) {
+        int len = sb.length();
+        sb.delete(0, len);
     }
 }

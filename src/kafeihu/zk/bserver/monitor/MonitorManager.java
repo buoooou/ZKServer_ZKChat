@@ -4,6 +4,10 @@ import kafeihu.zk.base.util.IPPattern;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
+import kafeihu.zk.bserver.monitor.proc.GetModuleName;
+import kafeihu.zk.bserver.monitor.proc.GetStatistics;
+import kafeihu.zk.bserver.monitor.proc.MonitorProc;
+import kafeihu.zk.bserver.monitor.proc.QuerySysLogData;
 import kafeihu.zk.bserver.service.ServiceManager;
 
 import java.net.ServerSocket;
@@ -107,18 +111,18 @@ public class MonitorManager extends ServiceManager{
 
     private static void initPrid()
     {
-//        if(!m_prid.containsKey("GetStatistics"))
-//        {
-//            m_prid.put("GetStatistics", new GetStatistics());
-//        }
-//        if(!m_prid.containsKey("GetModuleName"))
-//        {
-//            m_prid.put("GetModuleName", new GetModuleName());
-//        }
-//        if(!m_prid.containsKey("QuerySysLogData"))
-//        {
-//            m_prid.put("QuerySysLogData", new QuerySysLogData());
-//        }
+        if(!m_prid.containsKey("GetStatistics"))
+        {
+            m_prid.put("GetStatistics", new GetStatistics());
+        }
+        if(!m_prid.containsKey("GetModuleName"))
+        {
+            m_prid.put("GetModuleName", new GetModuleName());
+        }
+        if(!m_prid.containsKey("QuerySysLogData"))
+        {
+            m_prid.put("QuerySysLogData", new QuerySysLogData());
+        }
     }
 
     /**

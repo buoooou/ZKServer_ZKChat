@@ -5,6 +5,7 @@ import kafeihu.zk.base.util.IPPattern;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.SocketKit;
 import kafeihu.zk.bserver.manager.LoggerManager;
+import kafeihu.zk.bserver.monitor.proc.MonitorProc;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -74,8 +75,6 @@ public class MonitorListener implements Runnable {
             if(socket==null){
                 continue;
             }
-
-
 
             SocketKit socketKit=new SocketKit(socket);
 

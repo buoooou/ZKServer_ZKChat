@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.monitor;
+package kafeihu.zk.bserver.monitor.proc;
 
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.base.util.ArrayUtil;
@@ -11,9 +11,12 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 /**
+ *
  * Created by zhangkuo on 2017/6/9.
+ *
  */
 public abstract class MonitorProc {
+
     public static final int SOCKET_TIME_OUT = 15000;
     /**
      * 启动服务
