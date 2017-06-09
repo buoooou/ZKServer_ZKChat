@@ -1,7 +1,7 @@
 package kafeihu.zk.bserver.proc.base;
 
-import kafeihu.zk.bserver.config.GlobalConfig;
-import kafeihu.zk.bserver.context.ModuleContext;
+import kafeihu.zk.bserver.core.config.GlobalConfig;
+import kafeihu.zk.bserver.core.context.ModuleContext;
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.bserver.manager.ContextManager;
 import kafeihu.zk.bserver.manager.LoggerManager;

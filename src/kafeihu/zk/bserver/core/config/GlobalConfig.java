@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.config;
+package kafeihu.zk.bserver.core.config;
 
 import kafeihu.zk.base.util.XmlUtil;
 

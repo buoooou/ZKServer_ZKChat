@@ -1,6 +1,6 @@
 package kafeihu.zk.bserver.core;
 
-import kafeihu.zk.bserver.config.GlobalConfig;
+import kafeihu.zk.bserver.core.config.GlobalConfig;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;

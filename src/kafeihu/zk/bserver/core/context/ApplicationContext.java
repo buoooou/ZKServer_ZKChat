@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.context;
+package kafeihu.zk.bserver.core.context;
 
 /**
  * 总应用上下文

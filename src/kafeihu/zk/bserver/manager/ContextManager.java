@@ -1,8 +1,8 @@
 package kafeihu.zk.bserver.manager;
 
-import kafeihu.zk.bserver.context.ApplicationContext;
-import kafeihu.zk.bserver.context.ModuleContext;
-import kafeihu.zk.bserver.exception.UndefinedModuleException;
+import kafeihu.zk.bserver.core.context.ApplicationContext;
+import kafeihu.zk.bserver.core.context.ModuleContext;
+import kafeihu.zk.bserver.core.exception.UndefinedModuleException;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;

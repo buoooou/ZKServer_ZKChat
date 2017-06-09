@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.exception.model;
+package kafeihu.zk.bserver.core.exception.model;
 
 /**
  * 错误定义

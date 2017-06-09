@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.exception;
+package kafeihu.zk.bserver.core.exception;
 
 import kafeihu.zk.base.util.ResourceUtil;
 
