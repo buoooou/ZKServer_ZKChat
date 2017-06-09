@@ -4,7 +4,7 @@ import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.base.util.ArrayUtil;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.SocketKit;
-import kafeihu.zk.bserver.config.GlobalConfig;
+import kafeihu.zk.bserver.core.config.GlobalConfig;
 import kafeihu.zk.bserver.manager.LoggerManager;
 
 import java.net.InetAddress;
