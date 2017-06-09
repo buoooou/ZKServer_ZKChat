@@ -1,6 +1,6 @@
 package kafeihu.zk.console;
 
-import kafeihu.zk.base.client.BServerSocketClient;
+import kafeihu.zk.base.client.impl.BServerSocketClient;
 import kafeihu.zk.base.util.IoUtil;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.XmlUtil;

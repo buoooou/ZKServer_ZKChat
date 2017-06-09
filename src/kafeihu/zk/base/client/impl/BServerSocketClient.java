@@ -1,9 +1,9 @@
-package kafeihu.zk.base.client;
+package kafeihu.zk.base.client.impl;
 
+import kafeihu.zk.base.client.SocketClient;
 import kafeihu.zk.base.util.SocketKit;
 import kafeihu.zk.base.util.ArrayUtil;
 import kafeihu.zk.base.util.MiscUtil;
-
 import java.net.Socket;
 
 /**
@@ -14,7 +14,7 @@ import java.net.Socket;
  * 返回包格式：|包长(4)|数据(至少1)
  * Created by zhangkuo on 2016/11/27.
  */
-public class BServerSocketClient extends SocketClient{
+public class BServerSocketClient extends SocketClient {
     private static final int PACK_LEN = 4;
     private static final int MAX_LEN = 4194304;// 最大包长4M
     /**
