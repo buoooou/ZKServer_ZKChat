@@ -20,7 +20,7 @@ public class BServerProcTest {
     private Map<String, String> procTestPacketMap = new ConcurrentHashMap<String, String>();
 
     private String serverIp = "127.0.0.1";
-    private int serverPort = 8080;
+    private int serverPort = 8010;
 
     public BServerProcTest() throws Exception
     {

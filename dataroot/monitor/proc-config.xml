@@ -1,5 +1,11 @@
 <proc-config>
 	<proc-scope>singleton</proc-scope>
-
+	<proc>
+		<id>GetStatData</id>
+		<impl>kafeihu.zk.bserver.monitor.proc.GetStatData</impl>
+		<scope>singleton</scope>
+		<params>
+		</params>
+	</proc>
 	
 </proc-config>
