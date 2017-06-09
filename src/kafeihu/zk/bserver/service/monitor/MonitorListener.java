@@ -7,6 +7,7 @@ import kafeihu.zk.base.util.SocketKit;
 import kafeihu.zk.bserver.manager.LoggerManager;
 
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -74,11 +75,12 @@ public class MonitorListener implements Runnable {
                 continue;
             }
 
-            acceptClinetIP();
+
 
             SocketKit socketKit=new SocketKit(socket);
 
             try {
+                acceptClinetIP(socket);
                 // 接收数据长度
                 byte []packlen =new byte[MonitorProc.PACK_LEN];
                 socketKit.receive(packlen,MonitorProc.PACK_LEN);
@@ -120,8 +122,23 @@ public class MonitorListener implements Runnable {
     }
 
     //过滤客户端
-    private void acceptClinetIP() {
+    private void acceptClinetIP(Socket socket) throws Exception{
 
+        if (null == m_clientIPPatten)
+        {
+            return;
+        }
+        InetAddress clientAddr = socket.getInetAddress();
+        if (null != clientAddr)
+        {
+            boolean bMatch = m_clientIPPatten.match(clientAddr.getHostAddress());
+            if (!(m_allowing && bMatch))
+            {// 允许匹配的客户端地址
+                m_logger.warn(getClass().getName(), "illegal Monitor Client:"
+                        + clientAddr.getHostAddress());
+                throw new Exception("illegal Monitor Client");
+            }
+        }
     }
 
     private Socket acceptSocket() {

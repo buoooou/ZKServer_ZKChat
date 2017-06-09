@@ -1,22 +1,22 @@
 <monitor-config>
     <clientIPControl>
         <allow>Y</allow>
-        <equal>99.1.101.102</equal>
+        <equal>127.0.0.1</equal>
     </clientIPControl>
     <port>8998</port>
     <prid>
         <id>GetStatistics</id>
-        <impl>com.cmbchina.bserver.monitor.proc.GetStatistics</impl>
+        <impl>kafeihu.zk.bserver.service.monitor.proc.GetStatistics</impl>
         <desc></desc>
     </prid>
     <prid>
         <id>GetModuleName</id>
-        <impl>com.cmbchina.bserver.monitor.proc.GetModuleName</impl>
+        <impl>kafeihu.zk.bserver.service.monitor.proc.GetModuleName</impl>
         <desc></desc>
     </prid>
     <prid>
         <id>QuerySysLogData</id>
-        <impl>com.cmbchina.bserver.monitor.proc.QuerySysLogData</impl>
+        <impl>kafeihu.zk.bserver.service.monitor.proc.QuerySysLogData</impl>
         <MaxQuerySpanHours>24</MaxQuerySpanHours>
         <MaxLogDataLineNum>10000</MaxLogDataLineNum>
         <SendBatchNum>1000</SendBatchNum>
