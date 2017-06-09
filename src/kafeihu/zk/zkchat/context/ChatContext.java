@@ -2,7 +2,7 @@ package kafeihu.zk.zkchat.context;
 
 import kafeihu.zk.zkchat.config.ChatConfig;
 import kafeihu.zk.zkchat.config.TypeConfig;
-import kafeihu.zk.bserver.context.ModuleContext;
+import kafeihu.zk.bserver.core.context.ModuleContext;
 import kafeihu.zk.base.util.IoUtil;
 
 import java.io.FileInputStream;
