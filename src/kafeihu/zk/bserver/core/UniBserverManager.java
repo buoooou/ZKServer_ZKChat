@@ -1,4 +1,4 @@
-package kafeihu.zk.console;
+package kafeihu.zk.bserver.core;
 
 import kafeihu.zk.bserver.config.GlobalConfig;
 import kafeihu.zk.base.util.MiscUtil;
