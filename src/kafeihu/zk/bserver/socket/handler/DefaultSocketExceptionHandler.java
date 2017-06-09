@@ -1,7 +1,7 @@
 package kafeihu.zk.bserver.socket.handler;
 
 import kafeihu.zk.base.server.socket.ISocketExceptionHandler;
-import kafeihu.zk.bserver.config.GlobalConfig;
+import kafeihu.zk.bserver.core.config.GlobalConfig;
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.bserver.manager.LoggerManager;
 import kafeihu.zk.base.util.SocketKit;

@@ -4,7 +4,7 @@ import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.base.server.socket.*;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.XmlUtil;
-import kafeihu.zk.bserver.config.ThreadPoolConfig;
+import kafeihu.zk.bserver.core.config.ThreadPoolConfig;
 import kafeihu.zk.bserver.manager.LoggerManager;
 import kafeihu.zk.bserver.statistics.IStatistics;
 
