@@ -7,7 +7,6 @@ import kafeihu.zk.base.util.XmlUtil;
 import kafeihu.zk.bserver.statistics.IStatistics;
 
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -100,7 +99,7 @@ public class BServerMonitor {
         StringBuilder sb = new StringBuilder();
         sb.append("<html><head><title>UniBServer[");
         sb.append(serverIp).append(":").append(serverPort);
-        sb.append("]</title></head><body>");
+        sb.append("]</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /></head><body>");
         sb.append("<table width='100%' border='0' cellpadding='1' cellspacing='1' bgcolor='#999999'>");
         sb.append(
                 "<tr bgcolor='#F4F3EE'><td bgcolor='#DFDFDF'>UniBServer</td><td colspan=3>")
