@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.service.monitor;
+package kafeihu.zk.bserver.monitor;
 
 import kafeihu.zk.bserver.context.ModuleContext;
 

@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.service.monitor;
+package kafeihu.zk.bserver.monitor;
 
 import kafeihu.zk.base.util.IPPattern;
 import kafeihu.zk.base.util.MiscUtil;
@@ -145,8 +145,7 @@ public class MonitorManager extends ServiceManager{
                 MonitorProc proc = (MonitorProc) Class.forName(impl).newInstance();
                 proc.setId(id);
                 proc.setParams(pridConfig);
-                //m_prid.put(id, proc);
-                m_prid.put(id,proc);
+                m_prid.put(id, proc);
             }
         }
 
