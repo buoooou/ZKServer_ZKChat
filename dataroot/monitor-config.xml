@@ -3,7 +3,7 @@
         <allow>Y</allow>
         <equal>127.0.0.1</equal>
     </clientIPControl>
-    <port>8998</port>
+    <port>9999</port>
     <prid>
         <id>GetStatistics</id>
         <impl>kafeihu.zk.bserver.monitor.proc.GetStatistics</impl>

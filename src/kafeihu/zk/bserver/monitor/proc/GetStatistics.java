@@ -1,9 +1,8 @@
 package kafeihu.zk.bserver.monitor.proc;
 
-import kafeihu.zk.console.UniBserverManager;
+import kafeihu.zk.bserver.core.UniBserverManager;
 
 import java.net.InetAddress;
-import java.util.List;
 
 /**
  * Created by zhangkuo on 2017/6/9.
