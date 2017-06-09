@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.service.socket.handler;
+package kafeihu.zk.bserver.socket.handler;
 
 import kafeihu.zk.base.server.socket.ISocketRequestHandler;
 import kafeihu.zk.bserver.exception.BServerException;

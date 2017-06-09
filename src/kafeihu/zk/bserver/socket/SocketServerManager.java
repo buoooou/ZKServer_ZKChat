@@ -1,4 +1,4 @@
-package kafeihu.zk.bserver.service.socket;
+package kafeihu.zk.bserver.socket;
 
 import kafeihu.zk.bserver.service.ServiceManager;
 import kafeihu.zk.base.server.socket.ISocketServer;

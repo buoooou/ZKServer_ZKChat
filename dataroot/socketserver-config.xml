@@ -7,7 +7,7 @@
 <socketserver-config>
 	<socketServer>
 			<alias>SocketServer-NPS</alias>
-			<serverImpl>kafeihu.zk.bserver.service.socket.BSocketServer</serverImpl>
+			<serverImpl>kafeihu.zk.bserver.socket.BSocketServer</serverImpl>
 			<serverSocket>
 				<port>8010</port>
 				<clientSocketTimeoutMills>15000</clientSocketTimeoutMills>
@@ -19,20 +19,20 @@
 				<corePoolSize>20</corePoolSize>
 				<workQueueSize>0</workQueueSize>
 				<keepAliveTimeSeconds>60</keepAliveTimeSeconds>
-				<rejectedExecutionHandler>kafeihu.zk.bserver.service.socket.handler.DefaultSocketRejectedExecutionHandler</rejectedExecutionHandler>
+				<rejectedExecutionHandler>kafeihu.zk.bserver.socket.handler.DefaultSocketRejectedExecutionHandler</rejectedExecutionHandler>
 			</threadPool>
 			<socketWorker>
 				<requestHandler>
-					<handlerImpl>kafeihu.zk.bserver.service.socket.handler.RecvRequestDataHandler</handlerImpl>
+					<handlerImpl>kafeihu.zk.bserver.socket.handler.RecvRequestDataHandler</handlerImpl>
 				</requestHandler>
 				<requestHandler>
-					<handlerImpl>kafeihu.zk.bserver.service.socket.handler.DoRequestProcHandler</handlerImpl>
+					<handlerImpl>kafeihu.zk.bserver.socket.handler.DoRequestProcHandler</handlerImpl>
 				</requestHandler>
 				<requestHandler>
-					<handlerImpl>kafeihu.zk.bserver.service.socket.handler.SendResponseDataHandler</handlerImpl>
+					<handlerImpl>kafeihu.zk.bserver.socket.handler.SendResponseDataHandler</handlerImpl>
 				</requestHandler>
 				<exceptionHandler>
-					<handlerImpl>kafeihu.zk.bserver.service.socket.handler.DefaultSocketExceptionHandler</handlerImpl>
+					<handlerImpl>kafeihu.zk.bserver.socket.handler.DefaultSocketExceptionHandler</handlerImpl>
 				</exceptionHandler>
 			</socketWorker>
 			<statistics>
