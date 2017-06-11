@@ -13,6 +13,7 @@
     	<preLoadClass>kafeihu.zk.bserver.manager.ContextManager</preLoadClass>
 		<preLoadClass>kafeihu.zk.bserver.manager.ProcManager</preLoadClass>
 		<preLoadClass>kafeihu.zk.bserver.manager.ExecutorManager</preLoadClass>
+		<preLoadClass>kafeihu.zk.bserver.manager.ObjectPoolManager</preLoadClass>
 	</preLoadClasses>
 
 
