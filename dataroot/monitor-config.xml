@@ -1,3 +1,8 @@
+<!-- monitor监控模块配置
+clientIPControl 允许固定ip访问
+port 监控模块的端口
+prid 监控模块的对外请求
+-->
 <monitor-config>
     <clientIPControl>
         <allow>Y</allow>
