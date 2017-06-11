@@ -1,4 +1,4 @@
-<!-- 数据库驱动 -->
+<!-- 数据库驱动配置 -->
 <driver-config>
 	<driver>com.mysql.jdbc.Driver</driver>
 </driver-config>
