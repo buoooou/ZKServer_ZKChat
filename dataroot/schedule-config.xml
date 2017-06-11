@@ -1,5 +1,8 @@
+<!--定时任务配置 -->
 <schedule-config>
-    <!--定时任务 -->
+    <!--任务配置
+     params 支持自定义属性配置
+     -->
     <task>
         <name>systemMaintenanceMon</name>
         <impl>kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor</impl>
@@ -10,11 +13,11 @@
     </task>
 
     <!-- 定时策略 -->
-    <!--repeatCount重复次数-->
-    <!--endDate结束时间yyyyMMdd、-->
-    <!--timeUnit Hour,Minute,Second,MilliSecond -->
+    <!-- repeatCount重复次数 -->
+    <!-- endDate结束时间yyyyMMdd、 -->
+    <!-- timeUnit Hour,Minute,Second,MilliSecond -->
 
-    <!--任务策略-->
+    <!-- 任务策略 -->
     <policy>
         <id>monitorPolicy</id>
         <impl>kafeihu.zk.base.schedule.policy.impl.FixedRatePolicy</impl>
@@ -27,6 +30,7 @@
 
     <!--taskName 任务名，以逗号隔开-->
     <!--policyId 策略名-->
+    <!--scheduleBinding 绑定任务和策略，用指定策略运行任务 -->
     <scheduleBinding>
         <taskName>systemMaintenanceMon</taskName>
         <policyId>monitorPolicy</policyId>
