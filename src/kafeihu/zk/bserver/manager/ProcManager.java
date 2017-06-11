@@ -9,6 +9,8 @@ import kafeihu.zk.bserver.proc.RequestData;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
+import kafeihu.zk.bserver.statistics.IStatistics;
+import kafeihu.zk.bserver.statistics.StatisticsManager;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -108,10 +110,10 @@ public class ProcManager {
                 {
                     moduleProcInstMap.put(procId, procObj);
 
-//                    if (procObj instanceof IStatistics)
-//                    {
-//                        StatisticsManager.register(procObj);
-//                    }
+                    if (procObj instanceof IStatistics)
+                    {
+                        StatisticsManager.register(procObj);
+                    }
                 }
                 else if (procScope.equalsIgnoreCase(Scope_Prototype))
                 {

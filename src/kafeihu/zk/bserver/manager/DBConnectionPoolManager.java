@@ -3,6 +3,8 @@ package kafeihu.zk.bserver.manager;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
+import kafeihu.zk.bserver.statistics.DBConnectionPoolStatWrapper;
+import kafeihu.zk.bserver.statistics.StatisticsManager;
 import kafeihu.zk.db.model.DBConnectionPoolConfig;
 import kafeihu.zk.db.pool.DBConnectionPool;
 
@@ -133,9 +135,9 @@ public class DBConnectionPoolManager {
             }
             String alias = XmlUtil.getXmlElement("alias", xmlPoolConfig, id);
 
-//            DBConnectionPoolStatWrapper statObj = new DBConnectionPoolStatWrapper(
-//                    dbConnPoolInst, alias, id, moduleName);
-//            StatisticsManager.register(statObj);
+            DBConnectionPoolStatWrapper statObj = new DBConnectionPoolStatWrapper(
+                    dbConnPoolInst, alias, id, moduleName);
+            StatisticsManager.register(statObj);
 
             m_DBConnPoolInstMap.put(id, dbConnPoolInst);
         }

@@ -5,6 +5,8 @@ import kafeihu.zk.base.server.socket.ISocketServer;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
+import kafeihu.zk.bserver.statistics.IStatistics;
+import kafeihu.zk.bserver.statistics.StatisticsManager;
 
 import java.util.HashMap;
 import java.util.List;
@@ -99,9 +101,7 @@ public class SocketServerManager extends ServiceManager {
             }
             finally
             {
-                // StatisticsManager.unRegister(socketServer);
-                // m_TcpServerInstance.remove(new Integer(port));
-                // socketServer = null;
+
             }
         }
     }
@@ -125,10 +125,10 @@ public class SocketServerManager extends ServiceManager {
 
         socketServer.start();
         m_SocketServerInstance.put(Integer.valueOf(socketServer.getLocalPort()), socketServer);
-//        if (socketServer instanceof IStatistics)
-//        {
-//            StatisticsManager.register((IStatistics) socketServer);
-//        }
+        if (socketServer instanceof IStatistics)
+        {
+            StatisticsManager.register((IStatistics) socketServer);
+        }
     }
 
     /**
