@@ -1,11 +1,19 @@
-<!-- BServer -->
+<!-- BServer系统总配置-->
 <bserver-config>
 	<global>
 		<encoding>UTF-8</encoding>
 		<timeConsumingWarningMills>1500</timeConsumingWarningMills>
 	</global>
 
-	<!--工具类-->
+	<!--工具类：
+	1.模块管理:系统所有的业务模块管理器
+	2.日志管理:系统的日志管理器
+	3.数据库管理:系统的数据库管理器
+	4.上下文管理:系统的总上下文，模块上下文
+	5.proc管理:系统的所有有效请求的管理
+	6.异步调度器管理:异步管理器
+	7.对象池:对象池配置，配置后台访问的并发线程
+	-->
 	<preLoadClasses>
 		<preLoadClass>kafeihu.zk.bserver.manager.ModuleManager</preLoadClass>
 		<preLoadClass>kafeihu.zk.bserver.manager.LoggerManager</preLoadClass>
@@ -17,7 +25,11 @@
 	</preLoadClasses>
 
 
-	<!--服务模块，socket，监控模块monitor，暂时没实现-->
+	<!--服务模块：
+	1.SocketServerManager（Socket模块）
+	2.MonitorManager（monitor监控模块）
+	3.ScheduleManager（定时任务模块）
+	-->
 	<serviceManagers>
 		<serviceManager>
 			<name>SocketServerManager</name>
