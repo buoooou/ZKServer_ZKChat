@@ -19,6 +19,7 @@ public class GetUserFriends extends BaseProc {
     @Override
     protected Object doProc(Object reqData) throws Exception {
 
+        String sql="select user from User where userid=?";
 
 
         ResponseData responseData = new ResponseData();
