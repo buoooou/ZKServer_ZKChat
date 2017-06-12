@@ -11,14 +11,16 @@ public class GetUserFriends extends BaseProc {
         super(mModuleName, mProcId);
     }
     @Override
-    public void init() throws Exception
-    {
+    public void init() throws Exception{
         super.init();
 
     }
 
     @Override
     protected Object doProc(Object reqData) throws Exception {
+
+
+
         ResponseData responseData = new ResponseData();
         String str="zk";
         System.out.println("qingqiu");
