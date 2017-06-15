@@ -3,6 +3,8 @@ package kafeihu.zk.bserver.manager;
 
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.base.pool.ObjectPool;
+import kafeihu.zk.base.pool.ObjectPoolConfig;
+import kafeihu.zk.base.pool.PoolableObjectFactory;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
