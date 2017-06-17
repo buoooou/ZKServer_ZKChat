@@ -1,6 +1,7 @@
 package kafeihu.zk.database.pool;
 
 import kafeihu.zk.base.logging.Logger;
+import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.database.DBConstants;
 
 import java.sql.*;
@@ -189,8 +190,8 @@ public class PooledDBConnection implements Connection
         sb.append(logTips).append(" [");
         sb.append("isValid=").append(isValid);
         sb.append(", accessCount=").append(accessCount);
-        // sb.append(", lastAccessTime=").append(MiscUtil.getTimestamp(new
-        // Date(lastAccessEndMillis)));
+         sb.append(", lastAccessTime=").append(MiscUtil.getTimestamp(new
+         Date(lastAccessEndMillis)));
         sb.append(", idleSeconds=")
                 .append((int) ((System.currentTimeMillis() - lastAccessEndMillis) / 1000));
         sb.append(", surviveSeconds=").append(
@@ -362,12 +363,6 @@ public class PooledDBConnection implements Connection
     public Statement createStatement() throws SQLException
     {
         throw new SQLException(DBConstants.Msg_UnsupportedMethod);
-        // try {
-        // return dbConn.createStatement();
-        // } catch (SQLException ex) {
-        // handleException(ex);
-        // throw ex;
-        // }
     }
 
     @Override
@@ -375,12 +370,6 @@ public class PooledDBConnection implements Connection
             throws SQLException
     {
         throw new SQLException(DBConstants.Msg_UnsupportedMethod);
-        // try {
-        // return dbConn.createStatement(resultSetType, resultSetConcurrency);
-        // } catch (SQLException ex) {
-        // handleException(ex);
-        // throw ex;
-        // }
     }
 
     @Override
@@ -389,13 +378,6 @@ public class PooledDBConnection implements Connection
             throws SQLException
     {
         throw new SQLException(DBConstants.Msg_UnsupportedMethod);
-        // try {
-        // return dbConn.createStatement(resultSetType, resultSetConcurrency,
-        // resultSetHoldability);
-        // } catch (SQLException ex) {
-        // handleException(ex);
-        // throw ex;
-        // }
     }
 
     @Override
