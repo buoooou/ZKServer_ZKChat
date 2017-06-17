@@ -1,7 +1,7 @@
 package kafeihu.zk.database.pool;
 
 import kafeihu.zk.base.logging.Logger;
-import kafeihu.zk.db.model.DBConstants;
+import kafeihu.zk.database.DBConstants;
 
 import java.sql.*;
 import java.util.LinkedHashSet;

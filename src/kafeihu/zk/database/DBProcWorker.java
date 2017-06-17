@@ -9,4 +9,11 @@ import java.util.concurrent.Callable;
  */
 public abstract class DBProcWorker implements Callable<DBProcResult> {
 
+    private DBConnectionPool dbConnPool;
+
+    public DBProcWorker(DBConnectionPool dbConnPool)
+    {
+        this.dbConnPool = dbConnPool;
+    }
+
 }

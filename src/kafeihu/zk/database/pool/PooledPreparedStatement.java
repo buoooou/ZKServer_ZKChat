@@ -1,6 +1,6 @@
 package kafeihu.zk.database.pool;
 
-import kafeihu.zk.db.model.DBConstants;
+import kafeihu.zk.database.DBConstants;
 
 import java.io.InputStream;
 import java.io.Reader;
