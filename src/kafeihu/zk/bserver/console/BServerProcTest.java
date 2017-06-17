@@ -1,4 +1,4 @@
-package kafeihu.zk.console;
+package kafeihu.zk.bserver.console;
 
 import kafeihu.zk.base.client.impl.BServerSocketClient;
 import kafeihu.zk.base.util.IoUtil;
