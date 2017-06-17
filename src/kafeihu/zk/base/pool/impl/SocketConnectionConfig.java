@@ -8,6 +8,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
+ *
  * Socket连接配置类：配置Socket连接的基本信息。
  *
  * Created by zhangkuo on 2017/6/17.
