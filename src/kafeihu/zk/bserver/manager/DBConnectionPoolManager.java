@@ -5,8 +5,8 @@ import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
 import kafeihu.zk.bserver.statistics.DBConnectionPoolStatWrapper;
 import kafeihu.zk.bserver.statistics.StatisticsManager;
-import kafeihu.zk.db.pool.DBConnectionPoolConfig;
-import kafeihu.zk.db.pool.DBConnectionPool;
+import kafeihu.zk.database.pool.DBConnectionPoolConfig;
+import kafeihu.zk.database.pool.DBConnectionPool;
 
 import java.util.Collection;
 import java.util.List;
