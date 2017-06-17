@@ -73,7 +73,7 @@ public class FakeObjectPool implements ObjectPool{
     /**
      * 从对象资源池获取对象。
      *
-     * @param timeoutMills
+     * @param waitMills
      *            等待时间
      *
      * @throws NoSuchElementException
