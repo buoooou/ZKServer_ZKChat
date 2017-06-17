@@ -1,4 +1,4 @@
-package kafeihu.zk.db.pool;
+package kafeihu.zk.database.pool;
 
 /**
  * Created by zhangkuo on 2016/11/22.

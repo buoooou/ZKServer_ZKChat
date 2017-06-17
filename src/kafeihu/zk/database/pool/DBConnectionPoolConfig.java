@@ -1,4 +1,4 @@
-package kafeihu.zk.db.pool;
+package kafeihu.zk.database.pool;
 
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.XmlUtil;
