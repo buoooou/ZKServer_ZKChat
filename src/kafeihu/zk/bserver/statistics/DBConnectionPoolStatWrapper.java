@@ -1,6 +1,6 @@
 package kafeihu.zk.bserver.statistics;
 
-import kafeihu.zk.db.pool.DBConnectionPool;
+import kafeihu.zk.database.pool.DBConnectionPool;
 
 /**
  * Created by zhangkuo on 2017/6/11.

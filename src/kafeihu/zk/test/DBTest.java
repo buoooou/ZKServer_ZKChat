@@ -1,7 +1,7 @@
 package kafeihu.zk.test;
 
 import kafeihu.zk.bserver.manager.DBConnectionPoolManager;
-import kafeihu.zk.db.pool.DBConnectionPool;
+import kafeihu.zk.database.pool.DBConnectionPool;
 
 import java.sql.Connection;
 
