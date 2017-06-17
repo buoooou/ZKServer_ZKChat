@@ -1,6 +1,8 @@
 package kafeihu.zk.base.pool;
 
 /**
+ *
+ *
  * Created by zhangkuo on 2017/6/15.
  */
 public interface PoolableObjectFactory {
@@ -32,7 +34,7 @@ public interface PoolableObjectFactory {
     void destroyObject(Object obj) throws Exception;
 
     /**
-     * 判断对象是否有效。如果对象已无效，则调用destroyObject方法销毁对象
+     * 判断对象是否有效。如果对象已无效，
      *
      * @param obj
      * @return false 如果对象已无效
