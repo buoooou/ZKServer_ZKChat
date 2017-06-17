@@ -1,4 +1,4 @@
-package kafeihu.zk.db.exception;
+package kafeihu.zk.db.pool;
 
 /**
  * Created by zhangkuo on 2016/11/22.

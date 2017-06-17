@@ -1,7 +1,8 @@
-package kafeihu.zk.db.model;
+package kafeihu.zk.db.pool;
 
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.XmlUtil;
+import kafeihu.zk.db.model.DBConstants;
 
 /**
  * Created by zhangkuo on 2016/11/22.

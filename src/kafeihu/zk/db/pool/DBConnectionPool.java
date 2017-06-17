@@ -1,9 +1,7 @@
 package kafeihu.zk.db.pool;
 
 import kafeihu.zk.base.logging.Logger;
-import kafeihu.zk.db.exception.DBPoolException;
-import kafeihu.zk.db.model.DBConnectionPoolConfig;
-import kafeihu.zk.db.util.DBUtil;
+import kafeihu.zk.base.util.DBUtil;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

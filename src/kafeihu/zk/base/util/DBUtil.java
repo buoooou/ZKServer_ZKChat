@@ -1,4 +1,4 @@
-package kafeihu.zk.db.util;
+package kafeihu.zk.base.util;
 
 import java.sql.Connection;
 import java.sql.Statement;
