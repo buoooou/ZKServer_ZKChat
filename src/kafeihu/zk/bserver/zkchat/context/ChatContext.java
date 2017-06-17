@@ -1,7 +1,7 @@
-package kafeihu.zk.zkchat.context;
+package kafeihu.zk.bserver.zkchat.context;
 
-import kafeihu.zk.zkchat.config.ChatConfig;
-import kafeihu.zk.zkchat.config.TypeConfig;
+import kafeihu.zk.bserver.zkchat.config.ChatConfig;
+import kafeihu.zk.bserver.zkchat.config.TypeConfig;
 import kafeihu.zk.bserver.core.context.ModuleContext;
 import kafeihu.zk.base.util.IoUtil;
 

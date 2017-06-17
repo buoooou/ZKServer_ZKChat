@@ -1,4 +1,4 @@
-package kafeihu.zk.zkchat.config;
+package kafeihu.zk.bserver.zkchat.config;
 
 import kafeihu.zk.base.util.IoUtil;
 import kafeihu.zk.base.util.MiscUtil;

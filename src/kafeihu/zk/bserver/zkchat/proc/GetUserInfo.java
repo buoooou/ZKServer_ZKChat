@@ -1,4 +1,4 @@
-package kafeihu.zk.zkchat.proc;
+package kafeihu.zk.bserver.zkchat.proc;
 
 import kafeihu.zk.bserver.proc.base.BaseProc;
 

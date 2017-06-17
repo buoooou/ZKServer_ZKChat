@@ -13,7 +13,7 @@
 
 	<proc>
 		<id>OpenQRPayProtocol</id>
-		<impl>kafeihu.zk.zkchat.proc.GetUserFriends</impl>
+		<impl>kafeihu.zk.bserver.zkchat.proc.GetUserFriends</impl>
 		<scope>singleton</scope>
 		<params>
 		</params>
