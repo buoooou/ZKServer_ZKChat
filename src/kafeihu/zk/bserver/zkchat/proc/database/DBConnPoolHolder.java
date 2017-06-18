@@ -1,6 +1,8 @@
-package kafeihu.zk.bserver.proc.database;
+package kafeihu.zk.bserver.zkchat.proc.database;
 
 import kafeihu.zk.bserver.manager.DBConnectionPoolManager;
+import kafeihu.zk.bserver.zkchat.core.ZKChatErrorCode;
+import kafeihu.zk.bserver.zkchat.core.ZKChatException;
 import kafeihu.zk.database.pool.DBConnectionPool;
 
 /**
@@ -51,9 +53,9 @@ public class DBConnPoolHolder {
      * 通过数据库ID获取数据库连接池
      * @param dbID
      * @return
-     * @throws NetpayException
+     * @throws ZKChatException
      */
-    public static DBConnectionPool getDBConnPool(String dbID) throws NetpayException
+    public static DBConnectionPool getDBConnPool(String dbID) throws ZKChatException
     {
         try
         {
@@ -61,7 +63,7 @@ public class DBConnPoolHolder {
         }
         catch (Exception exp)
         {
-            throw new NetpayException(NetpayErrorCode.DBProc_Exception, exp.getMessage());
+            throw new ZKChatException(ZKChatErrorCode.DBProc_Exception, exp.getMessage());
         }
     }
 }
