@@ -22,6 +22,7 @@
 		<preLoadClass>kafeihu.zk.bserver.manager.ProcManager</preLoadClass>
 		<preLoadClass>kafeihu.zk.bserver.manager.ExecutorManager</preLoadClass>
 		<preLoadClass>kafeihu.zk.bserver.manager.ObjectPoolManager</preLoadClass>
+		<preLoadClass>kafeihu.zk.bserver.proc.database.DBConnPoolHolder</preLoadClass>
 	</preLoadClasses>
 
 	<shutdownHooks>
