@@ -42,6 +42,38 @@ public class UniBserverManager {
         }
     }
     /**
+     * 注册系统关闭挂钩
+     *
+     * @param hookConfig
+     * @throws Exception
+     */
+    private static void registerShutdownHooks(String hookConfig) throws Exception
+    {
+        List<String> listHookThread = XmlUtil.getAllXmlElements("hookThread", hookConfig);
+        for (String hookThreadConfig : listHookThread)
+        {
+            String impl = XmlUtil.getXmlElement("impl", hookThreadConfig);
+            if (!MiscUtil.isEmpty(impl))
+            {
+                Thread hookThread = null;
+                try
+                {
+                    Class<?> hookClazz = Class.forName(impl);
+                    hookThread = (Thread) hookClazz.newInstance();
+                    Method setParamMethod = hookClazz.getMethod("setParams", String.class);
+                    setParamMethod.invoke(hookThread, hookThreadConfig);
+                }
+                catch (NoSuchMethodException nsme)
+                {
+                }
+                if (null != hookThread)
+                {
+                    Runtime.getRuntime().addShutdownHook(hookThread);
+                }
+            }
+        }
+    }
+    /**
      * 服务启动
      */
     public static void start() throws Exception {
@@ -57,6 +89,11 @@ public class UniBserverManager {
         String preloadConfig = XmlUtil.getXmlElement("preLoadClasses", configData);
         preLoadClass(preloadConfig);
         LoggerManager.getSysLogger().info("UniBServer", "PreLoad classes OK!");
+
+        // 注册系统关闭挂钩
+        String hookConfig = XmlUtil.getXmlElement("shutdownHooks", configData);
+        registerShutdownHooks(hookConfig);
+        LoggerManager.getSysLogger().info("UniBServer", "RegisterShutdownHooks OK!");
 
 
         // 启动系统服务管理器
@@ -166,5 +203,14 @@ public class UniBserverManager {
     public static long getStartTime()
     {
         return m_startUpTime;
+    }
+
+    /**
+     * 停止BServer服务
+     */
+    public static void stop()
+    {
+        // 停止服务管理器
+        stopServiceManager();
     }
 }

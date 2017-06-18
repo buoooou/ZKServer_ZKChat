@@ -24,6 +24,11 @@
 		<preLoadClass>kafeihu.zk.bserver.manager.ObjectPoolManager</preLoadClass>
 	</preLoadClasses>
 
+	<shutdownHooks>
+		<hookThread>
+			<impl>kafeihu.zk.bserver.core.SystemShutdownHook</impl>
+		</hookThread>
+	</shutdownHooks>
 
 	<!--服务模块：
 	1.SocketServerManager（Socket模块）
