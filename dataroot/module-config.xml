@@ -16,7 +16,7 @@
 	<!-- 聊天zkchat模块配置-->
 	<module>
 		<name>zkchat</name>
-		<contextImpl>kafeihu.zk.bserver.zkchat.context.ChatContext</contextImpl>
+		<contextImpl>kafeihu.zk.bserver.zkchat.core.ChatContext</contextImpl>
 		<active>Y</active>
 		<description></description>
 	</module>
