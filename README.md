@@ -2,8 +2,20 @@
 通用socket服务器
 ## author
 zhangkuo
-## fuction
-服务模块：
+## 功能
+### 服务模块：
 	1.SocketServerManager（Socket模块）
+	socket请求
+	配置文件为：socketserver-config.xml
 	2.MonitorManager（monitor监控模块）
+	实时监控页面Monitor.htm
 	3.ScheduleManager（定时任务模块）
+    系统后台定时任务
+    配置文件：schedule-config.xml
+### 日志文件配置log-config.xml
+可修改日志文件
+### 对象池pool-config.xml
+
+### 系统维护文件
+systemMaintenance.txt
+修改文件状态，可日志提示该系统出于维护状态。
