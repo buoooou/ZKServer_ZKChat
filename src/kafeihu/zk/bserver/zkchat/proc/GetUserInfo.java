@@ -20,7 +20,7 @@ public class GetUserInfo extends BaseProc {
     @Override
     protected Object doProc(Object reqData) throws Exception {
 
-        
+
         return null;
     }
 }
