@@ -14,6 +14,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * 基于Socket实现的Thread-per-connection模式的SocketServer服务器<br>
+ * 适用场景：<br>
+ * 1.Socket短连接 <br>
+ * 2.低客户端同时在线数量<br>
+ * 3.高客户端响应体验
  * Created by zhangkuo on 2016/11/25.
  */
 public class SocketServer implements ISocketServer{
