@@ -424,8 +424,6 @@ public class NioSocketServer implements ISocketServer{
                     m_logger.error(getClass().getName(), NioSocketServer.this
                             + " Unexpected IOException when stop : " + exp);
                 }
-                // cleanup();
-                // m_isRunning = false;
             }
         }
     }
