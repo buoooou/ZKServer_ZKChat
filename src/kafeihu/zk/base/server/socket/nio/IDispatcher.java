@@ -22,7 +22,8 @@ public interface IDispatcher {
      */
     boolean isDispatching();
     /**
-     * ֹͣ���ȷַ�����
+     *
+     *
      */
     void shutdown();
     /**
