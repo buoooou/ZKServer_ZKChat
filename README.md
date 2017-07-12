@@ -19,6 +19,7 @@ zhangkuo
      * 3.客户端响应体验要求不高
 	2.MonitorManager（monitor监控模块）
 	实时监控页面Monitor.htm
+	5s刷新一次，监控各个接口的请求量，响应时间
 	3.ScheduleManager（定时任务模块）
     系统后台定时任务
     配置文件：schedule-config.xml
