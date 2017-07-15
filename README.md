@@ -5,13 +5,13 @@ zhangkuo
 ## 功能
 ### 架构
 #### UniBase
-基础层：
+    基础层：
     包含基础工具包，通讯，日志，数据库，对象池，后台定时器，加密
 #### UniBServer
-服务层：
+    服务层：
     包含总管理器，socket服务器，monitor监控，定时任务服务器
 #### UniBServer_ZKChat
-应用层：
+    应用层：
     业务模块，处理业务逻辑
 ### 服务模块：
 	1.SocketServerManager（Socket模块）
@@ -38,5 +38,5 @@ zhangkuo
 ### 对象池pool-config.xml
 
 ### 系统维护文件
-systemMaintenance.txt
+    systemMaintenance.txt
     修改文件状态，可日志提示该系统出于维护状态。
