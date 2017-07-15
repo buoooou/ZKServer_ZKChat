@@ -6,13 +6,13 @@ zhangkuo
 ### 架构
 #### UniBase
 基础层：
-包含基础工具包，通讯，日志，数据库，对象池，后台定时器，加密
+    包含基础工具包，通讯，日志，数据库，对象池，后台定时器，加密
 #### UniBServer
 服务层：
-包含总管理器，socket服务器，monitor监控，定时任务服务器
+    包含总管理器，socket服务器，monitor监控，定时任务服务器
 #### UniBServer_ZKChat
 应用层：
-业务模块，处理业务逻辑
+    业务模块，处理业务逻辑
 ### 服务模块：
 	1.SocketServerManager（Socket模块）
 	socket请求
@@ -34,9 +34,9 @@ zhangkuo
     系统后台定时任务
     配置文件：schedule-config.xml
 ### 日志文件配置log-config.xml
-可修改日志文件
+    可修改日志文件
 ### 对象池pool-config.xml
 
 ### 系统维护文件
 systemMaintenance.txt
-修改文件状态，可日志提示该系统出于维护状态。
+    修改文件状态，可日志提示该系统出于维护状态。
