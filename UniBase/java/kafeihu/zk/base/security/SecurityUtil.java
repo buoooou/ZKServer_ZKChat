@@ -1,6 +1,5 @@
 package kafeihu.zk.base.security;
 
-import kafeihu.zk.bserver.core.config.ThreadPoolConfig;
 import kafeihu.zk.base.security.ssl.KeyManagerFactoryConfig;
 import kafeihu.zk.base.security.ssl.SSLContextConfig;
 import kafeihu.zk.base.server.socket.SocketWorkerPool;
@@ -28,43 +27,43 @@ public class SecurityUtil {
      * @return
      * @throws Exception
      */
-    public static SocketWorkerPool createSocketWorkerPool(ThreadPoolConfig poolConfig) throws Exception
-    {
-        BlockingQueue<Runnable> blockQueue = null;
-        if (poolConfig.getWorkQueueSize() > 0)
-        {
-            blockQueue = new ArrayBlockingQueue<Runnable>(poolConfig.getWorkQueueSize());
-        }
-        else
-        {
-            blockQueue = new SynchronousQueue<Runnable>();
-        }
-
-        SocketWorkerRejectedExecutionHandler handler;
-        String rejectedExecutionHandler = poolConfig.getRejectedExecutionHandler();
-        if (MiscUtil.isEmpty(rejectedExecutionHandler))
-        {
-            throw new Exception("rejectedExecutionHandler of SocketWorkerPool can not be empty");
-        }
-        else
-        {
-            Object temp = Class.forName(poolConfig.getRejectedExecutionHandler()).newInstance();
-            if (temp instanceof SocketWorkerRejectedExecutionHandler)
-            {
-                handler = (SocketWorkerRejectedExecutionHandler) temp;
-
-            }
-            else
-            {
-                throw new Exception("rejectedExecutionHandler must be instance of "
-                        + SocketWorkerRejectedExecutionHandler.class.getName());
-            }
-        }
-
-        SocketWorkerPool pool = new SocketWorkerPool(poolConfig.getCorePoolSize(), poolConfig.getMaxPoolSize(),
-                poolConfig.getKeepAliveTimeSeconds(), TimeUnit.SECONDS, blockQueue, handler);
-        return pool;
-    }
+//    public static SocketWorkerPool createSocketWorkerPool(ThreadPoolConfig poolConfig) throws Exception
+//    {
+//        BlockingQueue<Runnable> blockQueue = null;
+//        if (poolConfig.getWorkQueueSize() > 0)
+//        {
+//            blockQueue = new ArrayBlockingQueue<Runnable>(poolConfig.getWorkQueueSize());
+//        }
+//        else
+//        {
+//            blockQueue = new SynchronousQueue<Runnable>();
+//        }
+//
+//        SocketWorkerRejectedExecutionHandler handler;
+//        String rejectedExecutionHandler = poolConfig.getRejectedExecutionHandler();
+//        if (MiscUtil.isEmpty(rejectedExecutionHandler))
+//        {
+//            throw new Exception("rejectedExecutionHandler of SocketWorkerPool can not be empty");
+//        }
+//        else
+//        {
+//            Object temp = Class.forName(poolConfig.getRejectedExecutionHandler()).newInstance();
+//            if (temp instanceof SocketWorkerRejectedExecutionHandler)
+//            {
+//                handler = (SocketWorkerRejectedExecutionHandler) temp;
+//
+//            }
+//            else
+//            {
+//                throw new Exception("rejectedExecutionHandler must be instance of "
+//                        + SocketWorkerRejectedExecutionHandler.class.getName());
+//            }
+//        }
+//
+//        SocketWorkerPool pool = new SocketWorkerPool(poolConfig.getCorePoolSize(), poolConfig.getMaxPoolSize(),
+//                poolConfig.getKeepAliveTimeSeconds(), TimeUnit.SECONDS, blockQueue, handler);
+//        return pool;
+//    }
 
     /**
      * 根据SSL上下文配置，构造SSL上下文实例
