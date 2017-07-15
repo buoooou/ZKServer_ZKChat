@@ -102,7 +102,7 @@ public class BServerProcTest {
         while (true)
         {
             System.out.println();
-            System.out.println("Input prid&module to test. 'Q' or 'q' to quit!");
+            System.out.println("Input prid&module to kafeihu.zk.bserver.test. 'Q' or 'q' to quit!");
 
             System.out.print(">prid:");
             String prid = in.readLine();

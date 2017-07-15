@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>BServer错误码定义</comment>
+<entry key="BSR9999">BServer error</entry>
+<entry key="BSR1001">Module undefined</entry>
+<entry key="BSR1002">Proc undefined</entry>
+<entry key="BSR1003">Illegal client</entry>
+
+<entry key="BSR1011">Illegal request data</entry>
+<entry key="BSR1012">Illegal response data</entry>
+
+<entry key="BSR2010">No free poolable object</entry>
+<entry key="BSR2020">Borrow poolable object failed</entry>
+<entry key="BSR2021">Borrow poolable object failed(SO)</entry>
+<entry key="BSR2022">Borrow poolable object failed(IO)</entry>
+<entry key="BSR2030">Return poolable object failed</entry>
+                   
+<entry key="BSR3001">Socket server busy</entry>
+<entry key="BSR3002">Socket server abnormal</entry>
+<entry key="BSR3003">Receive socket client request failed</entry>
+<entry key="BSR3004">Send response to socket client failed</entry>
+
+<entry key="BSR4000">Communicate to As400 failed</entry>
+<entry key="BSR4001">Communicate to As400 failed(S:EX)</entry>
+<entry key="BSR4002">Communicate to As400 failed(S:SO)</entry>
+<entry key="BSR4003">Communicate to As400 failed(S:IO)</entry>
+
+<entry key="BSR4011">Communicate to As400 failed(R:EX)</entry>
+<entry key="BSR4012">Communicate to As400 failed(R:SO)</entry>
+<entry key="BSR4013">Communicate to As400 failed(R:NF)</entry>
+<entry key="BSR4014">Communicate to As400 failed(R:IO)</entry>
+
+<entry key="BSR4100">Communicate to Host390 failed</entry>
+<entry key="BSR4101">Communicate to Host390 failed(IO)</entry>
+<entry key="BSR4111">Communicate to Host390 failed(GW)</entry>
+<entry key="BSR4112">Communicate to Host390 failed(SE)</entry>
+<entry key="BSR4113">Communicate to Host390 failed(CS)</entry>
+
+</properties>

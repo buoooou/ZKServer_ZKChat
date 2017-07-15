@@ -1,4 +1,4 @@
-package kafeihu.zk.test;
+package kafeihu.zk.bserver.test;
 
 /**
  * Created by zhangkuo on 2017/5/29.

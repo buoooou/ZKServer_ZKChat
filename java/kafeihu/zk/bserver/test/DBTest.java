@@ -1,4 +1,4 @@
-package kafeihu.zk.test;
+package kafeihu.zk.bserver.test;
 
 import kafeihu.zk.bserver.manager.DBConnectionPoolManager;
 import kafeihu.zk.database.pool.DBConnectionPool;
