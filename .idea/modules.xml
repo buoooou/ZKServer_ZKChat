@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/UniBServer.iml" filepath="$PROJECT_DIR$/UniBServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UniBServer_ZKChat/UniBServer_ZKChat.iml" filepath="$PROJECT_DIR$/UniBServer_ZKChat/UniBServer_ZKChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UniBase/UniBase.iml" filepath="$PROJECT_DIR$/UniBase/UniBase.iml" />
     </modules>
   </component>
 </project>

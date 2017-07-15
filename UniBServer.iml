@@ -16,5 +16,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="UniBase" exported="" />
   </component>
 </module>

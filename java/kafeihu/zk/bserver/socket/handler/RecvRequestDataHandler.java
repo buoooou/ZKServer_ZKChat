@@ -3,7 +3,7 @@ package kafeihu.zk.bserver.socket.handler;
 import kafeihu.zk.base.server.socket.ISocketRequestHandler;
 import kafeihu.zk.bserver.core.config.GlobalConfig;
 import kafeihu.zk.bserver.core.exception.BServerException;
-import kafeihu.zk.bserver.core.exception.EarlyFinishException;
+import kafeihu.zk.base.server.socket.EarlyFinishException;
 import kafeihu.zk.bserver.core.exception.model.ErrorCodeConstants;
 import kafeihu.zk.base.logging.Logger;
 import kafeihu.zk.bserver.manager.LoggerManager;
