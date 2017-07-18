@@ -6,7 +6,7 @@
  -->
 <socketserver-config>
 	<socketServer>
-			<alias>SocketServer-NPS</alias>
+			<alias>SocketServer_ZKChat</alias>
 			<serverImpl>kafeihu.zk.bserver.socket.BSocketServer</serverImpl>
 			<serverSocket>
 				<port>8010</port>

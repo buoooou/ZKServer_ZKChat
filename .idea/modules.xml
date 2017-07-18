@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/UniBServer/UniBServer.iml" filepath="$PROJECT_DIR$/UniBServer/UniBServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/UniBServer_ZKChat.iml" filepath="$PROJECT_DIR$/UniBServer_ZKChat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/UniBServer/UniBServer_ZKChat.iml" filepath="$PROJECT_DIR$/UniBServer/UniBServer_ZKChat.iml" />
       <module fileurl="file://$PROJECT_DIR$/UniBase/UniBase.iml" filepath="$PROJECT_DIR$/UniBase/UniBase.iml" />
     </modules>
   </component>
