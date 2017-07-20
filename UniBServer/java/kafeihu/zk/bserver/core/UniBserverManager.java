@@ -12,6 +12,7 @@ import kafeihu.zk.bserver.service.ServiceManager;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.*;
+import java.util.concurrent.*;
 
 /**
  * Created by zhangkuo on 2016/11/21.
@@ -20,6 +21,12 @@ public class UniBserverManager {
 
     private final static String Config_File_Name = "bserver-config.xml";
     private final static Map<String, Class<?>> m_serviceManagers = new HashMap<String, Class<?>>();
+    private final static BlockingDeque<Runnable> startQueue=new LinkedBlockingDeque<>();
+    private final static int corePoolSize=2;
+    private final static int maximumPoolSize=5;
+    private final static long keepAliveTime=10;
+    private final static TimeUnit unit=TimeUnit.SECONDS;
+    private final static ThreadPoolExecutor startExecutor=new ThreadPoolExecutor(corePoolSize,maximumPoolSize,keepAliveTime,unit,startQueue);
     /**
      * 服务启动时间
      */
@@ -119,11 +126,41 @@ public class UniBserverManager {
      */
     private static void startServiceManager(String serviceConfig) throws Exception
     {
-        List<String> serviceManagerList = new ArrayList<String>();
+
+        List<Future<Void>> results= new ArrayList<>();
         List<String> listService = XmlUtil.getAllXmlElements("serviceManager", serviceConfig);
         for (int i = 0; i < listService.size(); i++)
         {
-            String serviceConfigData = (String) listService.get(i);
+            String serviceConfigData= (String) listService.get(i);
+            results.add(startExecutor.submit(new StartService(serviceConfigData)));
+        }
+        boolean fail=false;
+        for (Future<Void> result :results){
+            try {
+                result.get();
+            }catch (Exception e){
+                fail=true;
+                LoggerManager.getSysLogger().error("StatService failed! Reason: ", e.getMessage());
+            }
+
+        }
+        if(fail){
+            throw new Exception("StatService failed!");
+        }
+        System.out.println("StatService OK!");
+    }
+
+    private static class StartService implements Callable<Void>{
+
+        private String serviceConfigData="";
+        public StartService(String serviceConfig) {
+            this.serviceConfigData=serviceConfig;
+        }
+
+        @Override
+        public Void call() throws Exception {
+            List<String> serviceManagerList = new ArrayList<String>();
+
             String name = XmlUtil.getXmlElement("name", serviceConfigData);
             if (serviceManagerList.contains(name))
             {
@@ -145,7 +182,7 @@ public class UniBserverManager {
                         + ServiceManager.class.getName());
             }
             // 启动服务
-            System.out.print("Starting service " + description + "...... ");
+            System.out.println("Starting service " + description + "...... ");
             Method startServiceMethod = serviceManager.getMethod("startService");
             try
             {
@@ -156,7 +193,8 @@ public class UniBserverManager {
                 throw new Exception(exp.getTargetException().getMessage());
             }
             m_serviceManagers.put(name, serviceManager);
-            System.out.println("OK!");
+
+            return null;
         }
     }
 
