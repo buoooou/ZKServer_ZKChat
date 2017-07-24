@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="GBK"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-<comment>BServer错误码定义</comment>
+<comment>BServer閿欒鐮佸畾涔�</comment>
 <entry key="BSR9999">BServer error</entry>
 <entry key="BSR1001">Module undefined</entry>
 <entry key="BSR1002">Proc undefined</entry>
