@@ -21,65 +21,58 @@ public class UniBserverManager {
 
     private final static String Config_File_Name = "bserver-config.xml";
     private final static Map<String, Class<?>> m_serviceManagers = new HashMap<String, Class<?>>();
-    private final static BlockingDeque<Runnable> startQueue=new LinkedBlockingDeque<>();
-    private final static int corePoolSize=2;
-    private final static int maximumPoolSize=5;
-    private final static long keepAliveTime=10;
-    private final static TimeUnit unit=TimeUnit.SECONDS;
-    private final static ThreadPoolExecutor startExecutor=new ThreadPoolExecutor(corePoolSize,maximumPoolSize,keepAliveTime,unit,startQueue);
+    private final static BlockingDeque<Runnable> startQueue = new LinkedBlockingDeque<>();
+    private final static int corePoolSize = 2;
+    private final static int maximumPoolSize = 5;
+    private final static long keepAliveTime = 10;
+    private final static TimeUnit unit = TimeUnit.SECONDS;
+    private final static ThreadPoolExecutor startExecutor = new ThreadPoolExecutor(corePoolSize, maximumPoolSize, keepAliveTime, unit, startQueue);
     /**
      * 服务启动时间
      */
     private static long m_startUpTime = System.currentTimeMillis();
+
     /**
      * 预加载并初始化静态类
      *
      * @param preloadConfig
      * @throws Exception
      */
-    private static void preLoadClass(String preloadConfig) throws Exception
-    {
+    private static void preLoadClass(String preloadConfig) throws Exception {
         List<String> listPreloadClass = XmlUtil.getAllXmlElements("preLoadClass", preloadConfig);
-        for (String preloadClass : listPreloadClass)
-        {
-            if (!MiscUtil.isEmpty(preloadClass))
-            {
+        for (String preloadClass : listPreloadClass) {
+            if (!MiscUtil.isEmpty(preloadClass)) {
                 Class.forName(preloadClass);
             }
         }
     }
+
     /**
      * 注册系统关闭挂钩
      *
      * @param hookConfig
      * @throws Exception
      */
-    private static void registerShutdownHooks(String hookConfig) throws Exception
-    {
+    private static void registerShutdownHooks(String hookConfig) throws Exception {
         List<String> listHookThread = XmlUtil.getAllXmlElements("hookThread", hookConfig);
-        for (String hookThreadConfig : listHookThread)
-        {
+        for (String hookThreadConfig : listHookThread) {
             String impl = XmlUtil.getXmlElement("impl", hookThreadConfig);
-            if (!MiscUtil.isEmpty(impl))
-            {
+            if (!MiscUtil.isEmpty(impl)) {
                 Thread hookThread = null;
-                try
-                {
+                try {
                     Class<?> hookClazz = Class.forName(impl);
                     hookThread = (Thread) hookClazz.newInstance();
                     Method setParamMethod = hookClazz.getMethod("setParams", String.class);
                     setParamMethod.invoke(hookThread, hookThreadConfig);
+                } catch (NoSuchMethodException nsme) {
                 }
-                catch (NoSuchMethodException nsme)
-                {
-                }
-                if (null != hookThread)
-                {
+                if (null != hookThread) {
                     Runtime.getRuntime().addShutdownHook(hookThread);
                 }
             }
         }
     }
+
     /**
      * 服务启动
      */
@@ -111,50 +104,50 @@ public class UniBserverManager {
         // 活跃模块名记日志
         logActiveModule();
 
-        LoggerManager.getSysLogger().info(ContextManager.getApplicationContext().getApplicationName(), "System started"+System.getProperty("line.separator"));
+        LoggerManager.getSysLogger().info(ContextManager.getApplicationContext().getApplicationName(), "System started" + System.getProperty("line.separator"));
         // 写启动日志到文件
         LoggerManager.getSysLogger().flush();
 
         m_startUpTime = System.currentTimeMillis();
 
     }
+
     /**
      * 启动BServer相关服务管理器
      *
      * @param serviceConfig
      * @throws Exception
      */
-    private static void startServiceManager(String serviceConfig) throws Exception
-    {
+    private static void startServiceManager(String serviceConfig) throws Exception {
 
-        List<Future<Void>> results= new ArrayList<>();
+        List<Future<Void>> results = new ArrayList<>();
         List<String> listService = XmlUtil.getAllXmlElements("serviceManager", serviceConfig);
-        for (int i = 0; i < listService.size(); i++)
-        {
-            String serviceConfigData= (String) listService.get(i);
+        for (int i = 0; i < listService.size(); i++) {
+            String serviceConfigData = (String) listService.get(i);
             results.add(startExecutor.submit(new StartService(serviceConfigData)));
         }
-        boolean fail=false;
-        for (Future<Void> result :results){
+        boolean fail = false;
+        for (Future<Void> result : results) {
             try {
                 result.get();
-            }catch (Exception e){
-                fail=true;
+            } catch (Exception e) {
+                fail = true;
                 LoggerManager.getSysLogger().error("StatService failed! Reason: ", e.getMessage());
             }
 
         }
-        if(fail){
+        if (fail) {
             throw new Exception("StatService failed!");
         }
         System.out.println("StatService OK!");
     }
 
-    private static class StartService implements Callable<Void>{
+    private static class StartService implements Callable<Void> {
 
-        private String serviceConfigData="";
+        private String serviceConfigData = "";
+
         public StartService(String serviceConfig) {
-            this.serviceConfigData=serviceConfig;
+            this.serviceConfigData = serviceConfig;
         }
 
         @Override
@@ -162,13 +155,11 @@ public class UniBserverManager {
             List<String> serviceManagerList = new ArrayList<String>();
 
             String name = XmlUtil.getXmlElement("name", serviceConfigData);
-            if (serviceManagerList.contains(name))
-            {
+            if (serviceManagerList.contains(name)) {
                 throw new Exception("duplicate serviceManager defined with name=" + name);
             }
             String description = XmlUtil.getXmlElement("description", serviceConfigData);
-            if (MiscUtil.isEmpty(description))
-            {
+            if (MiscUtil.isEmpty(description)) {
                 description = name;
             }
             String serviceManagerName = XmlUtil.getXmlElement("class", serviceConfigData);
@@ -176,20 +167,16 @@ public class UniBserverManager {
 
             Class<?> serviceManager = Class.forName(serviceManagerName);
             // 判断是否是ServiceManager子类
-            if (!ServiceManager.class.isAssignableFrom(serviceManager))
-            {
+            if (!ServiceManager.class.isAssignableFrom(serviceManager)) {
                 throw new Exception(serviceManagerName + " is not type of "
                         + ServiceManager.class.getName());
             }
             // 启动服务
             System.out.println("Starting service " + description + "...... ");
             Method startServiceMethod = serviceManager.getMethod("startService");
-            try
-            {
+            try {
                 startServiceMethod.invoke(serviceManager);
-            }
-            catch (InvocationTargetException exp)
-            {
+            } catch (InvocationTargetException exp) {
                 throw new Exception(exp.getTargetException().getMessage());
             }
             m_serviceManagers.put(name, serviceManager);
@@ -201,53 +188,46 @@ public class UniBserverManager {
     /**
      * 停止BServer服务管理器
      */
-    private static void stopServiceManager()
-    {
+    private static void stopServiceManager() {
         Collection<Class<?>> serviceManagerCls = m_serviceManagers.values();
-        for (Class<?> serviceManagerClazz : serviceManagerCls)
-        {
-            try
-            {
+        for (Class<?> serviceManagerClazz : serviceManagerCls) {
+            try {
                 Method stopServiceMethod = serviceManagerClazz.getMethod("stopService");
                 stopServiceMethod.invoke(serviceManagerClazz);
-            }
-            catch (Exception exp)
-            {
+            } catch (Exception exp) {
             }
         }
     }
-    private static void logActiveModule()
-    {
+
+    private static void logActiveModule() {
         StringBuilder sb = new StringBuilder();
         List<String> activeModuleName = ModuleManager.getModuleName();
-        for (String moduleName : activeModuleName)
-        {
+        for (String moduleName : activeModuleName) {
             sb.append(moduleName).append(", ");
         }
         String activeModules = sb.toString();
         int index = activeModules.lastIndexOf(",");
-        if(index > 0)
-        {
+        if (index > 0) {
             activeModules = activeModules.substring(0, index);
         }
         System.out.println("Active module: " + activeModules);
         LoggerManager.getSysLogger().info("Active module: ", activeModules);
 
     }
+
     /**
      * 返回网关服务启动时间
+     *
      * @return
      */
-    public static long getStartTime()
-    {
+    public static long getStartTime() {
         return m_startUpTime;
     }
 
     /**
      * 停止BServer服务
      */
-    public static void stop()
-    {
+    public static void stop() {
         // 停止服务管理器
         stopServiceManager();
     }
