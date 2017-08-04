@@ -14,7 +14,6 @@ import java.util.Date;
 import java.util.List;
 
 /**
- *
  * Created by zhangkuo on 2017/6/9.
  */
 public class BServerMonitor {
@@ -22,33 +21,25 @@ public class BServerMonitor {
     private String serverIp = "127.0.0.1";
     private int serverPort = 8010;
     private int loopSeconds = 5;
-    private String outputFileName =  "";
+    private String outputFileName = "";
 
     public BServerMonitor(String serverIp, int serverPort, int loopSeconds,
-                          String outputFileName)
-    {
+                          String outputFileName) {
         this.serverIp = serverIp;
         this.serverPort = serverPort;
         this.loopSeconds = loopSeconds;
         this.outputFileName = outputFileName;
     }
 
-    public void start()
-    {
-        Runnable worker = new Runnable()
-        {
+    public void start() {
+        Runnable worker = new Runnable() {
             @Override
-            public void run()
-            {
-                while (true)
-                {
-                    try
-                    {
+            public void run() {
+                while (true) {
+                    try {
                         Thread.sleep(loopSeconds * 1000);
                         getStatInfo();
-                    }
-                    catch (Exception exp)
-                    {
+                    } catch (Exception exp) {
                         System.out.println(exp.getMessage());
                     }
                 }
@@ -63,16 +54,14 @@ public class BServerMonitor {
      *
      * @throws Exception
      */
-    public void getStatInfo() throws Exception
-    {
+    public void getStatInfo() throws Exception {
         BServerSocketClient client = new BServerSocketClient(serverIp,
                 serverPort, 2000);
         client.setModuleName("monitor");
         client.setProcId("GetStatData");
 
         byte[] respData = client.sendRecv("getstatdata".getBytes());
-        if (respData[0] == '\1')
-        {// 处理成功
+        if (respData[0] == '\1') {// 处理成功
             String statData = new String(respData).substring(1);
 
             // 输出统计信息
@@ -80,9 +69,7 @@ public class BServerMonitor {
 
             // 输出为Html文件
             dump2Html(parseStatInfo2Html(statData));
-        }
-        else
-        {
+        } else {
             System.out.println("GetStatistics Failed! Recv:"
                     + new String(respData).substring(1));
         }
@@ -94,8 +81,7 @@ public class BServerMonitor {
      * @param xmlStatData
      * @return
      */
-    private String parseStatInfo2Html(String xmlStatData)
-    {
+    private String parseStatInfo2Html(String xmlStatData) {
         StringBuilder sb = new StringBuilder();
         sb.append("<html><head><title>UniBServer[");
         sb.append(serverIp).append(":").append(serverPort);
@@ -172,11 +158,9 @@ public class BServerMonitor {
 
         List<String> listxmlStat = XmlUtil.getAllXmlElements("statistics",
                 xmlStatData);
-        for (String xmlStatItem : listxmlStat)
-        {
+        for (String xmlStatItem : listxmlStat) {
             String type = XmlUtil.getXmlElement("type", xmlStatItem);
-            if (type.equalsIgnoreCase(IStatistics.StatType_SocketServer))
-            {
+            if (type.equalsIgnoreCase(IStatistics.StatType_SocketServer)) {
                 sbSocketServer.append("<tr bgcolor='#F4F3EE'>");
                 // SocketServer别名
                 sbSocketServer.append("<td>")
@@ -203,9 +187,7 @@ public class BServerMonitor {
                         .append(XmlUtil.getXmlElement("rct", xmlStatItem))
                         .append("</td>");
                 sbSocketServer.append("</tr>");
-            }
-            else if (type.equalsIgnoreCase(IStatistics.StatType_Proc))
-            {
+            } else if (type.equalsIgnoreCase(IStatistics.StatType_Proc)) {
                 sbProc.append("<tr bgcolor='#F4F3EE'>");
                 // 模块名
                 sbProc.append("<td>")
@@ -234,13 +216,10 @@ public class BServerMonitor {
                         .getXmlElement("mct", xmlStatItem)));
 
                 sbProc.append("<td>").append(succCnt).append("</td>");
-                if (succCnt > 0)
-                {
+                if (succCnt > 0) {
                     sbProc.append("<td>").append(totalCostMills / succCnt)
                             .append("</td>");
-                }
-                else
-                {
+                } else {
                     sbProc.append("<td>").append(totalCostMills)
                             .append("</td>");
                 }
@@ -254,9 +233,7 @@ public class BServerMonitor {
                         .append(XmlUtil.getXmlElement("fn", xmlStatItem))
                         .append("</td>");
                 sbProc.append("</tr>");
-            }
-            else if (type.equalsIgnoreCase(IStatistics.StatType_ObjectPool))
-            {
+            } else if (type.equalsIgnoreCase(IStatistics.StatType_ObjectPool)) {
                 sbObjectPool.append("<tr bgcolor='#F4F3EE'>");
                 sbObjectPool.append("<td>")
                         .append(XmlUtil.getXmlElement("alias", xmlStatItem))
@@ -277,9 +254,7 @@ public class BServerMonitor {
                         .append(XmlUtil.getXmlElement("max", xmlStatItem))
                         .append("</td>");
                 sbObjectPool.append("</tr>");
-            }
-            else if (type.equalsIgnoreCase(IStatistics.StatType_DBConnPool))
-            {
+            } else if (type.equalsIgnoreCase(IStatistics.StatType_DBConnPool)) {
                 sbDBConnPool.append("<tr bgcolor='#F4F3EE'>");
                 sbDBConnPool.append("<td>")
                         .append(XmlUtil.getXmlElement("alias", xmlStatItem))
@@ -307,9 +282,7 @@ public class BServerMonitor {
                         .append(XmlUtil.getXmlElement("max", xmlStatItem))
                         .append("</td>");
                 sbDBConnPool.append("</tr>");
-            }
-            else
-            {
+            } else {
 
             }
         }
@@ -346,15 +319,13 @@ public class BServerMonitor {
         sbCommData.append("<td bgcolor='#DFDFDF'>最大耗时发生时间</td>");
         sbCommData.append("</tr>");
 
-        String commStatData = XmlUtil.getXmlElement("HostCommData",xmlStatData);
+        String commStatData = XmlUtil.getXmlElement("HostCommData", xmlStatData);
 
         String[] commDataArray = commStatData.split(",");
 
-        for (String commData : commDataArray)
-        {
+        for (String commData : commDataArray) {
             String[] dataArray = commData.split("\\|");
-            if(dataArray.length >=9)
-            {
+            if (dataArray.length >= 9) {
                 sbCommData.append("<tr bgcolor='#F4F3EE'>");
                 sbCommData.append("<td>").append(dataArray[0]).append("</td>");
                 sbCommData.append("<td>").append(dataArray[4]).append("</td>");
@@ -363,7 +334,7 @@ public class BServerMonitor {
                 sbCommData.append("<td>").append(dataArray[2]).append("</td>");
 
                 long execCount = MiscUtil.parseLong(dataArray[4], 1);
-                if(execCount<=0) execCount = 1;
+                if (execCount <= 0) execCount = 1;
                 long totalCostMills = MiscUtil.parseLong(dataArray[6], 1);
                 sbCommData.append("<td>").append(totalCostMills / execCount).append("</td>");
                 sbCommData.append("<td>").append(dataArray[7]).append("</td>");
@@ -396,13 +367,11 @@ public class BServerMonitor {
                 xmlStatData);
 
 
-        for (String xmlSqlPerf : listxmlSqlPerf)
-        {
+        for (String xmlSqlPerf : listxmlSqlPerf) {
 
             String xmlData = XmlUtil.getXmlElement("data", xmlSqlPerf);
             String[] dataArray = xmlData.split("\\|");
-            if (dataArray.length >= 4)
-            {
+            if (dataArray.length >= 4) {
                 sbSqlPerf.append("<tr bgcolor='#F4F3EE'>");
                 sbSqlPerf.append("<td>")
                         .append(XmlUtil.getXmlElement("sql", xmlSqlPerf))
@@ -439,15 +408,12 @@ public class BServerMonitor {
 
         List<String> listxmlSqlExp = XmlUtil.getAllXmlElements("sqlExpMon",
                 xmlStatData);
-        for (String xmlSqlExp : listxmlSqlExp)
-        {
+        for (String xmlSqlExp : listxmlSqlExp) {
             String dbname = XmlUtil.getXmlElement("dbname", xmlSqlExp);
-            List<String> listSqlException = XmlUtil.getAllXmlElements("sqlException",xmlSqlExp);
-            for (String sqlExp : listSqlException)
-            {
+            List<String> listSqlException = XmlUtil.getAllXmlElements("sqlException", xmlSqlExp);
+            for (String sqlExp : listSqlException) {
                 String[] dataArray = sqlExp.split("\\|");
-                if (dataArray.length >= 4)
-                {
+                if (dataArray.length >= 4) {
                     sbExpMon.append("<tr bgcolor='#F4F3EE'>");
                     sbExpMon.append("<td>")
                             .append(dbname)
@@ -477,17 +443,13 @@ public class BServerMonitor {
      *
      * @param htmSrc
      */
-    private void dump2Html(String htmSrc)
-    {
-        try
-        {
+    private void dump2Html(String htmSrc) {
+        try {
             BufferedWriter out = new BufferedWriter(new FileWriter(
                     outputFileName));
             out.write(htmSrc);
             out.close();
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
