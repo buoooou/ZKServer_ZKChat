@@ -24,7 +24,7 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  * Created by zhangkuo on 2017/6/11.
  */
-public class ObjectPoolManager {
+public final class ObjectPoolManager {
 
     /**
      * 配置文件

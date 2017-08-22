@@ -18,7 +18,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * 应用程序上下文。应用启动后，通过该类获取应用相关信息
  * Created by zhangkuo on 2016/11/24.
  */
-public class ContextManager {
+public final class ContextManager {
     /**
      * 配置文件名
      */

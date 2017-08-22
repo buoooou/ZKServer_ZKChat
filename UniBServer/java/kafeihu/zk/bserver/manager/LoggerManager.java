@@ -20,7 +20,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * Created by zhangkuo on 2016/11/21.
  *
  */
-public class LoggerManager {
+public final class LoggerManager {
 
     /**
      * 系统日志处理器实例

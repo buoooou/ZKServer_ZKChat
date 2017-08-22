@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by zhangkuo on 2016/11/21.
  */
-public class ModuleManager {
+public final class ModuleManager {
 
     /**
      * 配置文件名

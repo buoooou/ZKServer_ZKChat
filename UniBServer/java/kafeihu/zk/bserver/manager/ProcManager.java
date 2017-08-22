@@ -22,7 +22,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * 业务处理类管理器，负责加载、解析、定位业务处理类
  * Created by zhangkuo on 2016/11/25.
  */
-public class ProcManager {
+public final class ProcManager {
     private final static String Config_File_Name = "proc-config.xml";
 
     private final static String Scope_Singleton = "singleton";

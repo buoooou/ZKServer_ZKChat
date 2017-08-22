@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
  *
  * Created by zhangkuo on 2017/6/11.
  */
-public class ExecutorManager {
+public final class ExecutorManager {
     /**
      * 配置文件
      */

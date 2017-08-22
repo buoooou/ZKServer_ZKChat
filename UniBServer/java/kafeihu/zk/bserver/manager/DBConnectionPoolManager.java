@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Created by zhangkuo on 2016/11/22.
  */
-public class DBConnectionPoolManager {
+public final class DBConnectionPoolManager {
 
     /**
      * 配置文件
