@@ -6,6 +6,7 @@ import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 
@@ -64,19 +65,18 @@ public class Dom4jXMLUtil {
      */
     public static String getOriginalXmlElement(String strElementName, String strSource, String strDefaultValue)
     {
-        String strHead = "<" + strElementName + ">";
-        String strTail = "</" + strElementName + ">";
-
-        int iHeadPos = strSource.indexOf(strHead);
-        int iTailPos = strSource.indexOf(strTail);
-        if (iHeadPos == -1 || iTailPos == -1)
-        {
+        Document document = null;
+        try {
+            document = DocumentHelper.parseText(strSource);
+        } catch (DocumentException e) {
             return strDefaultValue;
         }
-
-        int iHeadSize = strHead.length();
-        String strElementValue = strSource.substring(iHeadPos + iHeadSize, iTailPos);
-        return strElementValue;
+        Element root = document.getRootElement();
+        String value=root.element(strElementName).getText();
+        if(value.isEmpty()){
+            return strDefaultValue;
+        }
+        return value;
     }
 
     /**
@@ -89,26 +89,17 @@ public class Dom4jXMLUtil {
     public static List<String> getAllXmlElements(String strElementName, String strSource)
     {
         List<String> listElem = new ArrayList<String>();
-        String strHead = "<" + strElementName + ">";
-        String strTail = "</" + strElementName + ">";
-        int iHeadLen = strHead.length();
-        int iTailLen = strTail.length();
-        while (true)
-        {
-            int iHeadPos = strSource.indexOf(strHead);
-            if (iHeadPos == -1)
-            {
-                break;
-            }
+        Document document = null;
+        try {
+            document = DocumentHelper.parseText(strSource);
+        } catch (DocumentException e) {
 
-            int iTailPos = strSource.indexOf(strTail);
-            if (iTailPos == -1)
-            {
-                break;
-            }
-            String strElement = strSource.substring(iHeadPos + iHeadLen, iTailPos);
-            listElem.add(strElement.trim());
-            strSource = strSource.substring(iTailPos + iTailLen);
+        }
+        Element root = document.getRootElement();
+        List<Element> list= root.elements(strElementName);
+
+        for (Element element : list){
+            listElem.add(element.getTextTrim());
         }
         return listElem;
     }
@@ -121,39 +112,19 @@ public class Dom4jXMLUtil {
      */
     public static List<String> getAllXmlElementName(String strSource)
     {
-        List<String> listElemName = new ArrayList<String>();
-        if (null != strSource)
-        {
-            while (true)
-            {
-                int iStartPos = strSource.indexOf('<');
-                if (iStartPos == -1)
-                {
-                    break;
-                }
-                int iEndPos = strSource.indexOf('>', iStartPos);
-                if (iEndPos == -1)
-                {
-                    break;
-                }
+        List<String> listElem = new ArrayList<String>();
+        Document document = null;
+        try {
+            document = DocumentHelper.parseText(strSource);
+        } catch (DocumentException e) {
 
-                if (strSource.charAt(iStartPos + 1) == '!')
-                {// 注释
-                    strSource = strSource.substring(iEndPos);
-                    continue;
-                }
-                String strElemName = strSource.substring(iStartPos + 1, iEndPos);
-                String strEndXmlTag = "</" + strElemName + ">";
-                int iEndTagPos = strSource.indexOf(strEndXmlTag);
-                if (iEndTagPos == -1)
-                {
-                    break;
-                }
-                listElemName.add(strElemName);
-                strSource = strSource.substring(iEndTagPos + strEndXmlTag.length());
-            }
         }
-        return listElemName;
+        Element root = document.getRootElement();
+        for(Iterator it = root.elementIterator(); it.hasNext();){
+            Element element = (Element) it.next();
+            listElem.add(element.getName());
+        }
+        return listElem;
     }
 
     /**
