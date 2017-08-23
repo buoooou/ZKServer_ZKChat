@@ -105,8 +105,8 @@ public class ChatContext extends ModuleContext {
     {
         try
         {
-            typeConfig = new TypeConfig();
-            typeConfig.loadConfig(path);
+//            typeConfig = new TypeConfig();
+//            typeConfig.loadConfig(path);
         }
         catch (Exception exp)
         {
