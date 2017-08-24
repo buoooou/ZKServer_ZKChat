@@ -1,6 +1,6 @@
 package kafeihu.zk.bserver.monitor.proc;
 
-import kafeihu.zk.bserver.core.UniBserverManager;
+import kafeihu.zk.bserver.core.BserverManager;
 
 import java.net.InetAddress;
 
@@ -20,7 +20,7 @@ public class GetStatistics extends MonitorProc {
         StringBuilder sb = new StringBuilder();
         //sb.append("<timeStamp>").append(MiscUtil.getTimestamp()).append("</timeStamp>");
         //网关服务启动时间
-        sb.append("<sut>").append(UniBserverManager.getStartTime()).append("</sut>");
+        sb.append("<sut>").append(BserverManager.getStartTime()).append("</sut>");
         //系统当前时间
         sb.append("<st>").append(System.currentTimeMillis()).append("</st>");
 //        List<Object> statDataList = StatisticsManager.getStaticticsData();

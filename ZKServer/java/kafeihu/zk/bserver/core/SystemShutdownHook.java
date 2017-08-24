@@ -25,7 +25,7 @@ public class SystemShutdownHook extends Thread{
     protected void doShutdownProc()
     {
         // 停止BServer服务
-        UniBserverManager.stop();
+        BserverManager.stop();
 
         //停止资源池
         ObjectPoolManager.stopObjectPool();

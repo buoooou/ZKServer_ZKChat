@@ -1,11 +1,9 @@
 package kafeihu.zk.bserver.monitor.proc;
 
 import kafeihu.zk.base.util.MiscUtil;
-import kafeihu.zk.bserver.core.UniBserverManager;
+import kafeihu.zk.bserver.core.BserverManager;
 import kafeihu.zk.bserver.proc.ResponseData;
 import kafeihu.zk.bserver.proc.base.BaseProc;
-
-import java.util.List;
 
 /**
  * Created by zhangkuo on 2017/6/9.
@@ -23,7 +21,7 @@ public class GetStatData extends BaseProc {
         StringBuilder sb = new StringBuilder();
         sb.append("<timeStamp>").append(MiscUtil.getTimestamp()).append("</timeStamp>");
         // 网关服务启动时间
-        sb.append("<sut>").append(UniBserverManager.getStartTime())
+        sb.append("<sut>").append(BserverManager.getStartTime())
                 .append("</sut>");
         // 系统当前时间
         sb.append("<st>").append(System.currentTimeMillis()).append("</st>");

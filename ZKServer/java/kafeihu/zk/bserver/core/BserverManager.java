@@ -17,7 +17,7 @@ import java.util.concurrent.*;
 /**
  * Created by zhangkuo on 2016/11/21.
  */
-public class UniBserverManager {
+public class BserverManager {
 
     private final static String Config_File_Name = "bserver-config.xml";
     private final static Map<String, Class<?>> m_serviceManagers = new HashMap<String, Class<?>>();
