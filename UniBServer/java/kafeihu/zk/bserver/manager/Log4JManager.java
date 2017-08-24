@@ -12,7 +12,7 @@ public final class Log4JManager {
 
     private static Logger m_monitorLogger = Logger.getLogger("MONITORLOG");
     private static Logger m_zkchatLogger = Logger.getLogger("ZKCHATLOG");
-    private static SysLogger m_sysLogger = new SysLogger();
+    private static Logger m_sysLogger = Logger.getLogger("SYSLOG");
 
     static
     {
@@ -41,7 +41,7 @@ public final class Log4JManager {
      *
      * @return
      */
-    public static SysLogger getSysLogger() {
+    public static Logger getSysLogger() {
 
         return m_sysLogger;
     }
