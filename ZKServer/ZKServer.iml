@@ -7,8 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="UniBase" exported="" />
-    <orderEntry type="module" module-name="UniDB" exported="" />
+    <orderEntry type="module" module-name="ZKBase" exported="" />
+    <orderEntry type="module" module-name="ZKDB" exported="" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
