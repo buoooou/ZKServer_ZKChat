@@ -15,9 +15,16 @@ import java.util.Properties;
  */
 public class Dom4jXMLUtil {
 
-    public static void main(String[] args) {
-        String str="<a><b>dddd</b></a>";
-        System.out.println(getXmlElement(str,"b"));
+    public static void main(String[] args) throws DocumentException {
+        String str="<csdn> <java>Java班</java></csdn>";
+        System.out.println(getXmlElement(str,"java"));
+
+
+        String text = "<csdn> <java>Java班</java></csdn>";
+        Document document = DocumentHelper.parseText(text);
+        Element root = document.getRootElement();
+        String value=root.element("java").getTextTrim();
+        System.out.println(value);
     }
 
     /**
@@ -42,18 +49,17 @@ public class Dom4jXMLUtil {
      * @return
      */
     public static String getXmlElement(String strElementName, String strSource, String strDefaultValue) {
-        Document document = null;
         try {
-            document = DocumentHelper.parseText(strSource);
+            Document document = DocumentHelper.parseText(strSource);
+            Element root = document.getRootElement();
+            String value=root.element(strElementName).getTextTrim();
+            if(value.isEmpty()){
+                return strDefaultValue;
+            }
+            return value;
         } catch (DocumentException e) {
             return strDefaultValue;
         }
-        Element root = document.getRootElement();
-        String value=root.element(strElementName).getTextTrim();
-        if(value.isEmpty()){
-            return strDefaultValue;
-        }
-        return value;
     }
 
     /**
@@ -120,8 +126,8 @@ public class Dom4jXMLUtil {
 
         }
         Element root = document.getRootElement();
-        for(Iterator it = root.elementIterator(); it.hasNext();){
-            Element element = (Element) it.next();
+        for(Iterator it = root.elementIterator(); it.hasNext();) {
+            Element element = (Element) it.next();
             listElem.add(element.getName());
         }
         return listElem;
