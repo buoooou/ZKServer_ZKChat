@@ -1,6 +1,6 @@
 package kafeihu.zk.bserver.console;
 
-import kafeihu.zk.bserver.core.UniBserverManager;
+import kafeihu.zk.bserver.core.BserverManager;
 
 /**
  * Server服务器启动入口
@@ -12,7 +12,7 @@ public class Bserver {
     public static void main(String[] args) throws Exception {
 
         System.out.println("Unibserver start...");
-        UniBserverManager.start();
+        BserverManager.start();
         System.out.println("Unibserver started!");
 
 
