@@ -1,6 +1,5 @@
 package kafeihu.zk.bserver.manager;
 
-import kafeihu.zk.base.logging.log4j.SysLogger;
 import kafeihu.zk.base.util.ResourceUtil;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
