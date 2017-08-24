@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/UniBServer/UniBServer.iml" filepath="$PROJECT_DIR$/UniBServer/UniBServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/UniBServer_ZKChat.iml" filepath="$PROJECT_DIR$/UniBServer_ZKChat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/UniBase/UniBase.iml" filepath="$PROJECT_DIR$/UniBase/UniBase.iml" />
-      <module fileurl="file://$PROJECT_DIR$/UniDB/UniDB.iml" filepath="$PROJECT_DIR$/UniDB/UniDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZKBase/ZKBase.iml" filepath="$PROJECT_DIR$/ZKBase/ZKBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZKDB/UniDB.iml" filepath="$PROJECT_DIR$/ZKDB/UniDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZKServer/UniBServer.iml" filepath="$PROJECT_DIR$/ZKServer/UniBServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZKServer_ZKChat.iml" filepath="$PROJECT_DIR$/ZKServer_ZKChat.iml" />
     </modules>
   </component>
 </project>
