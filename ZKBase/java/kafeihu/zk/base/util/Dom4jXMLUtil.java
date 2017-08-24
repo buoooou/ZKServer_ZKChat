@@ -19,7 +19,6 @@ public class Dom4jXMLUtil {
         String str="<csdn> <java>Java班</java></csdn>";
         System.out.println(getXmlElement(str,"java"));
 
-
         String text = "<csdn> <java>Java班</java></csdn>";
         Document document = DocumentHelper.parseText(text);
         Element root = document.getRootElement();
