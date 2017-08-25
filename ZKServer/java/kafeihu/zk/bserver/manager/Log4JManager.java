@@ -12,6 +12,7 @@ public final class Log4JManager {
     private static Logger m_monitorLogger = Logger.getLogger("MONITORLOG");
     private static Logger m_zkchatLogger = Logger.getLogger("ZKCHATLOG");
     private static Logger m_sysLogger = Logger.getLogger("SYSLOG");
+    private static Logger m_consoleLogger = Logger.getLogger("CONSOLE");
 
     static
     {
@@ -62,5 +63,15 @@ public final class Log4JManager {
     {
         return m_monitorLogger;
     }
+    /**
+     * 获取指定模块关联的日志处理器
+     *
+     * @return
+     */
+    public static Logger getConsoleLogger()
+    {
+        return m_consoleLogger;
+    }
+
 }
 
