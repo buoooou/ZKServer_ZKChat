@@ -38,9 +38,9 @@ public final class ContextManager {
     {
         try
         {
-            System.out.print("Initializing ContextManager...... ");
+            Log4JManager.getConsoleLogger().info("Initializing ContextManager......");
             initialize();
-            System.out.println("OK!");
+            Log4JManager.getConsoleLogger().info("Initializing ContextManager OK!");
         }
         catch (Exception exp)
         {

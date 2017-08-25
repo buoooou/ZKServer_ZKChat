@@ -9,6 +9,6 @@ public class TestLog {
 
     public static void main(String[] args) {
 
-       // Log4JManager.getSysLogger().info("测试 系统日志");
+        Log4JManager.getConsoleLogger().info("测试 系统日志");
     }
 }

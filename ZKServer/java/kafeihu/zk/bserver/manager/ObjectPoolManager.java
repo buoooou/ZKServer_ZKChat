@@ -45,9 +45,9 @@ public final class ObjectPoolManager {
     {
         try
         {
-            System.out.print("Initializing ObjectPoolManager...... ");
+            Log4JManager.getConsoleLogger().info("Initializing ObjectPoolManager...... ");
             initialize();
-            System.out.println("OK!");
+            Log4JManager.getConsoleLogger().info("Initializing ObjectPoolManager OK!");
         }
         catch (Exception exp)
         {

@@ -32,10 +32,10 @@ public final class DBConnectionPoolManager {
     {
         try
         {
-            System.out.print("Initializing DBConnectionPoolManager...... ");
+            Log4JManager.getConsoleLogger().info("Initializing DBConnectionPoolManager...... ");
             initialize();
             logPoolInfo();
-            System.out.println("OK!");
+            Log4JManager.getConsoleLogger().info("Initializing DBConnectionPoolManager OK!");
         }
         catch (Exception exp)
         {

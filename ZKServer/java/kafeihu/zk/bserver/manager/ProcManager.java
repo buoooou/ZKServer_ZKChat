@@ -35,9 +35,9 @@ public final class ProcManager {
     {
         try
         {
-            System.out.print("Initializing ProcManager...... ");
+            Log4JManager.getConsoleLogger().info("Initializing ProcManager...... ");
             initialize();
-            System.out.println("OK!");
+            Log4JManager.getConsoleLogger().info("Initializing ProcManager OK!");
         }
         catch (Exception exp)
         {

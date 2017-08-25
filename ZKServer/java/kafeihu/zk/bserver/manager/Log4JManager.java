@@ -18,9 +18,9 @@ public final class Log4JManager {
     {
         try
         {
-            System.out.print("Initializing Log4JManager...... ");
+            //Log4JManager.getConsoleLogger().info("Initializing Log4JManager......");
             initialize();
-            System.out.println("Log4JManager OK!");
+           // Log4JManager.getConsoleLogger().info("Log4JManager OK!");
         }
         catch (Exception exp)
         {
