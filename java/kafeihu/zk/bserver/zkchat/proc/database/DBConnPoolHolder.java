@@ -1,7 +1,6 @@
 package kafeihu.zk.bserver.zkchat.proc.database;
 
 import kafeihu.zk.bserver.manager.DBConnectionPoolManager;
-import kafeihu.zk.bserver.manager.Log4JManager;
 import kafeihu.zk.bserver.zkchat.core.ZKChatErrorCode;
 import kafeihu.zk.bserver.zkchat.core.ZKChatException;
 import kafeihu.zk.database.pool.DBConnectionPool;

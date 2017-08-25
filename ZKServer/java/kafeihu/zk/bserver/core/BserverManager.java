@@ -5,7 +5,6 @@ import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
 import kafeihu.zk.bserver.manager.ContextManager;
-import kafeihu.zk.bserver.manager.Log4JManager;
 import kafeihu.zk.bserver.manager.LoggerManager;
 import kafeihu.zk.bserver.manager.ModuleManager;
 import kafeihu.zk.bserver.service.ServiceManager;

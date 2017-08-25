@@ -1,7 +1,5 @@
 package kafeihu.zk.bserver.test;
 
-import kafeihu.zk.bserver.manager.Log4JManager;
-
 /**
  * Created by zhangkuo on 2017/8/23.
  */

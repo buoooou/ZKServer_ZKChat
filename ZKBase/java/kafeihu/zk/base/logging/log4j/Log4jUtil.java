@@ -1,6 +1,5 @@
-package kafeihu.zk.bserver.manager;
+package kafeihu.zk.base.logging.log4j;
 
-import kafeihu.zk.base.logging.log4j.Log4jUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -8,7 +7,7 @@ import org.apache.log4j.PropertyConfigurator;
 /**
  * Created by zhangkuo on 2017/8/25.
  */
-public class Log4JManager {
+public final class Log4jUtil {
 
     private static Logger m_monitorLogger = Logger.getLogger("MONITORLOG");
     private static Logger m_zkchatLogger = Logger.getLogger("ZKCHATLOG");
@@ -62,4 +61,5 @@ public class Log4JManager {
     public static Logger getConsoleLogger() {
         return m_consoleLogger;
     }
+
 }

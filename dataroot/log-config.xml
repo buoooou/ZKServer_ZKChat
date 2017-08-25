@@ -1,9 +1,12 @@
 <!-- 日志配置文件
+logType log4j,zklog
 logLevel记录日志级别
 logBinding 绑定日志处理
 logHandler 日志处理器
 -->
 <log-config>
+
+		<logType>log4j</logType>
 
 		<logLevel>debug</logLevel>
 
