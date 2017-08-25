@@ -53,30 +53,23 @@ public final class LoggerManager {
         String sysLogPath = ResourceUtil.getSysLogPath();
         String sysLogConfigData = ResourceUtil.getSysDataResourceContent(Config_File_Name);
 
-        String logType = XmlUtil.getXmlElement("logType", sysLogConfigData);
+        // 初始化系统日志类
+        m_sysLogger = initialize(sysLogPath, sysLogConfigData);
 
-        if (logType.toLowerCase().equals("log4j")) {
-            loggerType = LoggerType.LOG4J;
-        } else {
-            loggerType = LoggerType.ZKLOG;
-            // 初始化系统日志类
-            m_sysLogger = initialize(sysLogPath, sysLogConfigData);
-
-            List<String> moduleNameList = ModuleManager.getModuleName();
-            for (String moduleName : moduleNameList) {
-                // 如果模块内没有日志配置文件，取系统日志配置
-                String moduleLogConfigData = sysLogConfigData;
-                if (ResourceUtil.isModuleDataResourceExists(moduleName, Config_File_Name)) {
-                    moduleLogConfigData = ResourceUtil.getModuleDataResourceContent(moduleName,
-                            Config_File_Name);
-                }
-                // 模块日志路径
-                String moduleLogPath = ResourceUtil.getModuleLogPath(moduleName);
-                // 初始化模块日志类
-                Logger moduleLogger = initialize(moduleLogPath, moduleLogConfigData);
-                m_moduleLoggerMap.put(moduleName, moduleLogger);
-
+        List<String> moduleNameList = ModuleManager.getModuleName();
+        for (String moduleName : moduleNameList) {
+            // 如果模块内没有日志配置文件，取系统日志配置
+            String moduleLogConfigData = sysLogConfigData;
+            if (ResourceUtil.isModuleDataResourceExists(moduleName, Config_File_Name)) {
+                moduleLogConfigData = ResourceUtil.getModuleDataResourceContent(moduleName,
+                        Config_File_Name);
             }
+            // 模块日志路径
+            String moduleLogPath = ResourceUtil.getModuleLogPath(moduleName);
+            // 初始化模块日志类
+            Logger moduleLogger = initialize(moduleLogPath, moduleLogConfigData);
+            m_moduleLoggerMap.put(moduleName, moduleLogger);
+
         }
     }
 

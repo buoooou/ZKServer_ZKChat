@@ -6,8 +6,6 @@ logHandler 日志处理器
 -->
 <log-config>
 
-		<logType>log4j</logType>
-
 		<logLevel>debug</logLevel>
 
 		<logBinding>

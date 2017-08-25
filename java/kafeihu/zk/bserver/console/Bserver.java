@@ -1,6 +1,7 @@
 package kafeihu.zk.bserver.console;
 
 import kafeihu.zk.bserver.core.BserverManager;
+import kafeihu.zk.bserver.manager.Log4JManager;
 
 /**
  * Server服务器启动入口
