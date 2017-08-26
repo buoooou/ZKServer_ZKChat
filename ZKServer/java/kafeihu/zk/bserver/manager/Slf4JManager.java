@@ -1,26 +1,26 @@
 package kafeihu.zk.bserver.manager;
 
-import kafeihu.zk.base.logging.log4j.Log4jUtil;
 import kafeihu.zk.base.util.ResourceUtil;
-import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by zhangkuo on 2017/8/25.
  */
-public class Log4JManager {
+public class Slf4JManager {
 
-    private static Logger m_monitorLogger = Logger.getLogger("monitor");
-    private static Logger m_zkchatLogger = Logger.getLogger("zkchat");
-    private static Logger m_sysLogger = Logger.getLogger("system");
-    private static Logger m_consoleLogger = Logger.getLogger("console");
+    private static Logger m_monitorLogger = LoggerFactory.getLogger("monitor");
+    private static Logger m_zkchatLogger = LoggerFactory.getLogger("zkchat");
+    private static Logger m_sysLogger = LoggerFactory.getLogger("system");
+    private static Logger m_consoleLogger = LoggerFactory.getLogger("console");
 
     static {
         try {
             String path = ResourceUtil.getSysDataPath();
             PropertyConfigurator.configure(path + "log4j.properties");
         } catch (Exception exp) {
-            throw new ExceptionInInitializerError(Log4jUtil.class.getName()
+            throw new ExceptionInInitializerError(Slf4JManager.class.getName()
                     + ".initialize().  " + exp);
         }
     }

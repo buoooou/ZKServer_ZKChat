@@ -32,9 +32,9 @@ public final class LoggerManager {
 
     static {
         try {
-            Log4JManager.getConsoleLogger().info("Initializing LoggerManager...... ");
+            Slf4JManager.getConsoleLogger().info("Initializing LoggerManager...... ");
             initialize();
-            Log4JManager.getConsoleLogger().info("Initializing LoggerManager OK!");
+            Slf4JManager.getConsoleLogger().info("Initializing LoggerManager OK!");
         } catch (Exception exp) {
             throw new ExceptionInInitializerError(LoggerManager.class.getName()
                     + ".initialize().  " + exp);

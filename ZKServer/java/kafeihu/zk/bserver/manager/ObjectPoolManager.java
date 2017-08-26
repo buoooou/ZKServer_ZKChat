@@ -8,7 +8,6 @@ import kafeihu.zk.base.pool.PoolableObjectFactory;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
-import kafeihu.zk.bserver.statistics.StatisticsManager;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -45,9 +44,9 @@ public final class ObjectPoolManager {
     {
         try
         {
-            Log4JManager.getConsoleLogger().info("Initializing ObjectPoolManager...... ");
+            Slf4JManager.getConsoleLogger().info("Initializing ObjectPoolManager...... ");
             initialize();
-            Log4JManager.getConsoleLogger().info("Initializing ObjectPoolManager OK!");
+            Slf4JManager.getConsoleLogger().info("Initializing ObjectPoolManager OK!");
         }
         catch (Exception exp)
         {

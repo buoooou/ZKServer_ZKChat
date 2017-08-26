@@ -34,9 +34,9 @@ public final class ExecutorManager {
     {
         try
         {
-            Log4JManager.getConsoleLogger().info("Initializing ExecutorManager...... ");
+            Slf4JManager.getConsoleLogger().info("Initializing ExecutorManager...... ");
             initialize();
-            Log4JManager.getConsoleLogger().info("Initializing ExecutorManager OK!");
+            Slf4JManager.getConsoleLogger().info("Initializing ExecutorManager OK!");
         }
         catch (Exception exp)
         {

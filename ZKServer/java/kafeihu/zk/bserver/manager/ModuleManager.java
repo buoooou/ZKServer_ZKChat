@@ -25,9 +25,9 @@ public final class ModuleManager {
     {
         try
         {
-            Log4JManager.getConsoleLogger().info("Initializing ModuleManager...... ");
+            Slf4JManager.getConsoleLogger().info("Initializing ModuleManager...... ");
             initialize();
-            Log4JManager.getConsoleLogger().info("Initializing ModuleManager OK!");
+            Slf4JManager.getConsoleLogger().info("Initializing ModuleManager OK!");
         }
         catch (Exception exp)
         {
