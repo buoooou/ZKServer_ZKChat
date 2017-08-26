@@ -10,10 +10,10 @@ import org.apache.log4j.PropertyConfigurator;
  */
 public class Log4JManager {
 
-    private static Logger m_monitorLogger = Logger.getLogger("MONITORLOG");
-    private static Logger m_zkchatLogger = Logger.getLogger("ZKCHATLOG");
-    private static Logger m_sysLogger = Logger.getLogger("SYSLOG");
-    private static Logger m_consoleLogger = Logger.getLogger("CONSOLE");
+    private static Logger m_monitorLogger = Logger.getLogger("monitor");
+    private static Logger m_zkchatLogger = Logger.getLogger("zkchat");
+    private static Logger m_sysLogger = Logger.getLogger("system");
+    private static Logger m_consoleLogger = Logger.getLogger("console");
 
     static {
         try {

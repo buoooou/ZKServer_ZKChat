@@ -3,8 +3,6 @@ package kafeihu.zk.bserver.manager;
 import kafeihu.zk.base.logging.ILog;
 import kafeihu.zk.base.logging.LogLevel;
 import kafeihu.zk.base.logging.Logger;
-import kafeihu.zk.base.logging.LoggerType;
-import kafeihu.zk.base.logging.log4j.Log4jUtil;
 import kafeihu.zk.base.util.MiscUtil;
 import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
@@ -30,13 +28,13 @@ public final class LoggerManager {
     private static Map<String, Logger> m_moduleLoggerMap = new ConcurrentHashMap<String, Logger>();
     private final static String Config_File_Name = "log-config.xml";
 
-    private static LoggerType loggerType = null;
+//    private static LoggerType loggerType = null;
 
     static {
         try {
-            Log4jUtil.getConsoleLogger().info("Initializing LoggerManager...... ");
+            Log4JManager.getConsoleLogger().info("Initializing LoggerManager...... ");
             initialize();
-            Log4jUtil.getConsoleLogger().info("Initializing LoggerManager OK!");
+            Log4JManager.getConsoleLogger().info("Initializing LoggerManager OK!");
         } catch (Exception exp) {
             throw new ExceptionInInitializerError(LoggerManager.class.getName()
                     + ".initialize().  " + exp);
