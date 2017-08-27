@@ -24,7 +24,9 @@
           <root url="jar://$MODULE_DIR$/../../slf4j-api-1.7.25.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ideaLibSources/slf4j-api-1.7.25-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
