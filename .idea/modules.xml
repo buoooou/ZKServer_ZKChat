@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ZKServer/UniBServer.iml" filepath="$PROJECT_DIR$/ZKServer/UniBServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ZKDB/UniDB.iml" filepath="$PROJECT_DIR$/ZKDB/UniDB.iml" />
       <module fileurl="file://$PROJECT_DIR$/ZKBase/ZKBase.iml" filepath="$PROJECT_DIR$/ZKBase/ZKBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/ZKDB/ZKDB.iml" filepath="$PROJECT_DIR$/ZKDB/ZKDB.iml" />
       <module fileurl="file://$PROJECT_DIR$/ZKServer/ZKServer.iml" filepath="$PROJECT_DIR$/ZKServer/ZKServer.iml" />

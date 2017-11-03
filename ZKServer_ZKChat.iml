@@ -7,7 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="ZKBase" exported="" />
-    <orderEntry type="module" module-name="ZKServer" exported="" />
+    <orderEntry type="module" module-name="ZKDB" />
+    <orderEntry type="module" module-name="ZKBase" />
+    <orderEntry type="module" module-name="ZKServer" />
   </component>
 </module>
