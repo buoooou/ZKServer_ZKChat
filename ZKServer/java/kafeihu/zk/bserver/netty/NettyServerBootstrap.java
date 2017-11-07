@@ -8,7 +8,7 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import kafeihu.zk.base.server.IServer;
 
-public class NettyBootstrap implements IServer {
+public class NettyServerBootstrap implements IServer {
 
     static final int PORT = Integer.parseInt(System.getProperty("port", "1080"));
 
