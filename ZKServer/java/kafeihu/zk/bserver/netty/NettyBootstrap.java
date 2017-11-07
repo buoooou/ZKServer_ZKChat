@@ -23,7 +23,7 @@ public class NettyBootstrap implements IServer {
     }
 
     @Override
-    public Thread start() throws Exception {
+    public void start() throws Exception {
 
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup();

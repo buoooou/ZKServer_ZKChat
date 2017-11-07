@@ -22,7 +22,7 @@ public interface IServer {
      * @return Server运行线程
      * @throws Exception
      */
-    Thread start() throws Exception;
+    void start() throws Exception;
 
     /**
      * 启动Server后调用

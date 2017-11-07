@@ -215,7 +215,7 @@ public class NioSocketServer implements ISocketServer{
     /**
      * 启动服务器
      */
-    public Thread start() throws Exception
+    public void start() throws Exception
     {
         // 初始化资源
         initServerSocketChannel();
@@ -236,7 +236,6 @@ public class NioSocketServer implements ISocketServer{
         m_serverThread.start();
 
         onServerStarted();
-        return m_serverThread;
 
     }
 

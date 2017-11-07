@@ -320,7 +320,7 @@ public class SocketServer implements ISocketServer{
     /**
      * 启动SocketServer
      */
-    public Thread start() throws Exception
+    public void start() throws Exception
     {
         // 初始化服务器端Socket
         initServerSocket();
@@ -336,7 +336,6 @@ public class SocketServer implements ISocketServer{
         m_serverThread.start();
 
         onServerStarted();
-        return m_serverThread;
     }
 
     /**
