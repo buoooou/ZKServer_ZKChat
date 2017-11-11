@@ -1,6 +1,8 @@
 package kafeihu.zk.bserver.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -12,7 +14,7 @@ import org.slf4j.Logger;
 
 public class NettyServerBootstrap implements IServer {
 
-    private final int PORT = Integer.parseInt(System.getProperty("port", "1080"));
+    private static int m_PORT ;
 
     private static final Logger m_logger = Slf4JManager.getSysLogger();
     /**
@@ -46,11 +48,24 @@ public class NettyServerBootstrap implements IServer {
                 .channel(NioServerSocketChannel.class)
                 .handler(new LoggingHandler(LogLevel.INFO))
                 .childHandler(new SocksServerInitializer());
-        b.bind(PORT).sync().channel().closeFuture().sync();
-
+        ChannelFuture future=b.bind(m_PORT).sync();
+        future.addListener(new ChannelFutureListener() {
+            @Override
+            public void operationComplete(ChannelFuture future) throws Exception {
+                operationCompleted(future);
+            }
+        });
+        future.channel().closeFuture().sync();
 
     }
 
+    public void operationCompleted(ChannelFuture future){
+        if(future.isSuccess()){
+            m_logger.info("operation Completed!");
+        }else {
+            m_logger.error("operation Error: "+future.cause().getMessage());
+        }
+    }
 
     @Override
     public void onServerStarting()
