@@ -54,23 +54,18 @@ public class NettyServerBootstrap implements IServer {
                 .channel(NioServerSocketChannel.class)
                 .handler(new LoggingHandler(LogLevel.INFO))
                 .childHandler(new SocksServerInitializer());
-        future=b.bind(m_serverPort).sync();
+        future=b.bind(m_serverPort).syncUninterruptibly();
         future.addListener(new ChannelFutureListener() {
             @Override
             public void operationComplete(ChannelFuture future) throws Exception {
-                operationCompleted(future);
+                if(future.isSuccess()){
+                    m_logger.info("operation Completed!");
+                }else {
+                    m_logger.error("operation Error: "+future.cause().getMessage());
+                }
             }
         });
-        future.channel().closeFuture().sync();
 
-    }
-
-    public void operationCompleted(ChannelFuture future){
-        if(future.isSuccess()){
-            m_logger.info("operation Completed!");
-        }else {
-            m_logger.error("operation Error: "+future.cause().getMessage());
-        }
     }
 
     @Override
@@ -101,8 +96,8 @@ public class NettyServerBootstrap implements IServer {
     @Override
     public void stop() throws Exception {
 
-        bossGroup.shutdownGracefully();
-        workerGroup.shutdownGracefully();
+        bossGroup.shutdownGracefully().syncUninterruptibly();
+        workerGroup.shutdownGracefully().syncUninterruptibly();
     }
     /**
      * 返回服务器监听端口
@@ -138,15 +133,15 @@ public class NettyServerBootstrap implements IServer {
         // 当前在线客户（Socket连接）数
         sb.append("<ocn>").append(getOnlineClientNum()).append("</ocn>");
         // 自服务启动以来已处理的客户请求数
-        sb.append("<rn>").append(workerPool.getCompletedTaskCount()).append("</rn>");
+        //sb.append("<rn>").append(workerPool.getCompletedTaskCount()).append("</rn>");
         // 自服务启动以来拒绝处理的客户请求数
-        sb.append("<rjn>").append(rejectedHandler.getRejectedExecutionCount()).append("</rjn>");
+        //sb.append("<rjn>").append(rejectedHandler.getRejectedExecutionCount()).append("</rjn>");
         // 最大并发线程数
-        sb.append("<max>").append(workerPool.getLargestPoolSize()).append("</max>");
+        //sb.append("<max>").append(workerPool.getLargestPoolSize()).append("</max>");
         // 当前活跃线程数
-        sb.append("<act>").append(workerPool.getActiveCount()).append("</act>");
+        //sb.append("<act>").append(workerPool.getActiveCount()).append("</act>");
         // 最大允许并发线程数
-        sb.append("<rct>").append(workerPool.getMaximumPoolSize()).append("</rct>");
+        //sb.append("<rct>").append(workerPool.getMaximumPoolSize()).append("</rct>");
         // 服务启动时间
         sb.append("<sut>").append(m_startUpTime).append("</sut>");
         // 服务器当前时间
@@ -163,4 +158,7 @@ public class NettyServerBootstrap implements IServer {
         sb.append("</statistics>");
         return sb.toString();
     }
+
+
+
 }
