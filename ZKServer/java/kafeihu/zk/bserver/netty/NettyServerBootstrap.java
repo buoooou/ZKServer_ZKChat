@@ -15,7 +15,7 @@ import org.slf4j.Logger;
 
 public class NettyServerBootstrap implements IServer {
 
-    private static int m_serverPort ;
+    private static int m_serverPort;
 
     private static final Logger m_logger = Slf4JManager.getSysLogger();
     /**
@@ -42,9 +42,16 @@ public class NettyServerBootstrap implements IServer {
 
     private ChannelFuture future;
 
+    private SocksServerInitializer pipelineFactory = new SocksServerInitializer();
+
     @Override
     public boolean isRunning() {
         return m_isRunning;
+    }
+
+
+    public void setPipelineFactory(SocksServerInitializer pipelineFactory) {
+        this.pipelineFactory = pipelineFactory;
     }
 
     @Override
@@ -53,7 +60,7 @@ public class NettyServerBootstrap implements IServer {
         b.group(bossGroup, workerGroup)
                 .channel(NioServerSocketChannel.class)
                 .handler(new LoggingHandler(LogLevel.INFO))
-                .childHandler(new SocksServerInitializer());
+                .childHandler(pipelineFactory);
         future=b.bind(m_serverPort).syncUninterruptibly();
         future.addListener(new ChannelFutureListener() {
             @Override
@@ -98,6 +105,7 @@ public class NettyServerBootstrap implements IServer {
 
         bossGroup.shutdownGracefully().syncUninterruptibly();
         workerGroup.shutdownGracefully().syncUninterruptibly();
+        m_logger.info("Socket NettyServer stopped!");
     }
     /**
      * 返回服务器监听端口
