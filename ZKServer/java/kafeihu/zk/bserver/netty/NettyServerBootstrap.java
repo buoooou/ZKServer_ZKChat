@@ -1,9 +1,7 @@
 package kafeihu.zk.bserver.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelFutureListener;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
@@ -37,8 +35,8 @@ public class NettyServerBootstrap implements IServer {
     private long m_stopTime = -1;
 
     private final ServerBootstrap b = new ServerBootstrap();
-    private final EventLoopGroup bossGroup = new NioEventLoopGroup(1);
-    private final EventLoopGroup workerGroup = new NioEventLoopGroup();
+    private static EventLoopGroup m_bossGroup = new NioEventLoopGroup(1);
+    private static EventLoopGroup m_workerGroup = new NioEventLoopGroup();
 
     private ChannelFuture future;
 
@@ -49,6 +47,12 @@ public class NettyServerBootstrap implements IServer {
         return m_isRunning;
     }
 
+    public NettyServerBootstrap(int port,EventLoopGroup bossGroup,EventLoopGroup workerGroup) {
+
+        this.m_serverPort = port;
+        this.m_bossGroup = bossGroup;
+        this.m_workerGroup = workerGroup;
+    }
 
     public void setPipelineFactory(SocksServerInitializer pipelineFactory) {
         this.pipelineFactory = pipelineFactory;
@@ -57,11 +61,12 @@ public class NettyServerBootstrap implements IServer {
     @Override
     public void start() throws Exception {
 
-        b.group(bossGroup, workerGroup)
+        b.group(m_bossGroup, m_workerGroup)
                 .channel(NioServerSocketChannel.class)
                 .handler(new LoggingHandler(LogLevel.INFO))
                 .childHandler(pipelineFactory);
         future=b.bind(m_serverPort).syncUninterruptibly();
+        applyConnectionOptions(b);
         future.addListener(new ChannelFutureListener() {
             @Override
             public void operationComplete(ChannelFuture future) throws Exception {
@@ -75,6 +80,28 @@ public class NettyServerBootstrap implements IServer {
 
     }
 
+    /***
+     *
+     * 设置连接参数
+     *
+     * @param bootstrap 服务器引导
+     */
+    protected void applyConnectionOptions(ServerBootstrap bootstrap) {
+//        SocketConfig config = configCopy.getSocketConfig();
+//        bootstrap.childOption(ChannelOption.TCP_NODELAY, config.isTcpNoDelay());
+//        if (config.getTcpSendBufferSize() != -1) {
+//            bootstrap.childOption(ChannelOption.SO_SNDBUF, config.getTcpSendBufferSize());
+//        }
+//        if (config.getTcpReceiveBufferSize() != -1) {
+//            bootstrap.childOption(ChannelOption.SO_RCVBUF, config.getTcpReceiveBufferSize());
+//            bootstrap.childOption(ChannelOption.RCVBUF_ALLOCATOR, new FixedRecvByteBufAllocator(config.getTcpReceiveBufferSize()));
+//        }
+//        bootstrap.childOption(ChannelOption.SO_KEEPALIVE, config.isTcpKeepAlive());
+//        bootstrap.childOption(ChannelOption.SO_LINGER, config.getSoLinger());
+//
+//        bootstrap.option(ChannelOption.SO_REUSEADDR, config.isReuseAddress());
+//        bootstrap.option(ChannelOption.SO_BACKLOG, config.getAcceptBackLog());
+    }
     @Override
     public void onServerStarting()
     {
@@ -103,8 +130,8 @@ public class NettyServerBootstrap implements IServer {
     @Override
     public void stop() throws Exception {
 
-        bossGroup.shutdownGracefully().syncUninterruptibly();
-        workerGroup.shutdownGracefully().syncUninterruptibly();
+        m_bossGroup.shutdownGracefully().syncUninterruptibly();
+        m_workerGroup.shutdownGracefully().syncUninterruptibly();
         m_logger.info("Socket NettyServer stopped!");
     }
     /**
@@ -167,6 +194,19 @@ public class NettyServerBootstrap implements IServer {
         return sb.toString();
     }
 
+    /**
+     * 根据配置文件构造Socket服务器实例
+     *
+     * @param xmlConfig
+     * @return
+     */
+    public static NettyServerBootstrap buildSocketServer(String xmlConfig) throws Exception
+    {
 
+        m_bossGroup = new NioEventLoopGroup();
+        m_workerGroup = new NioEventLoopGroup();
+        int port = 8010;
+        return new NettyServerBootstrap(port,m_bossGroup,m_workerGroup);
+    }
 
 }
