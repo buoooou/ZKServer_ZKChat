@@ -67,17 +67,6 @@ public class NettyServerBootstrap implements IServer {
                 .childHandler(pipelineFactory);
         future=b.bind(m_serverPort).syncUninterruptibly();
         applyConnectionOptions(b);
-        future.addListener(new ChannelFutureListener() {
-            @Override
-            public void operationComplete(ChannelFuture future) throws Exception {
-                if(future.isSuccess()){
-                    m_logger.info("operation Completed!");
-                }else {
-                    m_logger.error("operation Error: "+future.cause().getMessage());
-                }
-            }
-        });
-
     }
 
     /***
