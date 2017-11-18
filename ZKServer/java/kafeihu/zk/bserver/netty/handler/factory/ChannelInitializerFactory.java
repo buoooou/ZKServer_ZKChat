@@ -1,4 +1,5 @@
 package kafeihu.zk.bserver.netty.handler.factory;
 
-public class ChannelInitializerFactory {
+public interface ChannelInitializerFactory {
+    void addChannelHandlerFactory(ChannelHandlerFactory handlerFactory) throws Exception;
 }
