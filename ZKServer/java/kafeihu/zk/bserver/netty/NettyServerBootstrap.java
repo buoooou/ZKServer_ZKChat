@@ -34,9 +34,8 @@ public class NettyServerBootstrap implements IServer {
      */
     private long m_stopTime = -1;
 
-    private final ServerBootstrap b = new ServerBootstrap();
-    private static EventLoopGroup m_bossGroup = new NioEventLoopGroup(1);
-    private static EventLoopGroup m_workerGroup = new NioEventLoopGroup();
+    private ServerBootstrap m_bootStrap;
+    private NettyServerConfig m_config;
 
     private ChannelFuture future;
 
@@ -47,11 +46,9 @@ public class NettyServerBootstrap implements IServer {
         return m_isRunning;
     }
 
-    public NettyServerBootstrap(int port,EventLoopGroup bossGroup,EventLoopGroup workerGroup) {
+    public NettyServerBootstrap(int port) {
 
         this.m_serverPort = port;
-        this.m_bossGroup = bossGroup;
-        this.m_workerGroup = workerGroup;
     }
 
     public void setPipelineFactory(SocksServerInitializer pipelineFactory) {
@@ -61,12 +58,35 @@ public class NettyServerBootstrap implements IServer {
     @Override
     public void start() throws Exception {
 
-        b.group(m_bossGroup, m_workerGroup)
-                .channel(NioServerSocketChannel.class)
-                .handler(new LoggingHandler(LogLevel.INFO))
-                .childHandler(pipelineFactory);
-        future=b.bind(m_serverPort).syncUninterruptibly();
-        applyConnectionOptions(b);
+        EventLoopGroup bossGroup = new NioEventLoopGroup(m_config.getAcceptorThreadNum());
+        EventLoopGroup workerGroup = new NioEventLoopGroup(m_config.getWorkerThreadNum());
+
+        try{
+            m_bootStrap = new ServerBootstrap();
+
+            m_bootStrap.group(bossGroup, workerGroup)
+                    .channel(NioServerSocketChannel.class)
+                    .handler(new LoggingHandler(LogLevel.INFO))
+                    .childHandler(pipelineFactory);
+            future = m_bootStrap.bind(m_config.getPort()).syncUninterruptibly();
+            applyConnectionOptions(m_bootStrap);
+
+            Channel ch = m_bootStrap.bind().sync().channel();
+
+            //���������Ϣ������ʹ��
+            //dumpConfig();
+
+            System.out.println("SocketServer started. Port:" + m_config.getPort());
+            // System.out.println("Open your web browser and navigate to " +
+            // (SSL? "https" : "http") + "://127.0.0.1:" + PORT + '/');
+
+            ch.closeFuture().sync();
+        }
+        finally
+        {
+            bossGroup.shutdownGracefully();
+            workerGroup.shutdownGracefully();
+        }
     }
 
     /***
@@ -192,10 +212,8 @@ public class NettyServerBootstrap implements IServer {
     public static NettyServerBootstrap buildSocketServer(String xmlConfig) throws Exception
     {
 
-        m_bossGroup = new NioEventLoopGroup();
-        m_workerGroup = new NioEventLoopGroup();
         int port = 8010;
-        return new NettyServerBootstrap(port,m_bossGroup,m_workerGroup);
+        return new NettyServerBootstrap(port);
     }
 
 }
