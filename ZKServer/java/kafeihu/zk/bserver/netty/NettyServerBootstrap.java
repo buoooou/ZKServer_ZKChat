@@ -1,19 +1,15 @@
 package kafeihu.zk.bserver.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.bootstrap.ServerBootstrapConfig;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.logging.LogLevel;
-import io.netty.handler.logging.LoggingHandler;
 import kafeihu.zk.base.server.IServer;
 import kafeihu.zk.bserver.manager.Slf4JManager;
-import kafeihu.zk.bserver.statistics.IStatistics;
 import org.slf4j.Logger;
 
 public class NettyServerBootstrap implements IServer {
-
-    private static int m_serverPort;
 
     private static final Logger m_logger = Slf4JManager.getSysLogger();
     /**
@@ -36,7 +32,8 @@ public class NettyServerBootstrap implements IServer {
 
     private ServerBootstrap m_bootStrap;
     private NettyServerConfig m_config;
-
+    EventLoopGroup m_bossGroup ;
+    EventLoopGroup m_workerGroup ;
     private ChannelFuture future;
 
     private SocksServerInitializer pipelineFactory = new SocksServerInitializer();
@@ -46,11 +43,6 @@ public class NettyServerBootstrap implements IServer {
         return m_isRunning;
     }
 
-    public NettyServerBootstrap(int port) {
-
-        this.m_serverPort = port;
-    }
-
     public void setPipelineFactory(SocksServerInitializer pipelineFactory) {
         this.pipelineFactory = pipelineFactory;
     }
@@ -58,35 +50,41 @@ public class NettyServerBootstrap implements IServer {
     @Override
     public void start() throws Exception {
 
-        EventLoopGroup bossGroup = new NioEventLoopGroup(m_config.getAcceptorThreadNum());
-        EventLoopGroup workerGroup = new NioEventLoopGroup(m_config.getWorkerThreadNum());
+        m_bossGroup = new NioEventLoopGroup(m_config.getAcceptorThreadNum());
+        m_workerGroup = new NioEventLoopGroup(m_config.getWorkerThreadNum());
 
-        try{
+
             m_bootStrap = new ServerBootstrap();
 
-            m_bootStrap.group(bossGroup, workerGroup)
-                    .channel(NioServerSocketChannel.class)
-                    .handler(new LoggingHandler(LogLevel.INFO))
-                    .childHandler(pipelineFactory);
+            m_bootStrap.group(m_bossGroup, m_workerGroup)
+                    .channel(NioServerSocketChannel.class);
+            if (m_config.getAcceptorChannelHandlerFactory() != null)
+            {
+                m_bootStrap.handler(m_config.getAcceptorChannelHandlerFactory().newHandler());
+            }
+            m_bootStrap.childHandler(m_config.getWorkerChannelHandlerFactory().newHandler());
+
             future = m_bootStrap.bind(m_config.getPort()).syncUninterruptibly();
             applyConnectionOptions(m_bootStrap);
 
             Channel ch = m_bootStrap.bind().sync().channel();
 
-            //���������Ϣ������ʹ��
-            //dumpConfig();
-
             System.out.println("SocketServer started. Port:" + m_config.getPort());
-            // System.out.println("Open your web browser and navigate to " +
-            // (SSL? "https" : "http") + "://127.0.0.1:" + PORT + '/');
 
             ch.closeFuture().sync();
-        }
-        finally
-        {
-            bossGroup.shutdownGracefully();
-            workerGroup.shutdownGracefully();
-        }
+
+    }
+
+    public void dumpConfig()
+    {
+        ServerBootstrapConfig bc = m_bootStrap.config();
+        System.out.println("group:"+bc.group()+" threadNum:"+((NioEventLoopGroup)bc.group()).executorCount());
+        System.out.println("childGroup:"+bc.childGroup()+" threadNum:"+((NioEventLoopGroup)bc.childGroup()).executorCount());
+        System.out.println("handler:"+bc.handler());
+        System.out.println("childHandler:"+bc.childHandler());
+        System.out.println("options:"+bc.options());
+        System.out.println("childOptions:"+bc.childOptions());
+
     }
 
     /***
@@ -143,13 +141,7 @@ public class NettyServerBootstrap implements IServer {
         m_workerGroup.shutdownGracefully().syncUninterruptibly();
         m_logger.info("Socket NettyServer stopped!");
     }
-    /**
-     * 返回服务器监听端口
-     */
-    public int getLocalPort()
-    {
-        return m_serverPort;
-    }
+
     @Override
     public String getAlias() {
         return m_alias;
@@ -158,49 +150,6 @@ public class NettyServerBootstrap implements IServer {
     @Override
     public int getOnlineClientNum() {
         return 0;
-    }
-
-    /**
-     * 返回统计数据
-     */
-    public Object getStatistics()
-    {
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("<statistics>");
-        // 统计数据类型：SocketServer
-        sb.append("<type>").append(IStatistics.StatType_SocketServer).append("</type>");
-        // SocketServer别名
-        sb.append("<alias>").append(m_alias).append("</alias>");
-        // 监听端口
-        sb.append("<port>").append(getLocalPort()).append("</port>");
-        // 当前在线客户（Socket连接）数
-        sb.append("<ocn>").append(getOnlineClientNum()).append("</ocn>");
-        // 自服务启动以来已处理的客户请求数
-        //sb.append("<rn>").append(workerPool.getCompletedTaskCount()).append("</rn>");
-        // 自服务启动以来拒绝处理的客户请求数
-        //sb.append("<rjn>").append(rejectedHandler.getRejectedExecutionCount()).append("</rjn>");
-        // 最大并发线程数
-        //sb.append("<max>").append(workerPool.getLargestPoolSize()).append("</max>");
-        // 当前活跃线程数
-        //sb.append("<act>").append(workerPool.getActiveCount()).append("</act>");
-        // 最大允许并发线程数
-        //sb.append("<rct>").append(workerPool.getMaximumPoolSize()).append("</rct>");
-        // 服务启动时间
-        sb.append("<sut>").append(m_startUpTime).append("</sut>");
-        // 服务器当前时间
-        // sb.append("<st>").append(System.currentTimeMillis()).append("</st>");
-        if (isRunning())
-        {
-            sb.append("<state>run</state>");
-        }
-        else
-        {
-            sb.append("<state>stop</state>");
-            sb.append("<stt>").append(m_stopTime).append("</stt>");
-        }
-        sb.append("</statistics>");
-        return sb.toString();
     }
 
     /**
@@ -213,7 +162,7 @@ public class NettyServerBootstrap implements IServer {
     {
 
         int port = 8010;
-        return new NettyServerBootstrap(port);
+        return new NettyServerBootstrap();
     }
 
 }
