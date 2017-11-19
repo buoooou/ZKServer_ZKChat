@@ -160,8 +160,6 @@ public class NettyServerBootstrap implements IServer {
      */
     public static NettyServerBootstrap buildSocketServer(String xmlConfig) throws Exception
     {
-
-        int port = 8010;
         return new NettyServerBootstrap();
     }
 

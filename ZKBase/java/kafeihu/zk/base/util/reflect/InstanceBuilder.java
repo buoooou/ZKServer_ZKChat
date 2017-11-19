@@ -4,12 +4,38 @@ import kafeihu.zk.base.util.MiscUtil;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.net.Socket;
 
 public class InstanceBuilder<T> {
 
-    public T newInstance(String clazzName, Class<T> clazz, ConstructParam<?>... params) throws Exception
-    {
+
+    public static class Builder<T>{
+
+        private String className;
+        private Class<T> clazz;
+        private ConstructParam<?>[] params;
+
+        public Builder(String clazzName, Class<T> clazz){
+            this.className=clazzName;
+            this.clazz=clazz;
+        }
+        public Builder setConstructParam(ConstructParam<?>... params){
+            this.params=params;
+            return this;
+        }
+
+        public T build() throws Exception{
+            return new InstanceBuilder<T>().newInstance(this);
+        }
+
+    }
+    private InstanceBuilder(){}
+
+    private T newInstance(Builder<T> builder)throws Exception{
+
+        String clazzName = builder.className;
+        Class<T> clazz= builder.clazz;
+        ConstructParam<?>[] params = builder.params;
+
         try
         {
             if (MiscUtil.isEmpty(clazzName))
@@ -42,27 +68,34 @@ public class InstanceBuilder<T> {
 
     public static void main(String[] args) throws Exception
     {
-        InstanceBuilder<String> ibStr = new InstanceBuilder<String>();
         String clazzName = "java.lang.String";
         ConstructParam<?>[] params = new ConstructParam<?>[1];
         ConstructParam<String> param0 = new ConstructParam<String>("StringExample", String.class);
         params[0] = param0;
+        String s=(String) new InstanceBuilder.Builder<String>(clazzName,String.class).setConstructParam(params).build();
+        System.out.println("Inst:"+s);
 
-        String inst = ibStr.newInstance(clazzName, String.class);
-        System.out.println("Inst:"+inst);
-
-
-        inst = ibStr.newInstance(clazzName, String.class, params);
-        System.out.println("Inst:"+inst);
-
-
-        params = new ConstructParam<?>[2];
-        param0 = new ConstructParam<String>("127.0.0.1", String.class);
-        params[0] = param0;
-        ConstructParam<Integer> param1 = new ConstructParam<Integer>(8010, int.class);
-        params[1] = param1;
-        InstanceBuilder<Socket> ibSock = new InstanceBuilder<Socket>();
-        Socket instSock = ibSock.newInstance("java.net.Socket", Socket.class, params);
-        System.out.println("SocketInst:"+instSock.toString());
+//        InstanceBuilder<String> ibStr = new InstanceBuilder<String>();
+//        String clazzName = "java.lang.String";
+//        ConstructParam<?>[] params = new ConstructParam<?>[1];
+//        ConstructParam<String> param0 = new ConstructParam<String>("StringExample", String.class);
+//        params[0] = param0;
+//
+//        String inst = ibStr.newInstance(clazzName, String.class);
+//        System.out.println("Inst:"+inst);
+//
+//
+//        inst = ibStr.newInstance(clazzName, String.class, params);
+//        System.out.println("Inst:"+inst);
+//
+//
+//        params = new ConstructParam<?>[2];
+//        param0 = new ConstructParam<String>("127.0.0.1", String.class);
+//        params[0] = param0;
+//        ConstructParam<Integer> param1 = new ConstructParam<Integer>(8010, int.class);
+//        params[1] = param1;
+//        InstanceBuilder<Socket> ibSock = new InstanceBuilder<Socket>();
+//        Socket instSock = ibSock.newInstance("java.net.Socket", Socket.class, params);
+//        System.out.println("SocketInst:"+instSock.toString());
     }
 }

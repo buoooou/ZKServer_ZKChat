@@ -16,26 +16,26 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class NettyServerConfig {
     /**
-     * ����˿�
+     * 服务器端口
      */
     private int port;
     /**
-     * Reactorģʽ�е�acceptor�߳�����ͨ��ֻ����һ���˿ڣ�����Ϊ1����
+     * 当前接受的线程数
      */
     private int acceptorThreadNum = 1;
     /**
-     * Reactorģʽ�еĹ����߳������������Ϊ0�������߳���Ϊ����CPU����*2
+     * 工作线程数
      */
     private int workerThreadNum = 0;
 
     private ChannelHandlerFactory acceptorChannelHandlerFactory;
     private ChannelHandlerFactory workerChannelHandlerFactory;
     /**
-     * acceptor Socket��������
+     * acceptor Socket配置
      */
     private Map<String, Object> acceptorConnOptions = new ConcurrentHashMap<String, Object>();
     /**
-     * ������Socket��������
+     * worker Socket 配置
      */
     private Map<String, Object> workerConnOptions = new ConcurrentHashMap<String, Object>();
 
@@ -139,7 +139,7 @@ public class NettyServerConfig {
     }
 
     /**
-     * ����XML��ʽ��NetServer�����ļ����������ö���
+     * 解析 XML配置文件 生成 NettyServerConfig
      *
      * @param xmlConfig
      * @return
@@ -149,7 +149,7 @@ public class NettyServerConfig {
     {
         NettyServerConfig nsc = new NettyServerConfig();
 
-        // ��������˿�
+        // 设置服务器端口
         nsc.setPort(Integer.parseInt(XmlUtil.getXmlElement("serverPort", xmlConfig)));
 
         // ����Acceptor����
@@ -221,9 +221,13 @@ public class NettyServerConfig {
         String handlerFactoryImpl = XmlUtil.getXmlElement("impl", handlerFactoryCfg);
         Properties handlerFactoryParam = XmlUtil.parseProperties(XmlUtil.getXmlElement("param", handlerFactoryCfg));
 
-        InstanceBuilder<ChannelHandlerFactory> instBuilder = new InstanceBuilder<ChannelHandlerFactory>();
+//        Instance<ChannelHandlerFactory> instBuilder = new Instance<ChannelHandlerFactory>();
         ConstructParam<?>[] params = new ConstructParam<?>[1];
         params[0] = new ConstructParam<Properties>(handlerFactoryParam, Properties.class);
-        return instBuilder.newInstance(handlerFactoryImpl, ChannelHandlerFactory.class, params);
+//        return instBuilder.newInstance(handlerFactoryImpl, ChannelHandlerFactory.class, params);
+
+        return  (ChannelHandlerFactory)new InstanceBuilder.Builder<ChannelHandlerFactory>(handlerFactoryImpl, ChannelHandlerFactory.class).setConstructParam(params).build();
+
+
     }
 }
