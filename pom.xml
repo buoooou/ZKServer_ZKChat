@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <project.build.directory>ZKServer_ZKChat</project.build.directory>
+        <build.directory>${project.build.directory}/ZKServer_ZKChat</build.directory>
     </properties>
 
     <repositories>
@@ -43,7 +43,7 @@
             <!-- 控制资源文件的拷贝 -->
             <resource>
                 <directory>src/main/resources</directory>
-                <targetPath>${project.build.directory}</targetPath>
+                <targetPath>${build.directory}</targetPath>
                 <!-- excludes和includes二选一使用即可 -->
                 <!-- 不包含的文件，支持通配符 -->
                 <excludes>
@@ -80,6 +80,9 @@
                             <mainClass>kafeihu.zk.server.console.Bserver</mainClass>
                         </manifest>
                     </archive>
+                    <outputDirectory>
+                        ${build.directory}
+                    </outputDirectory>
                 </configuration>
             </plugin>
             <!-- 拷贝依赖的jar包到lib目录 -->
@@ -95,7 +98,7 @@
                         </goals>
                         <configuration>
                             <outputDirectory>
-                                ${project.build.directory}/lib
+                                ${build.directory}/lib
                             </outputDirectory>
                         </configuration>
                     </execution>
@@ -117,6 +120,9 @@
                 <configuration>
                     <attach>true</attach>
                     <encoding>UTF-8</encoding>
+                    <outputDirectory>
+                        ${build.directory}
+                    </outputDirectory>
                 </configuration>
                 <executions>
                     <execution>
