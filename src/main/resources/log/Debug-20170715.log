@@ -1,0 +1,2 @@
+20170715 19:28:03  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@67424e82
+20170715 19:28:03  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@41906a77

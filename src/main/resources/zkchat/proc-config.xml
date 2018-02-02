@@ -1,0 +1,23 @@
+<!--
+	id
+	impl
+	scope
+					singleton
+					protocol
+	params
+
+-->
+
+<proc-config>
+	<proc-scope>singleton</proc-scope>
+
+	<proc>
+		<id>OpenQRPayProtocol</id>
+		<impl>kafeihu.zk.server.zkchat.proc.GetUserFriends</impl>
+		<scope>singleton</scope>
+		<params>
+		</params>
+		<description></description>
+	</proc>
+
+</proc-config>

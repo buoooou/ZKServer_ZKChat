@@ -1,0 +1,76 @@
+<!-- 	基于Netty的服务器配置，通过配置不同处理器，可以成为Socket服务器、WebSocket服务器、HTTP服务器等.
+		以下配置为WebSocket服务器配置
+-->
+<nettyServer-config>
+	<serverPort>8081</serverPort>
+	<acceptor>
+		<threadNum>1</threadNum>
+		<connOption>
+			<SO_BACKLOG>1024</SO_BACKLOG>
+		</connOption>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.LoggingHandlerFactory</impl>
+			<param>
+			</param>
+			<desc>日志处理。对于acceptor，handler配置为可选项</desc>
+		</handlerFactory>
+	</acceptor>
+	
+	<worker>
+		<threadNum>0</threadNum>
+		<connOption>
+			<SO_KEEPALIVE>true</SO_KEEPALIVE>
+		</connOption>
+		
+		<handlerInitializerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.SocketChannelInitializerFactory</impl>
+			<param>
+			</param>
+			<desc>handler初始化器。建立Socket连接时调用：加载其他handler</desc>
+		</handlerInitializerFactory>
+		
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.HttpServerCodecFactory</impl>
+			<param>
+			</param>
+			<desc>解析HTTP报文</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.HttpObjectAggregatorFactory</impl>
+			<param>
+			</param>
+			<desc>将HTTP报文组装为HttpRequest对象</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.HttpAccessControlHandlerFactory</impl>
+			<param>
+			</param>
+			<desc>HTTP请求访问控制</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.WebSocketServerCompressionHandlerFactory</impl>
+			<param>
+			</param>
+			<desc>websocket压缩处理</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.WebSocketServerProtocolHandlerFactory</impl>
+			<param>
+			</param>
+			<desc>websocket协议处理：握手协议、Close/Ping/Pong等控制报文处理</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.WebSocketFrameHandlerFactory</impl>
+			<param>
+			</param>
+			<desc>websocket业务处理</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.DiscardHttpProcHandlerFactory</impl>
+			<param>
+			</param>
+			<desc>HTTP请求丢弃（拒绝）处理</desc>
+		</handlerFactory>
+		
+	</worker>
+</nettyServer-config>

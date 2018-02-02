@@ -1,0 +1,60 @@
+<!-- 	基于Netty的Socket客户端配置
+-->
+<nettyServer-config>
+	<serverIP>127.0.0.1</serverIP>
+	<serverPort>8089</serverPort>
+	<localPort></localPort>
+	
+	<reconnSpanSeconds>0</reconnSpanSeconds>
+	
+	<worker>
+		<threadNum>0</threadNum>
+		<connOption>
+			<TCP_NODELAY>true</TCP_NODELAY>
+		</connOption>
+		
+		<handlerInitializerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.SocketChannelInitializerFactory</impl>
+			<param>
+			</param>
+			<desc>handler初始化器。建立Socket连接时调用：加载其他handler</desc>
+		</handlerInitializerFactory>
+		
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.LineBasedFrameDecoderFactory</impl>
+			<param>
+				<maxLength>1024</maxLength>
+			</param>
+			<desc>解码器：以换行符分数据包</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.StringDecoderFactory</impl>
+			<param>
+				<charset>UTF-8</charset>
+			</param>
+			<desc>解码器：将字符数组转换为字符串</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.StringEncoderFactory</impl>
+			<param>
+				<charset>UTF-8</charset>
+			</param>
+			<desc>编码器：将字符串转换为字符数组</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.IdleStateHandlerFactory</impl>
+			<param>
+				<readerIdleTimeSeconds>3</readerIdleTimeSeconds>
+				<writerIdleTimeSeconds>5</writerIdleTimeSeconds>
+				<allIdleTimeSeconds>0</allIdleTimeSeconds>
+			</param>
+			<desc>心跳处理</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.SocketClientDataHandlerFactory</impl>
+			<param>
+			</param>
+			<desc>客户端业务请求处理</desc>
+		</handlerFactory>
+	</worker>
+</nettyServer-config>

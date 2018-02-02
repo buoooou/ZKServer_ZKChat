@@ -1,0 +1,17 @@
+<!--异步调度器
+id  ：调度器名
+poolsize ：调度器池数目
+
+-->
+
+
+<executor-config>
+
+    <scheduledThreadPoolExecutor>
+        <id>test</id>
+        <poolSize>5</poolSize>
+    </scheduledThreadPoolExecutor>
+
+
+
+</executor-config>

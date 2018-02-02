@@ -1,0 +1,23 @@
+<!-- 总模块配置文件-->
+<module-config>
+	<!-- 总应用配置-->
+	<application>
+		<name>UniBServer</name>
+		<contextImpl>kafeihu.zk.server.core.context.UniContext</contextImpl>
+	</application>
+	<!-- 监控模块配置-->
+	<module>
+		<name>monitor</name>
+		<contextImpl>kafeihu.zk.server.monitor.MonitorContext</contextImpl>
+		<active>Y</active>
+		<description></description>
+	</module>
+	
+	<!-- 聊天zkchat模块配置-->
+	<module>
+		<name>zkchat</name>
+		<contextImpl>kafeihu.zk.server.zkchat.core.ChatContext</contextImpl>
+		<active>Y</active>
+		<description></description>
+	</module>
+</module-config>

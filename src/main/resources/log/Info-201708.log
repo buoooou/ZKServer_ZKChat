@@ -1,0 +1,948 @@
+20170715 19:28:03  [INFO] UniBServer  System starting......
+20170715 19:28:03  [INFO] UniBServer  Init global config OK!
+20170715 19:28:03  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170715 19:28:03  [INFO] 连接名：  zkchat
+20170715 19:28:04  [INFO] UniBServer  PreLoad classes OK!
+20170715 19:28:04  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170715 19:28:04  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170715 19:28:05  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170715 19:28:05  [INFO] UniBServer  StartServiceManager OK!
+20170715 19:28:05  [INFO] Active module:   monitor, zkchat
+20170715 19:28:05  [INFO] UniBServer  System started
+
+20170715 19:28:10  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170715 19:28:10  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170715 19:28:10  [INFO] UniBServer  System exit
+20170718 20:59:08  [INFO] UniBServer  System starting......
+20170718 20:59:08  [INFO] UniBServer  Init global config OK!
+20170718 20:59:09  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170718 20:59:09  [INFO] 连接名：  zkchat
+20170718 20:59:09  [INFO] UniBServer  PreLoad classes OK!
+20170718 20:59:09  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170718 20:59:09  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170718 20:59:09  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170718 20:59:09  [INFO] UniBServer  StartServiceManager OK!
+20170718 20:59:09  [INFO] Active module:   monitor, zkchat
+20170718 20:59:09  [INFO] UniBServer  System started
+
+20170718 20:59:15  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170718 20:59:15  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170718 20:59:15  [INFO] UniBServer  System exit
+20170720 20:18:55  [INFO] UniBServer  System starting......
+20170720 20:18:55  [INFO] UniBServer  Init global config OK!
+20170720 20:18:56  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:18:56  [INFO] 连接名：  zkchat
+20170720 20:18:56  [INFO] UniBServer  PreLoad classes OK!
+20170720 20:18:56  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170720 20:18:57  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:19:48  [INFO] UniBServer  System starting......
+20170720 20:19:48  [INFO] UniBServer  Init global config OK!
+20170720 20:19:48  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:19:48  [INFO] 连接名：  zkchat
+20170720 20:19:48  [INFO] UniBServer  PreLoad classes OK!
+20170720 20:19:48  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170720 20:19:50  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:19:50  [INFO] UniBServer  System exit
+20170720 20:19:52  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:19:52  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:19:52  [INFO] UniBServer  System exit
+20170720 20:20:02  [INFO] UniBServer  System starting......
+20170720 20:20:02  [INFO] UniBServer  Init global config OK!
+20170720 20:20:03  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:20:03  [INFO] 连接名：  zkchat
+20170720 20:20:03  [INFO] UniBServer  PreLoad classes OK!
+20170720 20:20:03  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170720 20:20:03  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:20:18  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:20:18  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:20:18  [INFO] UniBServer  System exit
+20170720 20:21:35  [INFO] UniBServer  System starting......
+20170720 20:21:35  [INFO] UniBServer  Init global config OK!
+20170720 20:21:35  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:21:35  [INFO] 连接名：  zkchat
+20170720 20:21:36  [INFO] UniBServer  PreLoad classes OK!
+20170720 20:21:36  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170720 20:22:53  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:23:29  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:23:29  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:23:29  [INFO] UniBServer  System exit
+20170720 20:24:28  [INFO] UniBServer  System starting......
+20170720 20:24:28  [INFO] UniBServer  Init global config OK!
+20170720 20:24:28  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:24:28  [INFO] 连接名：  zkchat
+20170720 20:24:28  [INFO] UniBServer  PreLoad classes OK!
+20170720 20:24:28  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170720 20:25:29  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:26:07  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:26:07  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:26:07  [INFO] UniBServer  System exit
+20170720 20:26:31  [INFO] UniBServer  System starting......
+20170720 20:26:31  [INFO] UniBServer  Init global config OK!
+20170720 20:26:31  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:26:31  [INFO] 连接名：  zkchat
+20170720 20:26:31  [INFO] UniBServer  PreLoad classes OK!
+20170720 20:26:31  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170720 20:26:31  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:26:31  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170720 20:26:31  [INFO] UniBServer  StartServiceManager OK!
+20170720 20:26:31  [INFO] Active module:   monitor, zkchat
+20170720 20:26:31  [INFO] UniBServer  System started
+
+20170720 20:28:18  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:28:18  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:28:18  [INFO] UniBServer  System exit
+20170720 20:28:20  [INFO] UniBServer  System starting......
+20170720 20:28:20  [INFO] UniBServer  Init global config OK!
+20170720 20:28:20  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:28:20  [INFO] 连接名：  zkchat
+20170720 20:28:21  [INFO] UniBServer  PreLoad classes OK!
+20170720 20:28:21  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170720 20:28:21  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:28:21  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170720 20:28:21  [INFO] UniBServer  StartServiceManager OK!
+20170720 20:28:21  [INFO] Active module:   monitor, zkchat
+20170720 20:28:21  [INFO] UniBServer  System started
+
+20170720 20:28:58  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:28:58  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:28:58  [INFO] UniBServer  System exit
+20170720 20:29:00  [INFO] UniBServer  System starting......
+20170720 20:29:00  [INFO] UniBServer  Init global config OK!
+20170720 20:29:01  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:29:01  [INFO] 连接名：  zkchat
+20170720 20:29:01  [INFO] UniBServer  PreLoad classes OK!
+20170720 20:29:01  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170720 20:29:01  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170720 20:29:01  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:29:01  [INFO] UniBServer  StartServiceManager OK!
+20170720 20:29:01  [INFO] Active module:   monitor, zkchat
+20170720 20:29:01  [INFO] UniBServer  System started
+
+20170720 20:29:09  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:29:09  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:29:09  [INFO] UniBServer  System exit
+20170720 20:29:15  [INFO] UniBServer  System starting......
+20170720 20:29:15  [INFO] UniBServer  Init global config OK!
+20170720 20:29:16  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:29:16  [INFO] 连接名：  zkchat
+20170720 20:29:16  [INFO] UniBServer  PreLoad classes OK!
+20170720 20:29:16  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170720 20:29:16  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170720 20:29:16  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:29:16  [INFO] UniBServer  StartServiceManager OK!
+20170720 20:29:16  [INFO] Active module:   monitor, zkchat
+20170720 20:29:16  [INFO] UniBServer  System started
+
+20170720 20:29:49  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170720 20:29:49  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 20:29:49  [INFO] UniBServer  System exit
+20170720 21:04:36  [INFO] UniBServer  System starting......
+20170720 21:04:36  [INFO] UniBServer  Init global config OK!
+20170720 21:04:36  [INFO] UniBServer  PreLoad classes OK!
+20170720 21:04:36  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170720 21:04:36  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170720 21:04:36  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170720 21:04:36  [INFO] UniBServer  StartServiceManager OK!
+20170720 21:04:36  [INFO] Active module:   monitor, zkchat
+20170720 21:04:36  [INFO] UniBServer  System started
+
+20170720 21:05:31  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170720 21:05:32  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 21:05:32  [INFO] 连接名：  zkchat
+20170720 21:05:32  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170720 21:05:32  [INFO] UniBServer  System exit
+20170724 21:02:39  [INFO] UniBServer  System starting......
+20170724 21:02:39  [INFO] UniBServer  Init global config OK!
+20170724 21:02:41  [INFO] DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170724 21:02:41  [INFO] 连接名：  zkchat
+20170724 21:02:42  [INFO] UniBServer  PreLoad classes OK!
+20170724 21:02:42  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170724 21:02:42  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170724 21:02:42  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170724 21:02:42  [INFO] UniBServer  StartServiceManager OK!
+20170724 21:02:42  [INFO] Active module:   monitor, zkchat
+20170724 21:02:42  [INFO] UniBServer  System started
+
+20170724 21:02:56  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170724 21:02:56  [INFO] DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170724 21:02:56  [INFO] UniBServer  System exit
+20170804 21:19:19  [INFO] UniBServer  System starting......
+20170804 21:19:19  [INFO] UniBServer  Init global config OK!
+20170804 21:19:20  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170804 21:19:20  [INFO] 连接名：  zkchat
+20170804 21:19:21  [INFO] UniBServer  PreLoad classes OK!
+20170804 21:19:21  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170804 21:19:21  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170804 21:19:21  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170804 21:19:21  [INFO] UniBServer  StartServiceManager OK!
+20170804 21:19:21  [INFO] Active module:   monitor, zkchat
+20170804 21:19:21  [INFO] UniBServer  System started
+
+20170804 21:19:24  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170804 21:19:24  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170804 21:19:24  [INFO] UniBServer  System exit
+20170824 22:04:41  [INFO] UniBServer  System starting......
+20170824 22:04:41  [INFO] UniBServer  Init global config OK!
+20170824 22:04:42  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170824 22:04:42  [INFO] 连接名：  zkchat
+20170824 22:04:42  [INFO] UniBServer  PreLoad classes OK!
+20170824 22:04:42  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170824 22:04:42  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170824 22:04:42  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170824 22:04:42  [INFO] UniBServer  StartServiceManager OK!
+20170824 22:04:42  [INFO] Active module:   monitor, zkchat
+20170824 22:04:42  [INFO] UniBServer  System started
+
+20170824 22:06:28  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170824 22:06:28  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170824 22:06:28  [INFO] UniBServer  System exit
+20170824 22:07:14  [INFO] UniBServer  System starting......
+20170824 22:07:14  [INFO] UniBServer  Init global config OK!
+20170824 22:07:14  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170824 22:07:14  [INFO] 连接名：  zkchat
+20170824 22:07:14  [INFO] UniBServer  PreLoad classes OK!
+20170824 22:07:14  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170824 22:07:14  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170824 22:07:14  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170824 22:07:14  [INFO] UniBServer  StartServiceManager OK!
+20170824 22:07:14  [INFO] Active module:   monitor, zkchat
+20170824 22:07:14  [INFO] UniBServer  System started
+
+20170824 22:07:28  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170824 22:07:28  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170824 22:07:28  [INFO] UniBServer  System exit
+20170824 22:09:15  [INFO] UniBServer  System starting......
+20170824 22:09:15  [INFO] UniBServer  Init global config OK!
+20170824 22:09:16  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170824 22:09:16  [INFO] 连接名：  zkchat
+20170824 22:09:16  [INFO] UniBServer  PreLoad classes OK!
+20170824 22:09:16  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170824 22:09:16  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170824 22:09:16  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170824 22:09:16  [INFO] UniBServer  StartServiceManager OK!
+20170824 22:09:16  [INFO] Active module:   monitor, zkchat
+20170824 22:09:16  [INFO] UniBServer  System started
+
+20170824 22:09:29  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170824 22:09:29  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170824 22:09:29  [INFO] UniBServer  System exit
+20170825 22:36:38  [INFO] UniBServer  System starting......
+20170825 22:36:38  [INFO] UniBServer  Init global config OK!
+20170825 22:36:39  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:36:39  [INFO] 连接名：  zkchat
+20170825 22:36:39  [INFO] UniBServer  PreLoad classes OK!
+20170825 22:36:39  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170825 22:36:39  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170825 22:36:39  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:36:39  [INFO] UniBServer  StartServiceManager OK!
+20170825 22:36:39  [INFO] Active module:   monitor, zkchat
+20170825 22:36:39  [INFO] UniBServer  System started
+
+20170825 22:38:04  [INFO] UniBServer  System starting......
+20170825 22:38:04  [INFO] UniBServer  Init global config OK!
+20170825 22:38:05  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:38:05  [INFO] 连接名：  zkchat
+20170825 22:38:05  [INFO] UniBServer  PreLoad classes OK!
+20170825 22:38:05  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170825 22:38:06  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170825 22:38:15  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:38:15  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:38:15  [INFO] UniBServer  System exit
+20170825 22:38:27  [INFO] UniBServer  System starting......
+20170825 22:38:27  [INFO] UniBServer  Init global config OK!
+20170825 22:38:27  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:38:27  [INFO] 连接名：  zkchat
+20170825 22:38:27  [INFO] UniBServer  PreLoad classes OK!
+20170825 22:38:27  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170825 22:38:27  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170825 22:38:27  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:38:28  [INFO] UniBServer  StartServiceManager OK!
+20170825 22:38:28  [INFO] Active module:   monitor, zkchat
+20170825 22:38:28  [INFO] UniBServer  System started
+
+20170825 22:39:49  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:39:49  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:39:49  [INFO] UniBServer  System exit
+20170825 22:39:52  [INFO] UniBServer  System starting......
+20170825 22:39:52  [INFO] UniBServer  Init global config OK!
+20170825 22:39:53  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:39:53  [INFO] 连接名：  zkchat
+20170825 22:39:53  [INFO] UniBServer  PreLoad classes OK!
+20170825 22:39:53  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170825 22:39:53  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170825 22:39:53  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:39:53  [INFO] UniBServer  StartServiceManager OK!
+20170825 22:39:53  [INFO] Active module:   monitor, zkchat
+20170825 22:39:53  [INFO] UniBServer  System started
+
+20170825 22:43:10  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:43:11  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:43:11  [INFO] UniBServer  System exit
+20170825 22:43:14  [INFO] UniBServer  System starting......
+20170825 22:43:14  [INFO] UniBServer  Init global config OK!
+20170825 22:43:14  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:43:14  [INFO] 连接名：  zkchat
+20170825 22:43:15  [INFO] UniBServer  PreLoad classes OK!
+20170825 22:43:15  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170825 22:43:15  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170825 22:43:15  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:43:16  [INFO] UniBServer  StartServiceManager OK!
+20170825 22:43:16  [INFO] Active module:   monitor, zkchat
+20170825 22:43:16  [INFO] UniBServer  System started
+
+20170825 22:44:55  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:44:55  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:44:55  [INFO] UniBServer  System exit
+20170825 22:44:56  [INFO] UniBServer  System starting......
+20170825 22:44:56  [INFO] UniBServer  Init global config OK!
+20170825 22:44:57  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:44:57  [INFO] 连接名：  zkchat
+20170825 22:44:57  [INFO] UniBServer  PreLoad classes OK!
+20170825 22:44:57  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170825 22:44:57  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170825 22:44:57  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:44:57  [INFO] UniBServer  StartServiceManager OK!
+20170825 22:44:57  [INFO] Active module:   monitor, zkchat
+20170825 22:44:57  [INFO] UniBServer  System started
+
+20170825 22:45:58  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:45:58  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:45:58  [INFO] UniBServer  System exit
+20170825 22:45:59  [INFO] UniBServer  System starting......
+20170825 22:45:59  [INFO] UniBServer  Init global config OK!
+20170825 22:46:00  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:46:00  [INFO] 连接名：  zkchat
+20170825 22:46:00  [INFO] UniBServer  PreLoad classes OK!
+20170825 22:46:00  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170825 22:46:01  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170825 22:46:01  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:46:01  [INFO] UniBServer  StartServiceManager OK!
+20170825 22:46:01  [INFO] Active module:   monitor, zkchat
+20170825 22:46:01  [INFO] UniBServer  System started
+
+20170825 22:50:59  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:50:59  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:50:59  [INFO] UniBServer  System exit
+20170825 22:51:03  [INFO] UniBServer  System starting......
+20170825 22:51:03  [INFO] UniBServer  Init global config OK!
+20170825 22:51:03  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:51:03  [INFO] 连接名：  zkchat
+20170825 22:51:04  [INFO] UniBServer  PreLoad classes OK!
+20170825 22:51:04  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170825 22:51:04  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:51:04  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170825 22:51:05  [INFO] UniBServer  StartServiceManager OK!
+20170825 22:51:05  [INFO] Active module:   monitor, zkchat
+20170825 22:51:05  [INFO] UniBServer  System started
+
+20170825 22:54:57  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170825 22:54:57  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170825 22:54:57  [INFO] UniBServer  System exit
+20170826 00:03:01  [INFO] UniBServer  System starting......
+20170826 00:03:01  [INFO] UniBServer  Init global config OK!
+20170826 00:03:01  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 00:03:01  [INFO] 连接名：  zkchat
+20170826 00:03:02  [INFO] UniBServer  PreLoad classes OK!
+20170826 00:03:02  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 00:03:03  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 00:03:03  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 00:03:03  [INFO] UniBServer  StartServiceManager OK!
+20170826 00:03:03  [INFO] Active module:   monitor, zkchat
+20170826 00:03:03  [INFO] UniBServer  System started
+
+20170826 00:03:45  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 00:03:45  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 00:03:45  [INFO] UniBServer  System exit
+20170826 00:03:47  [INFO] UniBServer  System starting......
+20170826 00:03:47  [INFO] UniBServer  Init global config OK!
+20170826 00:03:47  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 00:03:47  [INFO] 连接名：  zkchat
+20170826 00:03:47  [INFO] UniBServer  PreLoad classes OK!
+20170826 00:03:47  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 00:03:47  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 00:03:47  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 00:03:47  [INFO] UniBServer  StartServiceManager OK!
+20170826 00:03:47  [INFO] Active module:   monitor, zkchat
+20170826 00:03:47  [INFO] UniBServer  System started
+
+20170826 00:04:05  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 00:04:05  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 00:04:05  [INFO] UniBServer  System exit
+20170826 10:15:07  [INFO] UniBServer  System starting......
+20170826 10:15:07  [INFO] UniBServer  Init global config OK!
+20170826 10:15:08  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:15:08  [INFO] 连接名：  zkchat
+20170826 10:15:08  [INFO] UniBServer  PreLoad classes OK!
+20170826 10:15:08  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 10:15:09  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 10:15:09  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:15:09  [INFO] UniBServer  StartServiceManager OK!
+20170826 10:15:09  [INFO] Active module:   monitor, zkchat
+20170826 10:15:09  [INFO] UniBServer  System started
+
+20170826 10:16:58  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:16:58  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:16:58  [INFO] UniBServer  System exit
+20170826 10:18:50  [INFO] UniBServer  System starting......
+20170826 10:18:50  [INFO] UniBServer  Init global config OK!
+20170826 10:18:51  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:18:51  [INFO] 连接名：  zkchat
+20170826 10:18:51  [INFO] UniBServer  PreLoad classes OK!
+20170826 10:18:51  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 10:18:52  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 10:18:52  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:18:52  [INFO] UniBServer  StartServiceManager OK!
+20170826 10:18:52  [INFO] Active module:   monitor, zkchat
+20170826 10:18:52  [INFO] UniBServer  System started
+
+20170826 10:21:37  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:21:37  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:21:37  [INFO] UniBServer  System exit
+20170826 10:22:25  [INFO] UniBServer  System starting......
+20170826 10:22:25  [INFO] UniBServer  Init global config OK!
+20170826 10:22:25  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:22:25  [INFO] 连接名：  zkchat
+20170826 10:22:26  [INFO] UniBServer  PreLoad classes OK!
+20170826 10:22:26  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 10:22:26  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 10:22:26  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:22:26  [INFO] UniBServer  StartServiceManager OK!
+20170826 10:22:26  [INFO] Active module:   monitor, zkchat
+20170826 10:22:26  [INFO] UniBServer  System started
+
+20170826 10:25:36  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:25:36  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:25:36  [INFO] UniBServer  System exit
+20170826 10:25:37  [INFO] UniBServer  System starting......
+20170826 10:25:37  [INFO] UniBServer  Init global config OK!
+20170826 10:25:37  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:25:37  [INFO] 连接名：  zkchat
+20170826 10:25:37  [INFO] UniBServer  PreLoad classes OK!
+20170826 10:25:37  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 10:25:37  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:25:37  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 10:25:37  [INFO] UniBServer  StartServiceManager OK!
+20170826 10:25:37  [INFO] Active module:   monitor, zkchat
+20170826 10:25:37  [INFO] UniBServer  System started
+
+20170826 10:25:40  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:25:40  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:25:40  [INFO] UniBServer  System exit
+20170826 10:26:47  [INFO] UniBServer  System starting......
+20170826 10:26:47  [INFO] UniBServer  Init global config OK!
+20170826 10:26:47  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:26:47  [INFO] 连接名：  zkchat
+20170826 10:26:47  [INFO] UniBServer  PreLoad classes OK!
+20170826 10:26:47  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 10:26:47  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 10:26:47  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:26:47  [INFO] UniBServer  StartServiceManager OK!
+20170826 10:26:47  [INFO] Active module:   monitor, zkchat
+20170826 10:26:47  [INFO] UniBServer  System started
+
+20170826 10:29:00  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:29:00  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:29:00  [INFO] UniBServer  System exit
+20170826 10:29:04  [INFO] UniBServer  System starting......
+20170826 10:29:04  [INFO] UniBServer  Init global config OK!
+20170826 10:29:04  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:29:04  [INFO] 连接名：  zkchat
+20170826 10:29:04  [INFO] UniBServer  PreLoad classes OK!
+20170826 10:29:04  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 10:29:04  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 10:29:04  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:29:04  [INFO] UniBServer  StartServiceManager OK!
+20170826 10:29:04  [INFO] Active module:   monitor, zkchat
+20170826 10:29:04  [INFO] UniBServer  System started
+
+20170826 10:30:59  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:30:59  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:30:59  [INFO] UniBServer  System exit
+20170826 10:31:00  [INFO] UniBServer  System starting......
+20170826 10:31:00  [INFO] UniBServer  Init global config OK!
+20170826 10:31:01  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:31:01  [INFO] 连接名：  zkchat
+20170826 10:31:01  [INFO] UniBServer  PreLoad classes OK!
+20170826 10:31:01  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 10:31:01  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 10:31:01  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:31:01  [INFO] UniBServer  StartServiceManager OK!
+20170826 10:31:01  [INFO] Active module:   monitor, zkchat
+20170826 10:31:01  [INFO] UniBServer  System started
+
+20170826 10:31:18  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:31:18  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:31:18  [INFO] UniBServer  System exit
+20170826 10:32:02  [INFO] UniBServer  System starting......
+20170826 10:32:02  [INFO] UniBServer  Init global config OK!
+20170826 10:32:03  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:32:03  [INFO] 连接名：  zkchat
+20170826 10:32:03  [INFO] UniBServer  PreLoad classes OK!
+20170826 10:32:03  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 10:32:03  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:32:03  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 10:32:03  [INFO] UniBServer  StartServiceManager OK!
+20170826 10:32:03  [INFO] Active module:   monitor, zkchat
+20170826 10:32:03  [INFO] UniBServer  System started
+
+20170826 10:34:03  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 10:34:03  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 10:34:03  [INFO] UniBServer  System exit
+20170826 11:09:57  [INFO] UniBServer  System starting......
+20170826 11:09:57  [INFO] UniBServer  Init global config OK!
+20170826 11:09:57  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:09:57  [INFO] 连接名：  zkchat
+20170826 11:09:57  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:09:57  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:09:58  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:09:58  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:09:58  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:09:58  [INFO] Active module:   monitor, zkchat
+20170826 11:09:58  [INFO] UniBServer  System started
+
+20170826 11:10:43  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:10:43  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:10:43  [INFO] UniBServer  System exit
+20170826 11:10:45  [INFO] UniBServer  System starting......
+20170826 11:10:45  [INFO] UniBServer  Init global config OK!
+20170826 11:10:46  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:10:46  [INFO] 连接名：  zkchat
+20170826 11:10:46  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:10:46  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:10:47  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:10:47  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:10:47  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:10:47  [INFO] Active module:   monitor, zkchat
+20170826 11:10:47  [INFO] UniBServer  System started
+
+20170826 11:11:16  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:11:16  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:11:16  [INFO] UniBServer  System exit
+20170826 11:13:13  [INFO] UniBServer  System starting......
+20170826 11:13:13  [INFO] UniBServer  Init global config OK!
+20170826 11:13:14  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:13:14  [INFO] 连接名：  zkchat
+20170826 11:13:14  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:13:14  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:13:14  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:13:14  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:13:14  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:13:14  [INFO] Active module:   monitor, zkchat
+20170826 11:13:14  [INFO] UniBServer  System started
+
+20170826 11:13:15  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:13:15  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:13:15  [INFO] UniBServer  System exit
+20170826 11:14:13  [INFO] UniBServer  System starting......
+20170826 11:14:13  [INFO] UniBServer  Init global config OK!
+20170826 11:14:19  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:14:19  [INFO] 连接名：  zkchat
+20170826 11:14:22  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:14:22  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:14:22  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:14:22  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:14:22  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:14:22  [INFO] Active module:   monitor, zkchat
+20170826 11:14:22  [INFO] UniBServer  System started
+
+20170826 11:15:08  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:15:08  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:15:08  [INFO] UniBServer  System exit
+20170826 11:15:12  [INFO] UniBServer  System starting......
+20170826 11:15:12  [INFO] UniBServer  Init global config OK!
+20170826 11:15:13  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:15:13  [INFO] 连接名：  zkchat
+20170826 11:15:13  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:15:13  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:15:13  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:15:13  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:15:13  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:15:13  [INFO] Active module:   monitor, zkchat
+20170826 11:15:13  [INFO] UniBServer  System started
+
+20170826 11:17:40  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:17:40  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:17:40  [INFO] UniBServer  System exit
+20170826 11:18:40  [INFO] UniBServer  System starting......
+20170826 11:18:40  [INFO] UniBServer  Init global config OK!
+20170826 11:18:41  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:18:41  [INFO] 连接名：  zkchat
+20170826 11:18:41  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:18:41  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:18:41  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:18:41  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:18:41  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:18:41  [INFO] Active module:   monitor, zkchat
+20170826 11:18:41  [INFO] UniBServer  System started
+
+20170826 11:18:57  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:18:57  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:18:57  [INFO] UniBServer  System exit
+20170826 11:19:57  [INFO] UniBServer  System starting......
+20170826 11:19:57  [INFO] UniBServer  Init global config OK!
+20170826 11:19:57  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:19:57  [INFO] 连接名：  zkchat
+20170826 11:19:57  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:19:57  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:19:57  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:19:57  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:19:57  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:19:57  [INFO] Active module:   monitor, zkchat
+20170826 11:19:57  [INFO] UniBServer  System started
+
+20170826 11:20:33  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:20:33  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:20:33  [INFO] UniBServer  System exit
+20170826 11:24:29  [INFO] UniBServer  System starting......
+20170826 11:24:29  [INFO] UniBServer  Init global config OK!
+20170826 11:24:39  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:24:39  [INFO] 连接名：  zkchat
+20170826 11:25:00  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:25:00  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:25:00  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:25:00  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:25:00  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:25:00  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:25:00  [INFO] Active module:   monitor, zkchat
+20170826 11:25:00  [INFO] UniBServer  System started
+
+20170826 11:25:00  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:25:00  [INFO] UniBServer  System exit
+20170826 11:25:35  [INFO] UniBServer  System starting......
+20170826 11:25:35  [INFO] UniBServer  Init global config OK!
+20170826 11:25:36  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:25:36  [INFO] 连接名：  zkchat
+20170826 11:25:43  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:25:43  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:25:44  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:25:45  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:25:46  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:25:46  [INFO] Active module:   monitor, zkchat
+20170826 11:25:46  [INFO] UniBServer  System started
+
+20170826 11:26:34  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:26:34  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:26:34  [INFO] UniBServer  System exit
+20170826 11:33:28  [INFO] UniBServer  System starting......
+20170826 11:33:28  [INFO] UniBServer  Init global config OK!
+20170826 11:33:28  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:33:28  [INFO] 连接名：  zkchat
+20170826 11:33:28  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:33:28  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:33:28  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:33:28  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:33:28  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:33:28  [INFO] Active module:   monitor, zkchat
+20170826 11:33:28  [INFO] UniBServer  System started
+
+20170826 11:33:58  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:33:58  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:33:58  [INFO] UniBServer  System exit
+20170826 11:33:59  [INFO] UniBServer  System starting......
+20170826 11:33:59  [INFO] UniBServer  Init global config OK!
+20170826 11:33:59  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:33:59  [INFO] 连接名：  zkchat
+20170826 11:34:00  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:34:00  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:34:00  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:34:00  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:34:00  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:34:00  [INFO] Active module:   monitor, zkchat
+20170826 11:34:00  [INFO] UniBServer  System started
+
+20170826 11:36:30  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:36:30  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:36:30  [INFO] UniBServer  System exit
+20170826 11:36:31  [INFO] UniBServer  System starting......
+20170826 11:36:31  [INFO] UniBServer  Init global config OK!
+20170826 11:36:32  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:36:32  [INFO] 连接名：  zkchat
+20170826 11:36:32  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:36:32  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:36:32  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:36:32  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:36:32  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:36:32  [INFO] Active module:   monitor, zkchat
+20170826 11:36:32  [INFO] UniBServer  System started
+
+20170826 11:36:45  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:36:45  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:36:45  [INFO] UniBServer  System exit
+20170826 11:36:46  [INFO] UniBServer  System starting......
+20170826 11:36:46  [INFO] UniBServer  Init global config OK!
+20170826 11:36:47  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:36:47  [INFO] 连接名：  zkchat
+20170826 11:36:47  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:36:47  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:36:47  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:36:47  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:36:47  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:36:47  [INFO] Active module:   monitor, zkchat
+20170826 11:36:47  [INFO] UniBServer  System started
+
+20170826 11:37:00  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:37:00  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:37:00  [INFO] UniBServer  System exit
+20170826 11:37:01  [INFO] UniBServer  System starting......
+20170826 11:37:01  [INFO] UniBServer  Init global config OK!
+20170826 11:37:01  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:37:01  [INFO] 连接名：  zkchat
+20170826 11:37:01  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:37:01  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:37:01  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:37:01  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:37:01  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:37:01  [INFO] Active module:   monitor, zkchat
+20170826 11:37:01  [INFO] UniBServer  System started
+
+20170826 11:37:16  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:37:16  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:37:16  [INFO] UniBServer  System exit
+20170826 11:37:17  [INFO] UniBServer  System starting......
+20170826 11:37:17  [INFO] UniBServer  Init global config OK!
+20170826 11:37:17  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:37:17  [INFO] 连接名：  zkchat
+20170826 11:37:17  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:37:17  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:37:17  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:37:17  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:37:17  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:37:17  [INFO] Active module:   monitor, zkchat
+20170826 11:37:17  [INFO] UniBServer  System started
+
+20170826 11:38:03  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:38:03  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:38:03  [INFO] UniBServer  System exit
+20170826 11:38:05  [INFO] UniBServer  System starting......
+20170826 11:38:05  [INFO] UniBServer  Init global config OK!
+20170826 11:38:06  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:38:06  [INFO] 连接名：  zkchat
+20170826 11:38:06  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:38:06  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:38:06  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:38:07  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:38:07  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:38:07  [INFO] Active module:   monitor, zkchat
+20170826 11:38:07  [INFO] UniBServer  System started
+
+20170826 11:38:09  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:38:09  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:38:09  [INFO] UniBServer  System exit
+20170826 11:38:27  [INFO] UniBServer  System starting......
+20170826 11:38:27  [INFO] UniBServer  Init global config OK!
+20170826 11:38:27  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:38:27  [INFO] 连接名：  zkchat
+20170826 11:38:27  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:38:27  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:38:27  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:38:27  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:38:27  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:38:27  [INFO] Active module:   monitor, zkchat
+20170826 11:38:27  [INFO] UniBServer  System started
+
+20170826 11:45:13  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:45:13  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:45:13  [INFO] UniBServer  System exit
+20170826 11:45:14  [INFO] UniBServer  System starting......
+20170826 11:45:14  [INFO] UniBServer  Init global config OK!
+20170826 11:45:15  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:45:15  [INFO] 连接名：  zkchat
+20170826 11:45:15  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:45:15  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:45:15  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:45:15  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:45:15  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:45:15  [INFO] Active module:   monitor, zkchat
+20170826 11:45:15  [INFO] UniBServer  System started
+
+20170826 11:48:21  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:48:21  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:48:21  [INFO] UniBServer  System exit
+20170826 11:49:10  [INFO] UniBServer  System starting......
+20170826 11:50:53  [INFO] UniBServer  System starting......
+20170826 11:52:01  [INFO] UniBServer  System starting......
+20170826 11:52:01  [INFO] UniBServer  Init global config OK!
+20170826 11:52:55  [INFO] UniBServer  System starting......
+20170826 11:52:55  [INFO] UniBServer  Init global config OK!
+20170826 11:55:19  [INFO] UniBServer  System starting......
+20170826 11:55:19  [INFO] UniBServer  Init global config OK!
+20170826 11:55:54  [INFO] UniBServer  System starting......
+20170826 11:55:55  [INFO] UniBServer  Init global config OK!
+20170826 11:55:55  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:55:55  [INFO] 连接名：  zkchat
+20170826 11:55:55  [INFO] UniBServer  PreLoad classes OK!
+20170826 11:55:55  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 11:55:55  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 11:55:56  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:55:56  [INFO] UniBServer  StartServiceManager OK!
+20170826 11:55:56  [INFO] Active module:   monitor, zkchat
+20170826 11:55:56  [INFO] UniBServer  System started
+
+20170826 11:55:59  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 11:55:59  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 11:55:59  [INFO] UniBServer  System exit
+20170826 12:12:45  [INFO] UniBServer  System starting......
+20170826 12:12:45  [INFO] UniBServer  Init global config OK!
+20170826 12:12:46  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 12:12:46  [INFO] 连接名：  zkchat
+20170826 12:12:46  [INFO] UniBServer  PreLoad classes OK!
+20170826 12:12:46  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 12:12:46  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 12:12:46  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 12:12:46  [INFO] UniBServer  StartServiceManager OK!
+20170826 12:12:46  [INFO] Active module:   monitor, zkchat
+20170826 12:12:46  [INFO] UniBServer  System started
+
+20170826 12:13:18  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 12:13:18  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 12:13:18  [INFO] UniBServer  System exit
+20170826 12:14:08  [INFO] UniBServer  System starting......
+20170826 12:14:08  [INFO] UniBServer  Init global config OK!
+20170826 12:14:09  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 12:14:09  [INFO] 连接名：  zkchat
+20170826 12:14:10  [INFO] UniBServer  PreLoad classes OK!
+20170826 12:14:10  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 12:14:10  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 12:14:10  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 12:14:10  [INFO] UniBServer  StartServiceManager OK!
+20170826 12:14:10  [INFO] Active module:   monitor, zkchat
+20170826 12:14:10  [INFO] UniBServer  System started
+
+20170826 12:15:05  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 12:15:05  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 12:15:05  [INFO] UniBServer  System exit
+20170826 12:26:58  [INFO] UniBServer  System starting......
+20170826 12:26:59  [INFO] UniBServer  Init global config OK!
+20170826 12:27:00  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 12:27:00  [INFO] 连接名：  zkchat
+20170826 12:27:00  [INFO] UniBServer  PreLoad classes OK!
+20170826 12:27:00  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 12:27:00  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 12:27:00  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 12:27:00  [INFO] UniBServer  StartServiceManager OK!
+20170826 12:27:00  [INFO] Active module:   monitor, zkchat
+20170826 12:27:00  [INFO] UniBServer  System started
+
+20170826 12:27:28  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 12:27:29  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 12:27:29  [INFO] UniBServer  System exit
+20170826 12:49:09  [INFO] UniBServer  System starting......
+20170826 12:49:09  [INFO] UniBServer  Init global config OK!
+20170826 12:49:09  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 12:49:09  [INFO] 连接名：  zkchat
+20170826 12:49:10  [INFO] UniBServer  PreLoad classes OK!
+20170826 12:49:10  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 12:49:10  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 12:49:10  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 12:49:10  [INFO] UniBServer  StartServiceManager OK!
+20170826 12:49:10  [INFO] Active module:   monitor, zkchat
+20170826 12:49:10  [INFO] UniBServer  System started
+
+20170826 12:51:36  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 12:51:36  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 12:51:36  [INFO] UniBServer  System exit
+20170826 12:51:41  [INFO] UniBServer  System starting......
+20170826 12:51:41  [INFO] UniBServer  Init global config OK!
+20170826 12:51:41  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 12:51:41  [INFO] 连接名：  zkchat
+20170826 12:51:42  [INFO] UniBServer  PreLoad classes OK!
+20170826 12:51:42  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 12:51:42  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 12:51:42  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 12:51:42  [INFO] UniBServer  StartServiceManager OK!
+20170826 12:51:42  [INFO] Active module:   monitor, zkchat
+20170826 12:51:42  [INFO] UniBServer  System started
+
+20170826 12:52:02  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 12:52:02  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 12:52:02  [INFO] UniBServer  System exit
+20170826 13:02:39  [INFO] UniBServer  System starting......
+20170826 13:02:39  [INFO] UniBServer  Init global config OK!
+20170826 13:02:39  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 13:02:39  [INFO] 连接名：  zkchat
+20170826 13:02:40  [INFO] UniBServer  PreLoad classes OK!
+20170826 13:02:40  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 13:02:40  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 13:02:40  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 13:02:40  [INFO] UniBServer  StartServiceManager OK!
+20170826 13:02:40  [INFO] Active module:   monitor, zkchat
+20170826 13:02:40  [INFO] UniBServer  System started
+
+20170826 13:03:04  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 13:03:04  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 13:03:04  [INFO] UniBServer  System exit
+20170826 13:03:08  [INFO] UniBServer  System starting......
+20170826 13:03:08  [INFO] UniBServer  Init global config OK!
+20170826 13:03:09  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 13:03:09  [INFO] 连接名：  zkchat
+20170826 13:03:09  [INFO] UniBServer  PreLoad classes OK!
+20170826 13:03:09  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 13:03:09  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 13:03:09  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 13:03:09  [INFO] UniBServer  StartServiceManager OK!
+20170826 13:03:09  [INFO] Active module:   monitor, zkchat
+20170826 13:03:09  [INFO] UniBServer  System started
+
+20170826 13:03:40  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 13:03:40  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 13:03:40  [INFO] UniBServer  System exit
+20170826 13:03:44  [INFO] UniBServer  System starting......
+20170826 13:03:44  [INFO] UniBServer  Init global config OK!
+20170826 13:03:44  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 13:03:44  [INFO] 连接名：  zkchat
+20170826 13:03:45  [INFO] UniBServer  PreLoad classes OK!
+20170826 13:03:45  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 13:03:45  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 13:03:45  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 13:03:45  [INFO] UniBServer  StartServiceManager OK!
+20170826 13:03:45  [INFO] Active module:   monitor, zkchat
+20170826 13:03:45  [INFO] UniBServer  System started
+
+20170826 13:04:27  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 13:04:27  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 13:04:27  [INFO] UniBServer  System exit
+20170826 13:04:31  [INFO] UniBServer  System starting......
+20170826 13:04:31  [INFO] UniBServer  Init global config OK!
+20170826 13:04:32  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 13:04:32  [INFO] 连接名：  zkchat
+20170826 13:04:32  [INFO] UniBServer  PreLoad classes OK!
+20170826 13:04:32  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 13:04:32  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 13:04:32  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 13:04:32  [INFO] UniBServer  StartServiceManager OK!
+20170826 13:04:32  [INFO] Active module:   monitor, zkchat
+20170826 13:04:32  [INFO] UniBServer  System started
+
+20170826 13:06:11  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 13:06:11  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 13:06:11  [INFO] UniBServer  System exit
+20170826 13:06:12  [INFO] UniBServer  System starting......
+20170826 13:06:12  [INFO] UniBServer  Init global config OK!
+20170826 13:06:12  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 13:06:12  [INFO] 连接名：  zkchat
+20170826 13:06:12  [INFO] UniBServer  PreLoad classes OK!
+20170826 13:06:12  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 13:06:12  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 13:06:12  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 13:06:12  [INFO] UniBServer  StartServiceManager OK!
+20170826 13:06:12  [INFO] Active module:   monitor, zkchat
+20170826 13:06:12  [INFO] UniBServer  System started
+
+20170826 13:06:37  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 13:06:37  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 13:06:37  [INFO] UniBServer  System exit
+20170826 16:14:51  [INFO] UniBServer  System starting......
+20170826 16:14:51  [INFO] UniBServer  Init global config OK!
+20170826 16:14:52  [INFO] kafeihu.zk.database.pool.DBConnectionPool   [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 16:14:52  [INFO] 连接名：  zkchat
+20170826 16:14:52  [INFO] UniBServer  PreLoad classes OK!
+20170826 16:14:52  [INFO] UniBServer  RegisterShutdownHooks OK!
+20170826 16:14:52  [INFO] kafeihu.zk.bserver.schedule.task.SystemMaintenanceMonitor  TaskName:systemMaintenanceMon PolicyId:monitorPolicy ModuleName:null
+20170826 16:14:52  [INFO] kafeihu.zk.bserver.socket.BSocketServer  started. [alias=SocketServer_ZKChat, port=8010]
+20170826 16:14:52  [INFO] UniBServer  StartServiceManager OK!
+20170826 16:14:52  [INFO] Active module:   monitor, zkchat
+20170826 16:14:52  [INFO] UniBServer  System started
+
+20170826 16:14:57  [INFO] kafeihu.zk.bserver.socket.BSocketServer  stopped. [alias=SocketServer_ZKChat, port=8010]
+20170826 16:14:57  [INFO] kafeihu.zk.database.pool.DBConnectionPool  closed.  [id=zkchat, username=root, jdbcUrl=jdbc:mysql://127.0.0.1/zkMoney, maxSize=50, minSize=2]
+20170826 16:14:57  [INFO] UniBServer  System exit

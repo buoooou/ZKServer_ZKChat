@@ -1,0 +1,43 @@
+<!-- Socket配置文件
+客户端请求分三次处理：
+1.接受请求:接受数据包请求，解析报文头，数据长度
+2.处理请求:获取请求数据的prid，通过procManager获取具体proc进行处理
+3.响应请求:返回响应数据
+ -->
+<socketserver-config>
+	<socketServer>
+			<alias>SocketServer_ZKChat</alias>
+			<serverImpl>kafeihu.zk.server.socket.BSocketServer</serverImpl>
+			<serverSocket>
+				<port>8010</port>
+				<clientSocketTimeoutMills>15000</clientSocketTimeoutMills>
+				<options>
+				</options>
+			</serverSocket>
+			<threadPool>
+				<maxPoolSize>200</maxPoolSize>
+				<corePoolSize>20</corePoolSize>
+				<workQueueSize>0</workQueueSize>
+				<keepAliveTimeSeconds>60</keepAliveTimeSeconds>
+				<rejectedExecutionHandler>kafeihu.zk.server.socket.handler.DefaultSocketRejectedExecutionHandler</rejectedExecutionHandler>
+			</threadPool>
+			<socketWorker>
+				<requestHandler>
+					<handlerImpl>kafeihu.zk.server.socket.handler.RecvRequestDataHandler</handlerImpl>
+				</requestHandler>
+				<requestHandler>
+					<handlerImpl>kafeihu.zk.server.socket.handler.DoRequestProcHandler</handlerImpl>
+				</requestHandler>
+				<requestHandler>
+					<handlerImpl>kafeihu.zk.server.socket.handler.SendResponseDataHandler</handlerImpl>
+				</requestHandler>
+				<exceptionHandler>
+					<handlerImpl>kafeihu.zk.server.socket.handler.DefaultSocketExceptionHandler</handlerImpl>
+				</exceptionHandler>
+			</socketWorker>
+			<statistics>
+				<spanHours>1</spanHours>
+				<freqUnit>S</freqUnit>
+			</statistics>
+	</socketServer>
+</socketserver-config>	

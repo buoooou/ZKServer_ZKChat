@@ -1,0 +1,28 @@
+20170720 20:18:56  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@67424e82
+20170720 20:18:56  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@41906a77
+20170720 20:19:14  [DEBGU] DBConnectionPool  cleanIdleConnection task begin...
+20170720 20:19:48  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@67424e82
+20170720 20:19:48  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@41906a77
+20170720 20:20:03  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@67424e82
+20170720 20:20:03  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@41906a77
+20170720 20:21:35  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@1ce92674
+20170720 20:21:35  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@3f49dace
+20170720 20:21:56  [DEBGU] DBConnectionPool  cleanIdleConnection task begin...
+20170720 20:22:57  [DEBGU] DBConnectionPool  cleanIdleConnection task begin...
+20170720 20:24:28  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@1ce92674
+20170720 20:24:28  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@3f49dace
+20170720 20:25:28  [DEBGU] DBConnectionPool  cleanIdleConnection task begin...
+20170720 20:26:31  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@67424e82
+20170720 20:26:31  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@41906a77
+20170720 20:26:45  [DEBGU] DBConnectionPool  cleanIdleConnection task begin...
+20170720 20:27:45  [DEBGU] DBConnectionPool  cleanIdleConnection task begin...
+20170720 20:28:20  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@67424e82
+20170720 20:28:20  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@41906a77
+20170720 20:28:39  [DEBGU] DBConnectionPool  cleanIdleConnection task begin...
+20170720 20:29:01  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@67424e82
+20170720 20:29:01  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@41906a77
+20170720 20:29:16  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@67424e82
+20170720 20:29:16  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@41906a77
+20170720 20:29:34  [DEBGU] DBConnectionPool  cleanIdleConnection task begin...
+20170720 21:05:32  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@7c033f74
+20170720 21:05:32  [DEBGU] DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@8f661ec

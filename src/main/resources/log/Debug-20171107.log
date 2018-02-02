@@ -1,0 +1,2 @@
+20171107 18:59:31  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@e2d56bf
+20171107 18:59:31  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@65ae6ba4

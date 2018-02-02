@@ -1,0 +1,4 @@
+20170720 20:29:44  [WARN] kafeihu.zk.bserver.zkchat.proc.GetUserFriends  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20170720 20:29:44  [WARN] kafeihu.zk.bserver.zkchat.proc.GetUserFriends  Prid:OpenQRPayProtocol MaxCostMills:0
+20170720 21:05:20  [WARN] kafeihu.zk.bserver.zkchat.proc.GetUserFriends  Prid:OpenQRPayProtocol MaxActiveCnt:1
+20170720 21:05:20  [WARN] kafeihu.zk.bserver.zkchat.proc.GetUserFriends  Prid:OpenQRPayProtocol MaxCostMills:0

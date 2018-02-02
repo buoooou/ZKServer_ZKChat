@@ -1,0 +1,25 @@
+<!-- 基于Netty的服务器配置，通过配置不同处理器，可以成为Socket服务器、WebSocket服务器、HTTP服务器等
+-->
+<nettyServer-config>
+	<port>8081</port>
+	
+		
+	</worker>
+</nettyServer-config>
+
+<nettyClient-config>
+</nettyClient-config>
+client:
+心跳间隔
+关闭连接前心跳失败次数
+关闭连接后重连间隔
+
+本地地址（可选）
+
+server:
+心跳间隔
+关闭连接前心跳失败次数
+关闭连接后重连间隔
+
+消息缓存重发
+双向心跳机制

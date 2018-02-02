@@ -1,0 +1,11 @@
+20171103 22:29:54  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@200a570f
+20171103 22:29:54  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@1e81f4dc
+20171103 22:30:12  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  cleanIdleConnection task begin...
+20171103 22:31:12  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  cleanIdleConnection task begin...
+20171103 22:45:57  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@200a570f
+20171103 22:45:57  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@1e81f4dc
+20171103 23:02:07  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@200a570f
+20171103 23:02:07  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@1e81f4dc
+20171103 23:30:16  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  createRealConnection ok. CreatedCnt:1. Conn:com.mysql.jdbc.JDBC4Connection@200a570f
+20171103 23:30:16  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  createRealConnection ok. CreatedCnt:2. Conn:com.mysql.jdbc.JDBC4Connection@1e81f4dc
+20171103 23:30:33  [DEBGU] kafeihu.zk.database.pool.DBConnectionPool  cleanIdleConnection task begin...

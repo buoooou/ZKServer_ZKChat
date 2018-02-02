@@ -1,0 +1,60 @@
+<!-- 	基于Netty的服务器配置，通过配置不同处理器，可以成为Socket服务器、WebSocket服务器、HTTP服务器等.
+		以下配置为Socket服务器配置
+-->
+<nettyServer-config>
+	<serverPort>8089</serverPort>
+	<acceptor>
+		<threadNum>1</threadNum>
+		<connOption>
+			<SO_BACKLOG>1024</SO_BACKLOG>
+		</connOption>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.LoggingHandlerFactory</impl>
+			<param>
+			</param>
+			<desc>日志处理。对于acceptor，handler配置为可选项</desc>
+		</handlerFactory>
+	</acceptor>
+	
+	<worker>
+		<threadNum>0</threadNum>
+		<connOption>
+			<SO_KEEPALIVE>true</SO_KEEPALIVE>
+		</connOption>
+		
+		<handlerInitializerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.SocketChannelInitializerFactory</impl>
+			<param>
+			</param>
+			<desc>handler初始化器。建立Socket连接时调用：加载其他handler</desc>
+		</handlerInitializerFactory>
+		
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.LineBasedFrameDecoderFactory</impl>
+			<param>
+				<maxLength>1024</maxLength>
+			</param>
+			<desc>解码器：以换行符分数据包</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.StringDecoderFactory</impl>
+			<param>
+				<charset>UTF-8</charset>
+			</param>
+			<desc>解码器：将字符数组转换为字符串</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.StringEncoderFactory</impl>
+			<param>
+				<charset>UTF-8</charset>
+			</param>
+			<desc>编码器：将字符串转换为字符数组</desc>
+		</handlerFactory>
+		<handlerFactory>
+			<impl>com.cmbchina.base.netty.channel.handler.SocketServerDataHandlerFactory</impl>
+			<param>
+			</param>
+			<desc>服务端业务请求处理</desc>
+		</handlerFactory>
+	</worker>
+</nettyServer-config>

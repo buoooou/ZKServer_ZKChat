@@ -1,0 +1,27 @@
+<!-- 数据库驱动配置 -->
+<driver-config>
+	<driver>com.mysql.jdbc.Driver</driver>
+</driver-config>
+	
+
+<!--数据库连接配置-->
+
+<dbConnPool-config>
+	<dbConnectionPool>
+		<id>zkchat</id>
+		<alias></alias>
+		<username>root</username>
+		<password>root</password>
+		<jdbcUrl>jdbc:mysql://127.0.0.1/zkMoney</jdbcUrl>
+		<maxSize>50</maxSize>
+		<initialSize>2</initialSize>
+		<minSize>2</minSize>
+		<maxIdleSeconds>300</maxIdleSeconds>
+		<idleConnScanSpanSeconds>60</idleConnScanSpanSeconds>
+		<maxWaitTimeoutMills>500</maxWaitTimeoutMills>
+		<validationQuerySql>select * from teacher;</validationQuerySql>
+		<maxCreateThreadCount>1</maxCreateThreadCount>
+		<accessSpanWarningMills>1000</accessSpanWarningMills>
+		<monitorSwitchOn>Y</monitorSwitchOn>
+	</dbConnectionPool>
+</dbConnPool-config>

@@ -1,0 +1,19 @@
+20170715 19:28:10  [ERROR] kafeihu.zk.bserver.monitor.MonitorListener  acceptSocket filed:Socket closed
+20170718 20:59:15  [ERROR] kafeihu.zk.bserver.monitor.MonitorListener  acceptSocket filed:Socket closed
+20170720 20:18:57  [ERROR] StatService failed! Reason:   java.lang.Exception: duplicate SocketServer defined with port=8010
+20170720 20:18:57  [ERROR] StatService failed! Reason:   java.lang.Exception: duplicate SocketServer defined with port=8010
+20170720 20:19:48  [ERROR] StatService failed! Reason:   java.lang.Exception: Address already in use
+20170720 20:19:48  [ERROR] StatService failed! Reason:   java.lang.Exception: Address already in use
+20170720 20:19:48  [ERROR] StatService failed! Reason:   java.lang.Exception: Address already in use
+20170720 20:20:03  [ERROR] StatService failed! Reason:   java.lang.Exception: duplicate SocketServer defined with port=8010
+20170720 20:20:03  [ERROR] StatService failed! Reason:   java.lang.Exception: duplicate SocketServer defined with port=8010
+20170720 20:23:29  [ERROR] StatService failed! Reason:   java.lang.Exception: duplicate SocketServer defined with port=8010
+20170720 20:23:29  [ERROR] StatService failed! Reason:   java.lang.Exception: duplicate SocketServer defined with port=8010
+20170720 20:26:07  [ERROR] StatService failed! Reason:   java.lang.Exception: duplicate SocketServer defined with port=8010
+20170720 20:26:07  [ERROR] StatService failed! Reason:   java.lang.Exception: duplicate SocketServer defined with port=8010
+20170720 20:28:18  [ERROR] kafeihu.zk.bserver.monitor.MonitorListener  acceptSocket filed:Socket closed
+20170720 20:28:58  [ERROR] kafeihu.zk.bserver.monitor.MonitorListener  acceptSocket filed:Socket closed
+20170720 20:29:09  [ERROR] kafeihu.zk.bserver.monitor.MonitorListener  acceptSocket filed:Socket closed
+20170720 20:29:49  [ERROR] kafeihu.zk.bserver.monitor.MonitorListener  acceptSocket filed:Socket closed
+20170720 21:05:31  [ERROR] kafeihu.zk.bserver.monitor.MonitorListener  acceptSocket filed:Socket closed
+20170724 21:02:56  [ERROR] kafeihu.zk.bserver.monitor.MonitorListener  acceptSocket filed:Socket closed
