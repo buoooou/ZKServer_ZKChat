@@ -2,8 +2,8 @@ package kafeihu.zk.server.console;
 
 import kafeihu.zk.base.client.impl.BServerSocketClient;
 import kafeihu.zk.base.util.MiscUtil;
-import kafeihu.zk.base.util.ResourceUtil;
 import kafeihu.zk.base.util.XmlUtil;
+import kafeihu.zk.server.manager.ResourceManager;
 import kafeihu.zk.server.statistics.IStatistics;
 
 import java.io.BufferedWriter;
@@ -459,7 +459,7 @@ public class BServerMonitor {
         String serverIp = "127.0.0.1";
         int serverPort = 8010;
         int loopSeconds = 5;
-        String outputFileName = ResourceUtil.getSysDataPath() + "Monitor.htm";
+        String outputFileName = ResourceManager.getSysDataPath() + "Monitor.htm";
 
         BServerMonitor bsvrMon = new BServerMonitor(serverIp, serverPort, loopSeconds, outputFileName);
         bsvrMon.start();

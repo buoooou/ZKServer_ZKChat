@@ -1,7 +1,6 @@
 package kafeihu.zk.server.test;
 
-import kafeihu.zk.base.util.ResourceUtil;
-
+import kafeihu.zk.server.manager.ResourceManager;
 import org.apache.log4j.PropertyConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,7 +26,7 @@ public final class Slf4jUtil {
         }
     }
     public static void main(String[] args) {
-        String path = ResourceUtil.getSysDataPath();
+        String path = ResourceManager.getSysDataPath();
         PropertyConfigurator.configure(path + "log4j.properties");
         new Slf4jUtil().setTemperature(4);
     }

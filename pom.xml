@@ -6,7 +6,7 @@
 
     <groupId>kafeihu.zk</groupId>
     <artifactId>ZKServer_ZKChat</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1.0-SNAPSHOT</version>
 
     <properties>
         <build.directory>${project.build.directory}/ZKServer_ZKChat</build.directory>
@@ -62,7 +62,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <defaultLibBundleDir>lib</defaultLibBundleDir>
                     <source>1.8</source>
                     <target>1.8</target>
                     <encoding>UTF-8</encoding>
@@ -119,7 +118,6 @@
                 <version>2.1</version>
                 <configuration>
                     <attach>true</attach>
-                    <encoding>UTF-8</encoding>
                     <outputDirectory>
                         ${build.directory}
                     </outputDirectory>
@@ -141,7 +139,7 @@
         <dependency>
             <groupId>kafeihu.zk</groupId>
             <artifactId>ZKBase</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>1.1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>kafeihu.zk</groupId>
@@ -151,7 +149,7 @@
         <dependency>
             <groupId>kafeihu.zk</groupId>
             <artifactId>ZKServer</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.1.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
