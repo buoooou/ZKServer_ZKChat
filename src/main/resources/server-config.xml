@@ -33,8 +33,7 @@
 
 	<!--服务模块：
 	1.SocketServerManager（Socket模块）
-	2.MonitorManager（monitor监控模块）
-	3.ScheduleManager（定时任务模块）
+	2.ScheduleManager（定时任务模块）
 	-->
 	<serviceManagers>
 		<serviceManager>
@@ -46,11 +45,6 @@
 			<name>ScheduleManager</name>
 			<class>kafeihu.zk.server.schedule.ScheduleManager</class>
 			<description>定时任务管理</description>
-		</serviceManager>
-		<serviceManager>
-			<name>MonitorManager</name>
-			<class>kafeihu.zk.server.monitor.MonitorManager</class>
-			<description>监控模块</description>
 		</serviceManager>
     </serviceManagers>
 

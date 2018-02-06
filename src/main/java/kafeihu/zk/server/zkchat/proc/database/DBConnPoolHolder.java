@@ -1,7 +1,7 @@
 package kafeihu.zk.server.zkchat.proc.database;
 
+import kafeihu.zk.base.logging.slf4j.Slf4JUtil;
 import kafeihu.zk.server.manager.DBConnectionPoolManager;
-import kafeihu.zk.server.manager.Slf4JManager;
 import kafeihu.zk.server.zkchat.core.ZKChatErrorCode;
 import kafeihu.zk.server.zkchat.core.ZKChatException;
 import kafeihu.zk.database.pool.DBConnectionPool;
@@ -30,9 +30,9 @@ public class DBConnPoolHolder {
     {
         try
         {
-            Slf4JManager.getConsoleLogger().info("Initializing DBConnPoolHolder...... ");
+            Slf4JUtil.getConsoleLogger().info("Initializing DBConnPoolHolder...... ");
             initialize();
-            Slf4JManager.getConsoleLogger().info("OK!");
+            Slf4JUtil.getConsoleLogger().info("OK!");
         }
         catch (Exception exp)
         {

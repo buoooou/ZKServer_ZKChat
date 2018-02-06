@@ -1,7 +1,7 @@
 package kafeihu.zk.server.console;
 
+import kafeihu.zk.base.logging.slf4j.Slf4JUtil;
 import kafeihu.zk.server.core.BserverManager;
-import kafeihu.zk.server.manager.Slf4JManager;
 
 /**
  * Server服务器启动入口
@@ -12,9 +12,9 @@ public class Bserver {
 
     public static void main(String[] args) throws Exception {
 
-        Slf4JManager.getConsoleLogger().info("ZKbserver start...");
+        Slf4JUtil.getConsoleLogger().info("ZKbserver start...");
         BserverManager.start();
-        Slf4JManager.getConsoleLogger().info("ZKbserver started!");
+        Slf4JUtil.getConsoleLogger().info("ZKbserver started!");
 
     }
 }

@@ -6,7 +6,7 @@
 
     <groupId>kafeihu.zk</groupId>
     <artifactId>ZKServer_ZKChat</artifactId>
-    <version>1.2.0-SNAPSHOT</version>
+    <version>1.2.1-SNAPSHOT</version>
 
     <properties>
         <build.directory>${project.build.directory}/ZKServer_ZKChat</build.directory>
@@ -149,7 +149,7 @@
         <dependency>
             <groupId>kafeihu.zk</groupId>
             <artifactId>ZKServer</artifactId>
-            <version>1.2.1-SNAPSHOT</version>
+            <version>1.3.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
