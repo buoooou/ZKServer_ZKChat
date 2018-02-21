@@ -1,16 +1,16 @@
-# UniBServer_ZKChat
+# ZKServer_ZKChat
 通用socket服务器
 ## author
 zhangkuo
 ## 功能
 ### 架构
-#### UniBase
+#### ZKBase
     基础层：
     包含基础工具包，通讯，日志，数据库，对象池，后台定时器，加密
-#### UniBServer
+#### ZKServer
     服务层：
     包含总管理器，socket服务器，monitor监控，定时任务服务器
-#### UniBServer_ZKChat
+#### ZKServer_ZKChat
     应用层：
     业务模块，处理业务逻辑
 ### 服务模块：
