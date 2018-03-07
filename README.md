@@ -8,11 +8,13 @@ zhangkuo
 ## ZKBase
     基础层：
     包含基础工具包，通讯，日志，数据库，对象池，后台定时器，加密
+    
 ## ZKServer
     服务层：
     包含总管理器，socket服务器，monitor监控，定时任务服务器
     
 ### 服务模块：
+
 	1.SocketServerManager（Socket模块）
 	socket请求
 	配置文件为：socketserver-config.xml
@@ -34,6 +36,10 @@ zhangkuo
 	3.ScheduleManager（定时任务模块）
     系统后台定时任务
     配置文件：schedule-config.xml
+    
+### 
+
+
 ### 日志文件配置log-config.xml
     可修改日志文件
 ### 对象池pool-config.xml
