@@ -2,17 +2,16 @@
 通用socket服务器
 ## author
 zhangkuo
-## 功能
-### 架构
-#### ZKBase
+
+## 架构
+
+## ZKBase
     基础层：
     包含基础工具包，通讯，日志，数据库，对象池，后台定时器，加密
-#### ZKServer
+## ZKServer
     服务层：
     包含总管理器，socket服务器，monitor监控，定时任务服务器
-#### ZKServer_ZKChat
-    应用层：
-    业务模块，处理业务逻辑
+    
 ### 服务模块：
 	1.SocketServerManager（Socket模块）
 	socket请求
@@ -42,3 +41,9 @@ zhangkuo
 ### 系统维护文件
     systemMaintenance.txt
     修改文件状态，可日志提示该系统出于维护状态。
+
+    
+## ZKServer_ZKChat
+    应用层：
+    业务模块，处理业务逻辑
+
