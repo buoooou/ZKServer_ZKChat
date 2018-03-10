@@ -1,20 +1,28 @@
 # ZKServer_ZKChat
+
 通用socket服务器
+
 ## author
+
 zhangkuo
 
-## 架构
+### github 
+
+https://github.com/zhangkuo921112
+
+## 系统架构
 
 ## ZKBase
+
     基础层：
     包含基础工具包，通讯，日志，数据库，对象池，后台定时器，加密
     
 ## ZKServer
+
     服务层：
     包含总管理器，socket服务器，monitor监控，定时任务服务器
     
 ### 服务模块：
-
 
 -1.SocketServerManager（Socket模块）
 
@@ -60,14 +68,18 @@ zhangkuo
 
 
 ### 日志文件配置log-config.xml
+
     可修改日志文件
+    
 ### 对象池pool-config.xml
 
 ### 系统维护文件
+
     systemMaintenance.txt
     修改文件状态，可日志提示该系统出于维护状态。
 
     
 ## ZKServer_ZKChat
+
     应用层：
     业务模块，处理业务逻辑
